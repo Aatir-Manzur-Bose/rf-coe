@@ -118,7 +118,7 @@ for i1 in data_list1:
     if (i1[2] != " "):
         seconds1_intval = (i1[2])
         seconds1.append(seconds1_intval)
-    if (i1[3] == i1[3]):
+    if (i1[3] != " "):
         seconds2_intval = (i1[3])
         seconds2.append(seconds2_intval)
 
