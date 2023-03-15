@@ -12,7 +12,6 @@ latency = []
 RSSI = []
 fading = []
 noise = []
-time = []
 tot_atten = []
 seconds = []
 time = []
@@ -94,23 +93,38 @@ for s in seconds:
 #
 
 dropouts = []
+returns = []
 seconds1 = []
+seconds2 = []
 time1 = []
+time2 = []
 
-df1 = pd.read_csv(r'C:\WearableTestUtils\WearableTestUtils\AttenuationUtils\rf_coe_dropout20230313-165835.csv')
+list_of_files = glob.glob('rf_coe_dropout*')  # * means all if need specific format then *.csv
+latest_file = max(list_of_files, key=os.path.getmtime)
+
+#df1 = pd.read_csv(r'C:\WearableTestUtils\WearableTestUtils\AttenuationUtils\rf_coe_dropout20230313-165835.csv')
+df1 = pd.read_csv(r'' + latest_file)
 print(df1)
-df1 = df1.dropna()
-data1 = pd.DataFrame(df1, columns=['dropout', "TIMESTAMP"])
+data1 = pd.DataFrame(df1, columns=['dropout', 'return', "DROPOUT TIMESTAMP", 'RETURN TIMESTAMP'])
 data_list1 = data1.values.tolist()
 
 for i1 in data_list1:
-    dropouts_intval = (i1[0])
-    seconds1_intval = (i1[1])
-    dropouts.append(dropouts_intval)
-    seconds1.append(seconds1_intval)
+    if (i1[0] != " "):
+        dropouts_intval = (i1[0])
+        dropouts.append(dropouts_intval)
+    if (i1[1] != " "):
+        returns_intval = (i1[1])
+        returns.append(returns_intval)
+    if (i1[2] != " "):
+        seconds1_intval = (i1[2])
+        seconds1.append(seconds1_intval)
+    if (i1[3] == i1[3]):
+        seconds2_intval = (i1[3])
+        seconds2.append(seconds2_intval)
 
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
+
 first = 0
 for s in seconds1:
     match = pattern.match(s)
@@ -122,8 +136,21 @@ for s in seconds1:
         first = hours + minutes + seconds + frax
     time1.append(hours + minutes + seconds + frax - first)
 
-print(time1)
-print(dropouts)
+first = 0
+for s in seconds2:
+    match = pattern.match(s)
+    hours = 3600 * (int(match.group(2)))
+    minutes = 60 * (int(match.group(3)))
+    seconds = int(match.group(4))
+    frax = float((int(match.group(5))) / 1000000)
+    if (first == 0):
+        first = hours + minutes + seconds + frax
+    time2.append(hours + minutes + seconds + frax - first)
+
+# print(seconds2)
+#print(time2)
+# print(dropouts)
+# print(time1)
 
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
@@ -131,6 +158,7 @@ ax.scatter(time1, dropouts, label="dropouts")
 ax.plot(time, RSSI, label="RSSI")
 ax.plot(time, latency, label="Latency")
 ax.plot(time, fading, label="fading")
+ax.scatter(time2, returns, label="returns")
 ax.set_xlabel("Time (seconds")
 ax.legend(loc='best')
 plt.show()
