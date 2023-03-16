@@ -4,6 +4,7 @@ import re
 import time
 import glob
 import os
+import numpy as np
 
 list_of_files = glob.glob('rf_coe_records*')  # * means all if need specific format then *.csv
 latest_file = max(list_of_files, key=os.path.getmtime)
@@ -147,19 +148,20 @@ for s in seconds2:
         first = hours + minutes + seconds + frax
     time2.append(hours + minutes + seconds + frax - first)
 
-# print(seconds2)
-#print(time2)
-# print(dropouts)
-# print(time1)
+tarr = np.asarray(time)
+rssiarr = np.asarray(RSSI)
+fadarr = np.asarray(fading)
+for b in time1:
+    i = (np.abs(tarr - b)).argmin()
+    print("Time (seconds), RSSI (dB), Fading (dB): " + str((tarr[i],rssiarr[i],fadarr[i])))
+
 
 
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
-#ax.scatter(time1, dropouts, label="dropouts")
 ax.plot(time, RSSI, label="RSSI")
 ax.plot(time, latency, label="Latency")
 ax.plot(time, fading, label="fading")
-
 for q in range(0,len(dropouts)): #assuming dropouts and returns have the same length
     ax.axvspan(time1[q],time2[q],color='red',alpha=0.3)
     if (q > 0):
@@ -167,10 +169,6 @@ for q in range(0,len(dropouts)): #assuming dropouts and returns have the same le
     else:
         ax.axvspan(0, time1[q], color='green', alpha=0.3)
 ax.axvspan(time2[q], time[-1], color='green', alpha=0.3)
-
-
-
-#ax.scatter(time2, returns, label="returns")
 ax.set_xlabel("Time (seconds")
 ax.legend(loc='best')
 plt.title("")
