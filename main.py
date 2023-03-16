@@ -9,12 +9,12 @@ import numpy as np
 import argparse
 
 latest_file = ''
-parser = argparse.ArgumentParser(description="My Script")
+parser = argparse.ArgumentParser(description=" RF CoE Data")
 parser.add_argument("--records")
 parser.add_argument("--drops")
 args, leftovers = parser.parse_known_args()
 if args.records is not None:
-    print( "file has been set (value is %s)" % args.records)
+    print( "records file has been set (value is %s)" % args.records)
     latest_file = args.records
 else: 
     list_of_files = glob.glob('rf_coe_records*')  # * means all if need specific format then *.csv
@@ -51,58 +51,19 @@ for i in data_list:
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
 
-first = 0
+def timeLine(seconds, time, pattern):
+    first = 0
+    for s in seconds:
+        match = pattern.match(s)
+        hours = 3600 * (int(match.group(2)))
+        minutes = 60 * (int(match.group(3)))
+        seconds = int(match.group(4))
+        frax = float((int(match.group(5))) / 1000000)
+        if (first == 0):
+            first = hours + minutes + seconds + frax
+        time.append(hours + minutes + seconds + frax - first)
+timeLine(seconds,time,pattern)
 
-for s in seconds:
-    match = pattern.match(s)
-    hours = 3600 * (int(match.group(2)))
-    minutes = 60 * (int(match.group(3)))
-    seconds = int(match.group(4))
-    frax = float((int(match.group(5))) / 1000000)
-    if (first == 0):
-        first = hours + minutes + seconds + frax
-    time.append(hours + minutes + seconds + frax - first)
-
-#
-# plt.figure(1)
-# plt.plot(time, latency)
-# plt.title("Latency vs Time")
-# plt.ylabel("Latency (Buffer Size)")
-# plt.xlabel("Time (Seconds)")
-#
-# plt.figure(2)
-# plt.plot(time, RSSI)
-# plt.title("RSSI vs Time")
-# plt.ylabel("RSSI (dB)")
-# plt.xlabel("Time (Seconds)")
-#
-# plt.figure(3)
-# plt.plot(time,fading)
-# plt.title("Fading vs Time")
-# plt.ylabel("Fading (dB)")
-# plt.xlabel("Time (Seconds)")
-#
-# plt.figure(4)
-# plt.scatter(RSSI,latency)
-# plt.title("Latency vs RSSI")
-# plt.ylabel("Latency (Buffer Size)")
-# plt.xlabel("RSSI (dB)")
-#
-# plt.figure(5)
-# plt.plot(time, latency)
-# plt.plot(time, RSSI)
-#
-# # plt.figure(5)
-# # plt.plot(time, latency)
-# # plt.plot(time, fading)
-#
-# fig = plt.figure(figsize=(12,12))
-# ax = fig.add_subplot(projection='3d')
-# ax.scatter(time,fading,latency)
-# ax.set_zlabel("Latency (Buffer Size)")
-# ax.set_xlabel("Time (seconds)")
-# ax.set_ylabel("Fading (dB)")
-#
 
 dropouts = []
 returns = []
@@ -140,27 +101,8 @@ for i1 in data_list1:
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
 
-first = 0
-for s in seconds1:
-    match = pattern.match(s)
-    hours = 3600 * (int(match.group(2)))
-    minutes = 60 * (int(match.group(3)))
-    seconds = int(match.group(4))
-    frax = float((int(match.group(5))) / 1000000)
-    if (first == 0):
-        first = hours + minutes + seconds + frax
-    time1.append(hours + minutes + seconds + frax - first)
-
-first = 0
-for s in seconds2:
-    match = pattern.match(s)
-    hours = 3600 * (int(match.group(2)))
-    minutes = 60 * (int(match.group(3)))
-    seconds = int(match.group(4))
-    frax = float((int(match.group(5))) / 1000000)
-    if (first == 0):
-        first = hours + minutes + seconds + frax
-    time2.append(hours + minutes + seconds + frax - first)
+timeLine(seconds1,time1,pattern)
+timeLine(seconds2,time2,pattern)
 
 tarr = np.asarray(time)
 rssiarr = np.asarray(RSSI)
