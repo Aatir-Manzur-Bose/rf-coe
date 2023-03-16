@@ -176,7 +176,7 @@ ax = fig.add_subplot(1, 1, 1)
 ax.plot(time, RSSI, label="RSSI")
 ax.plot(time, latency, label="Latency")
 ax.plot(time, fading, label="fading")
-for q in range(0,len(dropouts)): #assuming dropouts and returns have the same length
+for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #assuming dropouts and returns have the same length
     ax.axvspan(time1[q],time2[q],color='red',alpha=0.3)
     if (q > 0):
         ax.axvspan(time2[q - 1],time1[q],color='green',alpha=0.3)
