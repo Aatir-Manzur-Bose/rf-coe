@@ -98,10 +98,6 @@ for i1 in data_list1:
     if (i1[3] == i1[3] and i1[3] != " "):
         seconds2_intval = (i1[3])
         seconds2.append(seconds2_intval)
-print(dropouts)
-print(returns)
-print(seconds1)
-print(seconds2)
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
 
