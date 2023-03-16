@@ -30,7 +30,7 @@ for i in data_list:
     seconds_intval = (i[4])
     latency.append(latency_intval)
     RSSI.append(RSSI_intval)
-    fading.append(fading_intval)
+    fading.append(-1 * fading_intval)
     noise.append(noise_intval)
     seconds.append(seconds_intval)
 #   tot_atten.append(fading_intval + noise_intval)
@@ -118,7 +118,7 @@ for i1 in data_list1:
     if (i1[2] != " "):
         seconds1_intval = (i1[2])
         seconds1.append(seconds1_intval)
-    if (i1[3] != " "):
+    if (i1[3] == i1[3] and i1[3] != " "):
         seconds2_intval = (i1[3])
         seconds2.append(seconds2_intval)
 
@@ -152,13 +152,26 @@ for s in seconds2:
 # print(dropouts)
 # print(time1)
 
+
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
-ax.scatter(time1, dropouts, label="dropouts")
+#ax.scatter(time1, dropouts, label="dropouts")
 ax.plot(time, RSSI, label="RSSI")
 ax.plot(time, latency, label="Latency")
 ax.plot(time, fading, label="fading")
-ax.scatter(time2, returns, label="returns")
+
+for q in range(0,len(dropouts)): #assuming dropouts and returns have the same length
+    ax.axvspan(time1[q],time2[q],color='red',alpha=0.3)
+    if (q > 0):
+        ax.axvspan(time2[q - 1],time1[q],color='green',alpha=0.3)
+    else:
+        ax.axvspan(0, time1[q], color='green', alpha=0.3)
+ax.axvspan(time2[q], time[-1], color='green', alpha=0.3)
+
+
+
+#ax.scatter(time2, returns, label="returns")
 ax.set_xlabel("Time (seconds")
 ax.legend(loc='best')
+plt.title("")
 plt.show()
