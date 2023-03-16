@@ -13,8 +13,8 @@ parser = argparse.ArgumentParser(description="My Script")
 parser.add_argument("--records")
 parser.add_argument("--drops")
 args, leftovers = parser.parse_known_args()
-if args.file is not None:
-    print "file has been set (value is %s)" % args.records
+if args.records is not None:
+    print( "file has been set (value is %s)" % args.records)
     latest_file = args.records
 else: 
     list_of_files = glob.glob('rf_coe_records*')  # * means all if need specific format then *.csv
@@ -111,7 +111,7 @@ seconds2 = []
 time1 = []
 time2 = []
 if args.drops is not None:
-    print "file has been set (value is %s)" % args.drops
+    print("file has been set (value is %s)" % args.drops)
     latest_file = args.drops
 else: 
     list_of_files = glob.glob('rf_coe_dropout*')  # * means all if need specific format then *.csv
