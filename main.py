@@ -80,6 +80,7 @@ else:
 
 #df1 = pd.read_csv(r'C:\WearableTestUtils\WearableTestUtils\AttenuationUtils\rf_coe_dropout20230313-165835.csv')
 df1 = pd.read_csv(r'' + latest_file)
+print(latest_file)
 print(df1)
 data1 = pd.DataFrame(df1, columns=['dropout', 'return', "DROPOUT TIMESTAMP", 'RETURN TIMESTAMP'])
 data_list1 = data1.values.tolist()
@@ -97,7 +98,10 @@ for i1 in data_list1:
     if (i1[3] == i1[3] and i1[3] != " "):
         seconds2_intval = (i1[3])
         seconds2.append(seconds2_intval)
-
+print(dropouts)
+print(returns)
+print(seconds1)
+print(seconds2)
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
 
