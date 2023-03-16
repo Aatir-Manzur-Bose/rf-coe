@@ -6,8 +6,19 @@ import glob
 import os
 import numpy as np
 
-list_of_files = glob.glob('rf_coe_records*')  # * means all if need specific format then *.csv
-latest_file = max(list_of_files, key=os.path.getmtime)
+import argparse
+
+latest_file = ''
+parser = argparse.ArgumentParser(description="My Script")
+parser.add_argument("--records")
+parser.add_argument("--drops")
+args, leftovers = parser.parse_known_args()
+if args.file is not None:
+    print "file has been set (value is %s)" % args.records
+    latest_file = args.records
+else: 
+    list_of_files = glob.glob('rf_coe_records*')  # * means all if need specific format then *.csv
+    latest_file = max(list_of_files, key=os.path.getmtime)
 
 latency = []
 RSSI = []
@@ -99,9 +110,12 @@ seconds1 = []
 seconds2 = []
 time1 = []
 time2 = []
-
-list_of_files = glob.glob('rf_coe_dropout*')  # * means all if need specific format then *.csv
-latest_file = max(list_of_files, key=os.path.getmtime)
+if args.drops is not None:
+    print "file has been set (value is %s)" % args.drops
+    latest_file = args.drops
+else: 
+    list_of_files = glob.glob('rf_coe_dropout*')  # * means all if need specific format then *.csv
+    latest_file = max(list_of_files, key=os.path.getmtime)
 
 #df1 = pd.read_csv(r'C:\WearableTestUtils\WearableTestUtils\AttenuationUtils\rf_coe_dropout20230313-165835.csv')
 df1 = pd.read_csv(r'' + latest_file)
