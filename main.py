@@ -147,22 +147,22 @@ for r in range(1,len(latency)-1):
 
 
 fig = plt.figure()
-ax = fig.add_subplot(1, 2, 1)
-ax.plot(time, RSSI, label="RSSI",color='green')
-ax.plot(time, latency, label="Latency",color='black')
-for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #assuming dropouts and returns have the same length
-    ax.axvspan(time1[q],time2[q],color='red',alpha=0.7)
-    if (q < len(dropouts) - 1):
-        ax.axvspan(time2[q],time1[q+1],color='green',alpha=0.1)
-ax.axvspan(time[0],time1[0],color='green',alpha=0.1)
-if time2[-1] > time1[-1]:
-    ax.axvspan(time2[-1], time[-1],color='green',alpha=0.1)
-else:
-    ax.axvspan(time1[-1], time[-1],color='red',alpha=0.7)
-#ax.axvspan(time2[-1],time[-1],color='green',alpha=0.1)
-ax.set_xlabel("Time (seconds)")
-ax.legend(loc='best')
-plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
+# ax = fig.add_subplot(1, 2, 1)
+# ax.plot(time, RSSI, label="RSSI",color='green')
+# ax.plot(time, latency, label="Latency",color='black')
+# for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #assuming dropouts and returns have the same length
+#     ax.axvspan(time1[q],time2[q],color='red',alpha=0.7)
+#     if (q < len(dropouts) - 1):
+#         ax.axvspan(time2[q],time1[q+1],color='green',alpha=0.1)
+# ax.axvspan(time[0],time1[0],color='green',alpha=0.1)
+# if time2[-1] > time1[-1]:
+#     ax.axvspan(time2[-1], time[-1],color='green',alpha=0.1)
+# else:
+#     ax.axvspan(time1[-1], time[-1],color='red',alpha=0.7)
+# #ax.axvspan(time2[-1],time[-1],color='green',alpha=0.1)
+# ax.set_xlabel("Time (seconds)")
+# ax.legend(loc='best')
+# plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
 
 ax = fig.add_subplot(1, 2, 2)
 ax.plot(time, RSSI, label="RSSI",color='green')
