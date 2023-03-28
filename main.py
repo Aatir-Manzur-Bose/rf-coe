@@ -32,6 +32,7 @@ df = pd.read_csv(r'' + latest_file)
 # print(df)
 df = df.dropna()
 data = pd.DataFrame(df, columns=['latency', 'RSSI', 'attn1', 'attn2', "TIMESTAMP"])
+# print(data)
 data_list = data.values.tolist()
 
 for i in data_list:
@@ -57,20 +58,33 @@ def timeLine(seconds, time, pattern):
         match = pattern.match(s)
         hours = 3600 * (int(match.group(2)))
         minutes = 60 * (int(match.group(3)))
-        seconds = int(match.group(4))
+        secondsq = int(match.group(4))
         frax = float((int(match.group(5))) / 1000000)
         if (first == 0):
-            first = hours + minutes + seconds + frax
-        time.append(hours + minutes + seconds + frax - first)
-timeLine(seconds,time,pattern)
+            first = hours + minutes + secondsq + frax
+        time.append(hours + minutes + secondsq + frax - first)
+    return(first)
+
+def derivative(x,t):
+    derv = []
+    for d in range(1,len(x)):
+        dx = x[d] - x[d-1]
+        dt = t[d] - t[d-1]
+        derv.append(dx / dt)
+    return derv
+#no more index searching -- implement for loop in here, have it go by steps of 1
+
+
+firstTime = timeLine(seconds,time,pattern)
 
 
 dropouts = []
 returns = []
 seconds1 = []
 seconds2 = []
-time1 = []
-time2 = []
+time1 = [] #timestamps corresponding to dropouts
+time2 = [] #timestamps corresponding to returns
+
 if args.drops is not None:
     print("file has been set (value is %s)" % args.drops)
     latest_file = args.drops
@@ -80,8 +94,8 @@ else:
 
 #df1 = pd.read_csv(r'C:\WearableTestUtils\WearableTestUtils\AttenuationUtils\rf_coe_dropout20230313-165835.csv')
 df1 = pd.read_csv(r'' + latest_file)
-print(latest_file)
-print(df1)
+# print(latest_file)
+# print(df1)
 data1 = pd.DataFrame(df1, columns=['dropout', 'return', "DROPOUT TIMESTAMP", 'RETURN TIMESTAMP'])
 data_list1 = data1.values.tolist()
 
@@ -101,8 +115,15 @@ for i1 in data_list1:
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
 
-timeLine(seconds1,time1,pattern)
-timeLine(seconds2,time2,pattern)
+firstTime1 = timeLine(seconds1,time1,pattern)
+firstTime2 = timeLine(seconds2,time2,pattern)
+
+
+offset1 = firstTime1 - firstTime #calculates the offset in time between dropout.py and RFLatency.py
+offset2 = firstTime2 - firstTime #calculates the offset between the first dropout and first return
+for i in range(0,len(time1)):
+    time1[i] = time1[i] + offset1
+    time2[i] = time2[i] + offset2
 
 tarr = np.asarray(time)
 rssiarr = np.asarray(RSSI)
@@ -111,21 +132,48 @@ for b in time1:
     i = (np.abs(tarr - b)).argmin()
     print("Time (seconds), RSSI (dB), Fading (dB): " + str((tarr[i],rssiarr[i],fadarr[i])))
 
+derivlist = derivative(latency,time)
+
+tot_list = []
+auto_dropouts = []
+auto_dropouts_time = []
+
+for r in range(1,len(latency)-1):
+    if (abs(derivlist[r]) > 120):
+        print("The derivative at t = {} is {}".format(time[r],derivlist[r]))
+        auto_dropouts.append(derivlist[r])
+        auto_dropouts_time.append(time[r])
 
 
 fig = plt.figure()
-ax = fig.add_subplot(1, 1, 1)
-ax.plot(time, RSSI, label="RSSI")
-ax.plot(time, latency, label="Latency")
-ax.plot(time, fading, label="fading")
+ax = fig.add_subplot(1, 2, 1)
+ax.plot(time, RSSI, label="RSSI",color='green')
+ax.plot(time, latency, label="Latency",color='black')
 for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #assuming dropouts and returns have the same length
-    ax.axvspan(time1[q],time2[q],color='red',alpha=0.3)
-    if (q > 0):
-        ax.axvspan(time2[q - 1],time1[q],color='green',alpha=0.3)
-    else:
-        ax.axvspan(0, time1[q], color='green', alpha=0.3)
-ax.axvspan(time2[q], time[-1], color='green', alpha=0.3)
-ax.set_xlabel("Time (seconds")
+    ax.axvspan(time1[q],time2[q],color='red',alpha=0.7)
+    if (q < len(dropouts) - 1):
+        ax.axvspan(time2[q],time1[q+1],color='green',alpha=0.1)
+ax.axvspan(time[0],time1[0],color='green',alpha=0.1)
+ax.axvspan(time2[-1],time[-1],color='green',alpha=0.1)
+ax.set_xlabel("Time (seconds)")
 ax.legend(loc='best')
-plt.title("")
+plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
+
+ax = fig.add_subplot(1, 2, 2)
+ax.plot(time, RSSI, label="RSSI",color='green')
+ax.plot(time, latency, label="Latency",color='black')
+for q in range(1,len(auto_dropouts) - 1): #assuming dropouts and returns have the same length
+    if (auto_dropouts[q] < 0):
+        ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
+    else:
+        ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='green',alpha=0.1)
+ax.axvspan(time[0],auto_dropouts_time[0],color='green',alpha=0.1)
+if (auto_dropouts[-1] < 0):
+    ax.axvspan(auto_dropouts_time[-1], time[-1], color='red', alpha=0.7)
+else:
+    ax.axvspan(auto_dropouts_time[-1], time[-1], color='green', alpha=0.1)
+ax.set_xlabel("Time (seconds)")
+ax.legend(loc='best')
+plt.title("Latency and RSSI Plot with Automatically Marked Regions of Dropouts")
 plt.show()
+
