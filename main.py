@@ -123,6 +123,7 @@ offset1 = firstTime1 - firstTime #calculates the offset in time between dropout.
 offset2 = firstTime2 - firstTime #calculates the offset between the first dropout and first return
 for i in range(0,len(time1)):
     time1[i] = time1[i] + offset1
+for i in range(0,len(time2)):
     time2[i] = time2[i] + offset2
 
 tarr = np.asarray(time)
@@ -154,7 +155,11 @@ for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #ass
     if (q < len(dropouts) - 1):
         ax.axvspan(time2[q],time1[q+1],color='green',alpha=0.1)
 ax.axvspan(time[0],time1[0],color='green',alpha=0.1)
-ax.axvspan(time2[-1],time[-1],color='green',alpha=0.1)
+if time2[-1] > time1[-1]:
+    ax.axvspan(time2[-1], time[-1],color='green',alpha=0.1)
+else:
+    ax.axvspan(time1[-1], time[-1],color='red',alpha=0.7)
+#ax.axvspan(time2[-1],time[-1],color='green',alpha=0.1)
 ax.set_xlabel("Time (seconds)")
 ax.legend(loc='best')
 plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
