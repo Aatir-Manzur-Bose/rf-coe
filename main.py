@@ -131,7 +131,12 @@ rssiarr = np.asarray(RSSI)
 fadarr = np.asarray(fading)
 for b in time1:
     i = (np.abs(tarr - b)).argmin()
-    print("Time (seconds), RSSI (dB), Fading (dB): " + str((tarr[i],rssiarr[i],fadarr[i])))
+    # print("Time (seconds), RSSI (dB): " + str((tarr[i],rssiarr[i])))
+    # print("Time before (seconds), RSSI before (dB): " + str((tarr[i-1], rssiarr[i-1])))
+for e in time2:
+    q = (np.abs(tarr - e)).argmin()
+    # print("Time (seconds), RSSI (dB): " + str((tarr[q],rssiarr[q])))
+    # print("Time before (seconds), RSSI before (dB): " + str((tarr[q-1], rssiarr[q-1])))
 
 derivlist = derivative(latency,time)
 
@@ -139,46 +144,62 @@ tot_list = []
 auto_dropouts = []
 auto_dropouts_time = []
 
+last = 0
 for r in range(1,len(latency)-1):
-    if (abs(derivlist[r]) > 120):
-        print("The derivative at t = {} is {}".format(time[r],derivlist[r]))
-        auto_dropouts.append(derivlist[r])
-        auto_dropouts_time.append(time[r])
-
+    if (abs(derivlist[r]) > 200):
+        gap = r - last
+        if (gap == r or gap > 1):
+            last = r
+            print("The derivative at t = {} is {}".format(time[r],derivlist[r]))
+            auto_dropouts.append(derivlist[r])
+            auto_dropouts_time.append(time[r])
 
 fig = plt.figure()
-# ax = fig.add_subplot(1, 2, 1)
-# ax.plot(time, RSSI, label="RSSI",color='green')
-# ax.plot(time, latency, label="Latency",color='black')
-# for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #assuming dropouts and returns have the same length
-#     ax.axvspan(time1[q],time2[q],color='red',alpha=0.7)
-#     if (q < len(dropouts) - 1):
-#         ax.axvspan(time2[q],time1[q+1],color='green',alpha=0.1)
-# ax.axvspan(time[0],time1[0],color='green',alpha=0.1)
-# if time2[-1] > time1[-1]:
-#     ax.axvspan(time2[-1], time[-1],color='green',alpha=0.1)
-# else:
-#     ax.axvspan(time1[-1], time[-1],color='red',alpha=0.7)
-# #ax.axvspan(time2[-1],time[-1],color='green',alpha=0.1)
-# ax.set_xlabel("Time (seconds)")
-# ax.legend(loc='best')
-# plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
+ax = fig.add_subplot(1, 2, 1)
+ax.plot(time, RSSI, label="RSSI",color='green')
+ax.plot(time, latency, label="Latency",color='black')
+for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #assuming dropouts and returns have the same length
+    ax.axvspan(time1[q],time2[q],color='red',alpha=0.7)
+    # if (q < len(dropouts) - 1):
+    #     ax.axvspan(time2[q],time1[q+1],color='green',alpha=0.3)
+# ax.axvspan(time[0],time1[0],color='green',alpha=0.3)
+if time2[-1] > time1[-1]:
+    pass
+    #ax.axvspan(time2[-1], time[-1],color='green',alpha=0.3)
+else:
+    ax.axvspan(time1[-1], time[-1],color='red',alpha=0.7)
+#ax.axvspan(time2[-1],time[-1],color='green',alpha=0.1)
+ax.set_xlabel("Time (seconds)")
+ax.legend(loc='best')
+plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
 
 ax = fig.add_subplot(1, 2, 2)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
 for q in range(1,len(auto_dropouts) - 1): #assuming dropouts and returns have the same length
+    i = (np.abs(tarr - auto_dropouts_time[q])).argmin()
     if (auto_dropouts[q] < 0):
-        ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
-    else:
-        ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='green',alpha=0.1)
-ax.axvspan(time[0],auto_dropouts_time[0],color='green',alpha=0.1)
-if (auto_dropouts[-1] < 0):
-    ax.axvspan(auto_dropouts_time[-1], time[-1], color='red', alpha=0.7)
-else:
-    ax.axvspan(auto_dropouts_time[-1], time[-1], color='green', alpha=0.1)
+        if (RSSI[i] < -98):
+            ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
+
+            #**NOTE** Need to account for dropout that 
+
+        # if (RSSI[i] <= -101):
+        #     ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
+
+    # else:
+    #     if (RSSI[i] < -100):
+    #         ax.axvspan(auto_dropouts_time[q], auto_dropouts_time[q + 1], color='red', alpha=0.7)
+
+    #ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='green',alpha=0.3)
+# ax.axvspan(time[0],auto_dropouts_time[0],color='green',alpha=0.3)
+# if (auto_dropouts[-1] < 0):
+#     ax.axvspan(auto_dropouts_time[-1], time[-1], color='red', alpha=0.7)
+# else:
+#     ax.axvspan(auto_dropouts_time[-1], time[-1], color='green', alpha=0.3)
 ax.set_xlabel("Time (seconds)")
 ax.legend(loc='best')
 plt.title("Latency and RSSI Plot with Automatically Marked Regions of Dropouts")
+
 plt.show()
 
