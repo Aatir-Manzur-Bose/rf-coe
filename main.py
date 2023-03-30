@@ -182,7 +182,7 @@ for q in range(1,len(auto_dropouts) - 1): #assuming dropouts and returns have th
         if (RSSI[i] < -98):
             ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
 
-            #**NOTE** Need to account for dropout that 
+            #**NOTE** Need to account for dropout that
 
         # if (RSSI[i] <= -101):
         #     ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
