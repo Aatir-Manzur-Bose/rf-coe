@@ -178,9 +178,14 @@ ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
 for q in range(1,len(auto_dropouts) - 1): #assuming dropouts and returns have the same length
     i = (np.abs(tarr - auto_dropouts_time[q])).argmin()
-    if (auto_dropouts[q] < 0):
-        if (RSSI[i] < -98):
+    if (RSSI[i] < -97):
+        if (auto_dropouts[q] < 0):
             ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
+        # else:
+        #     if (auto_dropouts[q - 1] < 0):
+        #         ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
+
+
 
             #**NOTE** Need to account for dropout that
 
