@@ -17,8 +17,22 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
     y2 = []
     a1 = []
     a2 = []
+    tp= []
+    tpt = []
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
+
+    def turningpoints(v):
+     
+        N=0
+        for i in range(1, len(v)-1):
+            if ((v[i-1] < v[i] and v[i+1] < v[i]) 
+            or (v[i-1] > v[i] and v[i+1] > v[i])):
+                N += 1
+                if(v[i]<100):
+                    tp.append(v[i])
+                    tpt.append(x[i])
+        return N
 
     with open(filename, 'a') as csvfile:
         # creating a csv writer object
@@ -31,6 +45,7 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         y2.append(y2i)
         a1.append(attn1)
         a2.append(attn2)
+        turningpoints(y)
         # row = [yi, y2i, datetime.now()]
         # csvwriter.writerow(row)
         # x = range(len(y))
@@ -41,6 +56,7 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         ax.set_title("Latency and RSSI plot")
         ax.plot(x, y, label='Latency')
         ax.plot(x, y2, label='RSSI')
+        ax.scatter(tpt,tp)
         ax.legend(loc='best')
         # ax.plot(x, a1)
         # ax.plot(x, a2)
