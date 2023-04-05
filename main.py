@@ -21,6 +21,7 @@ else:
     latest_file = max(list_of_files, key=os.path.getmtime)
 
 latency = []
+filt_latency = []
 RSSI = []
 fading = []
 noise = []
@@ -31,24 +32,29 @@ time = []
 df = pd.read_csv(r'' + latest_file)
 # print(df)
 df = df.dropna()
-data = pd.DataFrame(df, columns=['latency', 'RSSI', 'attn1', 'attn2', "TIMESTAMP"])
+data = pd.DataFrame(df, columns=['latency', 'RSSI', 'filtered latency', 'attn1', 'attn2', "TIMESTAMP"])
 # print(data)
 data_list = data.values.tolist()
 
 for i in data_list:
     latency_intval = (i[0])
+    filt_latency_intval = (i[2])
     RSSI_intval = (i[1])
-    fading_intval = (i[3])
-    noise_intval = (i[2])
-    seconds_intval = (i[4])
+    fading_intval = (i[4])
+    noise_intval = (i[3])
+    seconds_intval = (i[5])
     latency.append(latency_intval)
     RSSI.append(RSSI_intval)
     fading.append(-1 * fading_intval)
     noise.append(noise_intval)
     seconds.append(seconds_intval)
+    filt_latency.append(filt_latency_intval)
 #   tot_atten.append(fading_intval + noise_intval)
 
 # print(seconds)
+print(len(filt_latency))
+print(len(seconds))
+
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
 
@@ -143,21 +149,26 @@ derivlist = derivative(latency,time)
 tot_list = []
 auto_dropouts = []
 auto_dropouts_time = []
+rssi_drops = []
 
 last = 0
 for r in range(1,len(latency)-1):
     if (abs(derivlist[r]) > 200):
-        gap = r - last
-        if (gap == r or gap > 1): #waits one sample before checking for another value to add to list
-            last = r
-            print("The derivative at t = {} is {} and RSSI is {}".format(time[r],derivlist[r],RSSI[r]))
-            auto_dropouts.append(derivlist[r])
-            auto_dropouts_time.append(time[r])
+        # gap = r - last
+        # if (gap == r or gap > 1): #waits one sample before checking for another value to add to list
+        #     last = r
+        print("The derivative at t = {} is {} and RSSI is {}".format(time[r],derivlist[r],RSSI[r]))
+        rssi_drops.append(RSSI[r])
+        auto_dropouts.append(derivlist[r])
+        auto_dropouts_time.append(time[r])
 
+
+print(len(time))
 fig = plt.figure()
 ax = fig.add_subplot(1, 2, 1)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
+# ax.plot(time,filt_latency,label='Filtered Latency',color='red')
 for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #assuming dropouts and returns have the same length
     ax.axvspan(time1[q],time2[q],color='red',alpha=0.7)
     # if (q < len(dropouts) - 1):
@@ -173,16 +184,20 @@ ax.set_xlabel("Time (seconds)")
 ax.legend(loc='best')
 plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
 
+last_state = 0
 ax = fig.add_subplot(1, 2, 2)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
+# ax.plot(time,filt_latency,label='Filtered Latency',color='red')
 for q in range(0,len(auto_dropouts) - 1): #assuming dropouts and returns have the same length
     i = (np.abs(tarr - auto_dropouts_time[q])).argmin()
-    if (RSSI[i] < -98):
+    if (RSSI[i] <= max(rssi_drops)):
         if (auto_dropouts[q] < 0):
-            ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
+            ax.axvspan(time[i + 2],time[i + 3],color='red',alpha=0.7)
+            last_state += 1
         if abs(derivlist[i]) < 100:
-            ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
+            ax.axvspan(time[i + 2],time[i + 3],color='red',alpha=0.7)
+            last_state += 1
 
         # else:
         #     if (auto_dropouts[q - 1] < 0):
