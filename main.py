@@ -16,10 +16,11 @@ args, leftovers = parser.parse_known_args()
 if args.records is not None:
     print( "records file has been set (value is %s)" % args.records)
     latest_file = args.records
+    print(latest_file)
 else: 
     list_of_files = glob.glob('rf_coe_records*')  # * means all if need specific format then *.csv
     latest_file = max(list_of_files, key=os.path.getmtime)
-
+    print(latest_file)
 latency = []
 filt_latency = []
 RSSI = []
@@ -51,6 +52,11 @@ for i in data_list:
     filt_latency.append(filt_latency_intval)
 #   tot_atten.append(fading_intval + noise_intval)
 
+#print("latency inteval " + str((tarr[i],rssiarr[i],fadarr[i])))
+print(latency_intval)
+print(type(latency_intval))
+print(i)
+print(type(i))
 # print(seconds)
 print(len(filt_latency))
 print(len(seconds))
