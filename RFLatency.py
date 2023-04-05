@@ -66,7 +66,7 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         print(i, ': ', yi)
         with open(filename, 'a') as csvfile:
             # creating a csv writer object
-            row = [yi, y2i, filt, attn1, attn2, datetime.now()]
+            row = [yi, y2i, filti, attn1, attn2, datetime.now()]
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(row)
 

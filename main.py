@@ -53,11 +53,11 @@ for i in data_list:
 #   tot_atten.append(fading_intval + noise_intval)
 
 #print("latency inteval " + str((tarr[i],rssiarr[i],fadarr[i])))
-print(latency_intval)
-print(type(latency_intval))
-print(i)
-print(type(i))
-# print(seconds)
+# print(latency_intval)
+# print(type(latency_intval))
+# print(i)
+# print(type(i))
+# # print(seconds)
 print(len(filt_latency))
 print(len(seconds))
 
@@ -88,7 +88,6 @@ def derivative(x,t):
 
 
 firstTime = timeLine(seconds,time,pattern)
-
 
 dropouts = []
 returns = []
@@ -169,12 +168,11 @@ for r in range(1,len(latency)-1):
         auto_dropouts_time.append(time[r])
 
 
-print(len(time))
 fig = plt.figure()
 ax = fig.add_subplot(1, 2, 1)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
-# ax.plot(time,filt_latency,label='Filtered Latency',color='red')
+ax.plot(time,filt_latency,label='Filtered Latency',color='blue')
 for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #assuming dropouts and returns have the same length
     ax.axvspan(time1[q],time2[q],color='red',alpha=0.7)
     # if (q < len(dropouts) - 1):
@@ -194,7 +192,7 @@ last_state = 0
 ax = fig.add_subplot(1, 2, 2)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
-# ax.plot(time,filt_latency,label='Filtered Latency',color='red')
+ax.plot(time,filt_latency,label='Filtered Latency',color='blue')
 for q in range(0,len(auto_dropouts) - 1): #assuming dropouts and returns have the same length
     i = (np.abs(tarr - auto_dropouts_time[q])).argmin()
     if (RSSI[i] <= max(rssi_drops)):
