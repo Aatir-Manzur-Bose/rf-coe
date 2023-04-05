@@ -1,0 +1,9 @@
+Timestamp1: 30-40dB no dropouts
+
+Timestamp2: 40-50dB
+
+Timestamp3: 35-45dB no dropouts
+
+Timestamp4: 40-48dB I missed some dropouts at the beginning, then typing the preceeding sentence recorded some dropouts/returns unexpectedly, THEN it ended with a long period of silence, and a complete disconnect.
+
+Timestamp5: 40-45dB good measurement. dropout mistake near end needs fixing in file.
