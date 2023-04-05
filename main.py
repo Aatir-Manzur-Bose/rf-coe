@@ -148,9 +148,9 @@ last = 0
 for r in range(1,len(latency)-1):
     if (abs(derivlist[r]) > 200):
         gap = r - last
-        if (gap == r or gap > 1):
+        if (gap == r or gap > 1): #waits one sample before checking for another value to add to list
             last = r
-            print("The derivative at t = {} is {}".format(time[r],derivlist[r]))
+            print("The derivative at t = {} is {} and RSSI is {}".format(time[r],derivlist[r],RSSI[r]))
             auto_dropouts.append(derivlist[r])
             auto_dropouts_time.append(time[r])
 
@@ -176,11 +176,14 @@ plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
 ax = fig.add_subplot(1, 2, 2)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
-for q in range(1,len(auto_dropouts) - 1): #assuming dropouts and returns have the same length
+for q in range(0,len(auto_dropouts) - 1): #assuming dropouts and returns have the same length
     i = (np.abs(tarr - auto_dropouts_time[q])).argmin()
-    if (RSSI[i] < -97):
+    if (RSSI[i] < -98):
         if (auto_dropouts[q] < 0):
             ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
+        if abs(derivlist[i]) < 100:
+            ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
+
         # else:
         #     if (auto_dropouts[q - 1] < 0):
         #         ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
