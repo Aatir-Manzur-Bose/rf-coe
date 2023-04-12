@@ -5,6 +5,8 @@ import time
 import glob
 import os
 import numpy as np
+import csv
+
 
 import argparse
 
@@ -58,8 +60,8 @@ for i in data_list:
 # print(i)
 # print(type(i))
 # # print(seconds)
-print(len(filt_latency))
-print(len(seconds))
+# print(len(filt_latency))
+# print(len(seconds))
 
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
@@ -90,6 +92,7 @@ def derivative(x,t):
 firstTime = timeLine(seconds,time,pattern)
 
 dropouts = []
+dropout_list = []
 returns = []
 seconds1 = []
 seconds2 = []
@@ -140,6 +143,36 @@ for i in range(0,len(time2)):
 tarr = np.asarray(time)
 rssiarr = np.asarray(RSSI)
 fadarr = np.asarray(fading)
+
+for ct in range(0, len(time1)):
+    for q in range(0,len(time)): #assuming dropouts and returns have the same length
+        if (time[q] >= time1[ct] and time[q] < time2[ct]):
+            dropout_list.append(1)
+        else:
+            dropout_list.append(0)
+    if (ct == 0):
+        master = dropout_list
+    else:
+        for i in range(0,len(time)):
+            master[i] = master[i] + dropout_list[i]
+    dropout_list = []
+
+fields = ['latency', 'RSSI', 'filtered latency', "TIMESTAMP", "Drop?"]
+filename = "masterfile.csv"
+with open(filename, 'a') as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(fields)
+    for a in range(0,len(time)):
+        row = [latency[a],RSSI[a],filt_latency[a],time[a],master[a]]
+        csvwriter.writerow(row)
+
+
+# print(len(time))
+# print(len(time1))
+# print(master)
+# print(time)
+
+
 for b in time1:
     i = (np.abs(tarr - b)).argmin()
     # print("Time (seconds), RSSI (dB): " + str((tarr[i],rssiarr[i])))
@@ -150,22 +183,35 @@ for e in time2:
     # print("Time before (seconds), RSSI before (dB): " + str((tarr[q-1], rssiarr[q-1])))
 
 derivlist = derivative(latency,time)
+filtderivlist = derivative(filt_latency,time)
 
 tot_list = []
 auto_dropouts = []
 auto_dropouts_time = []
 rssi_drops = []
+autdrop = []
+autdroptime = []
+derivcheck = []
+rssiauto = []
 
 last = 0
 for r in range(1,len(latency)-1):
+    # if (abs(time[r] - 40) < 5):
+    #     print("NEAR 40 DERIVATIVE @ t = {}: {}".format(time[r],filtderivlist[r]))
     if (abs(derivlist[r]) > 200):
         # gap = r - last
         # if (gap == r or gap > 1): #waits one sample before checking for another value to add to list
         #     last = r
-        print("The derivative at t = {} is {} and RSSI is {}".format(time[r],derivlist[r],RSSI[r]))
+        # print("At t = {}, Lat_Der = {} and Filt_Late_Der = {}".format(time[r],derivlist[r],filtderivlist[r]))
         rssi_drops.append(RSSI[r])
         auto_dropouts.append(derivlist[r])
         auto_dropouts_time.append(time[r])
+    if (abs(filtderivlist[r] > 910)):
+        # print("At t = {}, Lat_Der = {} and Filt_Late_Der = {}".format(time[r],derivlist[r],filtderivlist[r]))
+        autdrop.append(filtderivlist[r])
+        autdroptime.append(time[r])
+        derivcheck.append(derivlist[r])
+        rssiauto.append(RSSI[r])
 
 
 fig = plt.figure()
@@ -173,7 +219,7 @@ ax = fig.add_subplot(1, 2, 1)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
 ax.plot(time,filt_latency,label='Filtered Latency',color='blue')
-for q in range(0,min(len(dropouts), len(returns), len(time1), len(time2))): #assuming dropouts and returns have the same length
+for q in range(0,len(time1)): #assuming dropouts and returns have the same length
     ax.axvspan(time1[q],time2[q],color='red',alpha=0.7)
     # if (q < len(dropouts) - 1):
     #     ax.axvspan(time2[q],time1[q+1],color='green',alpha=0.3)
@@ -193,15 +239,15 @@ ax = fig.add_subplot(1, 2, 2)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
 ax.plot(time,filt_latency,label='Filtered Latency',color='blue')
-for q in range(0,len(auto_dropouts) - 1): #assuming dropouts and returns have the same length
-    i = (np.abs(tarr - auto_dropouts_time[q])).argmin()
-    if (RSSI[i] <= max(rssi_drops)):
-        if (auto_dropouts[q] < 0):
-            ax.axvspan(time[i + 2],time[i + 3],color='red',alpha=0.7)
-            last_state += 1
-        if abs(derivlist[i]) < 100:
-            ax.axvspan(time[i + 2],time[i + 3],color='red',alpha=0.7)
-            last_state += 1
+for q in range(0,len(autdrop)): #assuming dropouts and returns have the same length
+    i = (np.abs(tarr - autdroptime[q])).argmin()
+    # if (derivcheck[q] < 1): #and RSSI[i] < max(rssiauto)):
+    ax.axvspan(time[i],time[i+1],color='red',alpha=0.7)
+
+        #     last_state += 1
+        # if abs(derivlist[i]) < 100:
+        #     ax.axvspan(time[i + 2],time[i + 3],color='red',alpha=0.7)
+        #     last_state += 1
 
         # else:
         #     if (auto_dropouts[q - 1] < 0):
