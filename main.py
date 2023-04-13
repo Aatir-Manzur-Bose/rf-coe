@@ -6,8 +6,12 @@ import glob
 import os
 import numpy as np
 import csv
-
-
+from sklearn.linear_model import LogisticRegression
+from sklearn.feature_selection import RFE
+from sklearn.model_selection import train_test_split
+from sklearn import metrics
+import seaborn as sns
+from sklearn.metrics import classification_report
 import argparse
 
 latest_file = ''
@@ -52,16 +56,7 @@ for i in data_list:
     noise.append(noise_intval)
     seconds.append(seconds_intval)
     filt_latency.append(filt_latency_intval)
-#   tot_atten.append(fading_intval + noise_intval)
 
-#print("latency inteval " + str((tarr[i],rssiarr[i],fadarr[i])))
-# print(latency_intval)
-# print(type(latency_intval))
-# print(i)
-# print(type(i))
-# # print(seconds)
-# print(len(filt_latency))
-# print(len(seconds))
 
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
@@ -88,7 +83,6 @@ def derivative(x,t):
     return derv
 #no more index searching -- implement for loop in here, have it go by steps of 1
 
-
 firstTime = timeLine(seconds,time,pattern)
 
 dropouts = []
@@ -106,10 +100,7 @@ else:
     list_of_files = glob.glob('rf_coe_dropout*')  # * means all if need specific format then *.csv
     latest_file = max(list_of_files, key=os.path.getmtime)
 
-#df1 = pd.read_csv(r'C:\WearableTestUtils\WearableTestUtils\AttenuationUtils\rf_coe_dropout20230313-165835.csv')
 df1 = pd.read_csv(r'' + latest_file)
-# print(latest_file)
-# print(df1)
 data1 = pd.DataFrame(df1, columns=['dropout', 'return', "DROPOUT TIMESTAMP", 'RETURN TIMESTAMP'])
 data_list1 = data1.values.tolist()
 
@@ -158,29 +149,14 @@ for ct in range(0, len(time1)):
     dropout_list = []
 
 fields = ['latency', 'RSSI', 'filtered latency', "TIMESTAMP", "Drop?"]
-filename = "masterfile.csv"
-with open(filename, 'a') as csvfile:
+filename = "masterfile" + latest_file
+with open(filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(fields)
     for a in range(0,len(time)):
         row = [latency[a],RSSI[a],filt_latency[a],time[a],master[a]]
         csvwriter.writerow(row)
 
-
-# print(len(time))
-# print(len(time1))
-# print(master)
-# print(time)
-
-
-for b in time1:
-    i = (np.abs(tarr - b)).argmin()
-    # print("Time (seconds), RSSI (dB): " + str((tarr[i],rssiarr[i])))
-    # print("Time before (seconds), RSSI before (dB): " + str((tarr[i-1], rssiarr[i-1])))
-for e in time2:
-    q = (np.abs(tarr - e)).argmin()
-    # print("Time (seconds), RSSI (dB): " + str((tarr[q],rssiarr[q])))
-    # print("Time before (seconds), RSSI before (dB): " + str((tarr[q-1], rssiarr[q-1])))
 
 derivlist = derivative(latency,time)
 filtderivlist = derivative(filt_latency,time)
@@ -196,13 +172,7 @@ rssiauto = []
 
 last = 0
 for r in range(1,len(latency)-1):
-    # if (abs(time[r] - 40) < 5):
-    #     print("NEAR 40 DERIVATIVE @ t = {}: {}".format(time[r],filtderivlist[r]))
     if (abs(derivlist[r]) > 200):
-        # gap = r - last
-        # if (gap == r or gap > 1): #waits one sample before checking for another value to add to list
-        #     last = r
-        # print("At t = {}, Lat_Der = {} and Filt_Late_Der = {}".format(time[r],derivlist[r],filtderivlist[r]))
         rssi_drops.append(RSSI[r])
         auto_dropouts.append(derivlist[r])
         auto_dropouts_time.append(time[r])
@@ -213,66 +183,18 @@ for r in range(1,len(latency)-1):
         derivcheck.append(derivlist[r])
         rssiauto.append(RSSI[r])
 
-
 fig = plt.figure()
+last_state = 0
 ax = fig.add_subplot(1, 2, 1)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
 ax.plot(time,filt_latency,label='Filtered Latency',color='blue')
-for q in range(0,len(time1)): #assuming dropouts and returns have the same length
-    ax.axvspan(time1[q],time2[q],color='red',alpha=0.7)
-    # if (q < len(dropouts) - 1):
-    #     ax.axvspan(time2[q],time1[q+1],color='green',alpha=0.3)
-# ax.axvspan(time[0],time1[0],color='green',alpha=0.3)
-if time2[-1] > time1[-1]:
-    pass
-    #ax.axvspan(time2[-1], time[-1],color='green',alpha=0.3)
-else:
-    ax.axvspan(time1[-1], time[-1],color='red',alpha=0.7)
-#ax.axvspan(time2[-1],time[-1],color='green',alpha=0.1)
+for q in range(0,len(time)): #assuming dropouts and returns have the same length
+    if (master[q] == 1):
+        ax.axvspan(time[q], time[q+1], color='red', alpha=0.7)
+
 ax.set_xlabel("Time (seconds)")
 ax.legend(loc='best')
 plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
 
-last_state = 0
-ax = fig.add_subplot(1, 2, 2)
-ax.plot(time, RSSI, label="RSSI",color='green')
-ax.plot(time, latency, label="Latency",color='black')
-ax.plot(time,filt_latency,label='Filtered Latency',color='blue')
-for q in range(0,len(autdrop)): #assuming dropouts and returns have the same length
-    i = (np.abs(tarr - autdroptime[q])).argmin()
-    # if (derivcheck[q] < 1): #and RSSI[i] < max(rssiauto)):
-    ax.axvspan(time[i],time[i+1],color='red',alpha=0.7)
-
-        #     last_state += 1
-        # if abs(derivlist[i]) < 100:
-        #     ax.axvspan(time[i + 2],time[i + 3],color='red',alpha=0.7)
-        #     last_state += 1
-
-        # else:
-        #     if (auto_dropouts[q - 1] < 0):
-        #         ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
-
-
-
-            #**NOTE** Need to account for dropout that
-
-        # if (RSSI[i] <= -101):
-        #     ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='red',alpha=0.7)
-
-    # else:
-    #     if (RSSI[i] < -100):
-    #         ax.axvspan(auto_dropouts_time[q], auto_dropouts_time[q + 1], color='red', alpha=0.7)
-
-    #ax.axvspan(auto_dropouts_time[q],auto_dropouts_time[q+1],color='green',alpha=0.3)
-# ax.axvspan(time[0],auto_dropouts_time[0],color='green',alpha=0.3)
-# if (auto_dropouts[-1] < 0):
-#     ax.axvspan(auto_dropouts_time[-1], time[-1], color='red', alpha=0.7)
-# else:
-#     ax.axvspan(auto_dropouts_time[-1], time[-1], color='green', alpha=0.3)
-ax.set_xlabel("Time (seconds)")
-ax.legend(loc='best')
-plt.title("Latency and RSSI Plot with Automatically Marked Regions of Dropouts")
-
-plt.show()
 
