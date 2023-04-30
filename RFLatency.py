@@ -9,6 +9,12 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as anim
 import re
 import ldausbcli_007
+import multiprocessing
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--example', nargs='?', const=1, type=int)
+args = parser.parse_args()
+print(args)
 
 
 def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj):
@@ -104,7 +110,7 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
     return tuple(vals)
 
 
-def main():
+def main(n):
     currtime = time.strftime("%Y%m%d-%H%M%S")
     filename = "rf_coe_records" + currtime + ".csv"
     fields = ['latency', 'RSSI', 'filtered latency', 'attn1', 'attn2', 'TIMESTAMP']
@@ -137,4 +143,20 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--duration', nargs='?', const=300, default=300, type=int)
+    user_args = parser.parse_args()
+    print(user_args)
+
+    # Start main as a process
+    p = multiprocessing.Process(target=main, name="main", args=(user_args.duration,))
+    p.start()
+
+    # Wait 10 seconds for foo
+    time.sleep(10)
+
+    # Terminate foo
+    p.terminate()
+
+    # Cleanup
+    p.join()
