@@ -153,7 +153,7 @@ if __name__ == '__main__':
     p.start()
 
     # Wait 10 seconds for foo
-    time.sleep(10)
+    time.sleep(user_args.duration)
 
     # Terminate foo
     p.terminate()
