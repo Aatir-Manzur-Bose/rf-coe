@@ -39,23 +39,23 @@ time = []
 df = pd.read_csv(r'' + latest_file)
 # print(df)
 df = df.dropna()
-data = pd.DataFrame(df, columns=['latency', 'RSSI', 'filtered latency', 'attn1', 'attn2', "TIMESTAMP"])
+data = pd.DataFrame(df, columns=['latency', 'RSSI', 'attn1', 'attn2', "TIMESTAMP"])
 # print(data)
 data_list = data.values.tolist()
 
 for i in data_list:
     latency_intval = (i[0])
-    filt_latency_intval = (i[2])
+    # filt_latency_intval = (i[2])
     RSSI_intval = (i[1])
-    fading_intval = (i[4])
-    noise_intval = (i[3])
-    seconds_intval = (i[5])
+    fading_intval = (i[3])
+    noise_intval = (i[2])
+    seconds_intval = (i[4])
     latency.append(latency_intval)
     RSSI.append(RSSI_intval)
     fading.append(-1 * fading_intval)
     noise.append(noise_intval)
     seconds.append(seconds_intval)
-    filt_latency.append(filt_latency_intval)
+    # filt_latency.append(filt_latency_intval)
 
 
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
@@ -148,47 +148,47 @@ for ct in range(0, len(time1)):
             master[i] = master[i] + dropout_list[i]
     dropout_list = []
 
-fields = ['latency', 'RSSI', 'filtered latency', "TIMESTAMP", "Drop?"]
+fields = ['latency', 'RSSI', "TIMESTAMP", "Drop?"]
 filename = "masterfile" + latest_file
 with open(filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(fields)
     for a in range(0,len(time)):
-        row = [latency[a],RSSI[a],filt_latency[a],time[a],master[a]]
+        row = [latency[a],RSSI[a],time[a],master[a]]
         csvwriter.writerow(row)
 
+#
+# derivlist = derivative(latency,time)
+# filtderivlist = derivative(filt_latency,time)
+#
+# tot_list = []
+# auto_dropouts = []
+# auto_dropouts_time = []
+# rssi_drops = []
+# autdrop = []
+# autdroptime = []
+# derivcheck = []
+# rssiauto = []
 
-derivlist = derivative(latency,time)
-filtderivlist = derivative(filt_latency,time)
-
-tot_list = []
-auto_dropouts = []
-auto_dropouts_time = []
-rssi_drops = []
-autdrop = []
-autdroptime = []
-derivcheck = []
-rssiauto = []
-
-last = 0
-for r in range(1,len(latency)-1):
-    if (abs(derivlist[r]) > 200):
-        rssi_drops.append(RSSI[r])
-        auto_dropouts.append(derivlist[r])
-        auto_dropouts_time.append(time[r])
-    if (abs(filtderivlist[r] > 910)):
-        # print("At t = {}, Lat_Der = {} and Filt_Late_Der = {}".format(time[r],derivlist[r],filtderivlist[r]))
-        autdrop.append(filtderivlist[r])
-        autdroptime.append(time[r])
-        derivcheck.append(derivlist[r])
-        rssiauto.append(RSSI[r])
+# last = 0
+# for r in range(1,len(latency)-1):
+#     if (abs(derivlist[r]) > 200):
+#         rssi_drops.append(RSSI[r])
+#         auto_dropouts.append(derivlist[r])
+#         auto_dropouts_time.append(time[r])
+#     if (abs(filtderivlist[r] > 910)):
+#         # print("At t = {}, Lat_Der = {} and Filt_Late_Der = {}".format(time[r],derivlist[r],filtderivlist[r]))
+#         autdrop.append(filtderivlist[r])
+#         autdroptime.append(time[r])
+#         derivcheck.append(derivlist[r])
+#         rssiauto.append(RSSI[r])
 
 fig = plt.figure()
 last_state = 0
 ax = fig.add_subplot(1, 2, 1)
 ax.plot(time, RSSI, label="RSSI",color='green')
 ax.plot(time, latency, label="Latency",color='black')
-ax.plot(time,filt_latency,label='Filtered Latency',color='blue')
+# ax.plot(time,filt_latency,label='Filtered Latency',color='blue')
 for q in range(0,len(time)): #assuming dropouts and returns have the same length
     if (master[q] == 1):
         ax.axvspan(time[q], time[q+1], color='red', alpha=0.7)

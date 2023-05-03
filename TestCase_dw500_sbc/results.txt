@@ -1,0 +1,9 @@
+RSSI Only:
+# of Dropouts = 60
+Dropouts/Minute = 11.326780706792272
+Average Dropout Length = 16.75 samples
+RSSI + Latency:
+# of Dropouts = 33
+Dropouts/Minute = 6.484263738231757
+Average Dropout Length = 13.666666666666666 samples
+

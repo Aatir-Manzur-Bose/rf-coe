@@ -1,0 +1,4 @@
+# of Dropouts = 71
+Dropouts/Minute = 13.850752400994619
+Average Dropout Length = 10.887323943661972 samples
+

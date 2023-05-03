@@ -9,18 +9,12 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as anim
 import re
 import ldausbcli_007
-import multiprocessing
-import argparse
-parser = argparse.ArgumentParser()
-parser.add_argument('--example', nargs='?', const=1, type=int)
-args = parser.parse_args()
-print(args)
 
 
 def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj):
     x = []
     y = []
-    filt = []
+    # filt = []
     y2 = []
     a1 = []
     a2 = []
@@ -47,10 +41,11 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         csvwriter.writerow(fields)
 
     def update(i):
-        yi, y2i, filti, attn1, attn2 = fun(dev_list, active_attn_devices, attobj)
+        print(fun(dev_list, active_attn_devices, attobj))
+        yi, y2i, attn1, attn2 = fun(dev_list, active_attn_devices, attobj)
         y.append(yi)
         y2.append(y2i)
-        filt.append(filti)
+        # filt.append(filti)
         a1.append(attn1)
         a2.append(attn2)
         turningpoints(y)
@@ -64,7 +59,7 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         ax.set_title("Latency and RSSI plot")
         ax.plot(x, y, label='Latency')
         ax.plot(x, y2, label='RSSI')
-        ax.plot(x,filt, label='Filtered Latency')
+        # ax.plot(x,filt, label='Filtered Latency')
         ax.scatter(tpt,tp)
         ax.legend(loc='best')
         # ax.plot(x, a1)
@@ -72,7 +67,7 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         print(i, ': ', yi)
         with open(filename, 'a') as csvfile:
             # creating a csv writer object
-            row = [yi, y2i, filti, attn1, attn2, datetime.now()]
+            row = [yi, y2i, attn1, attn2, datetime.now()]
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(row)
 
@@ -86,21 +81,18 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
         try:
             result = dev.send_expect(DeviceMessageType.TAP, "aud.latency", ".*current:.*\d+")
             result2 = str(dev.send_expect(DeviceMessageType.TAP, "cor.bt rssi", ".*RSSI:.*\d+"))
-            result4 = dev.send_expect(DeviceMessageType.TAP, "bt lq print", ".*LAT raw: \d+")
+            # result4 = dev.send_expect(DeviceMessageType.TAP, "bt lq print", ".*LAT raw: \d+")
             print(result2)
-            lat = [int(s) for s in result4.data.split() if s.isdigit()]
+            # lat = [int(s) for s in result4.data.split() if s.isdigit()]
             latency = [int(s) for s in result.data.split() if s.isdigit()]
             regex = re.compile(r'[\+\-]?[0-9]+')
             rssi = [int(k) for k in regex.findall(result2)]
             print("Found response: {}".format(latency[0]))
             print("Found response: {}".format(rssi[0]))
-            print("Filtered LAT: {}".format(lat[1]))
-            if latency[0] <400 and rssi[0] < 0 and lat[1] < 400:
-                vals.append(latency[0])
-                vals.append(rssi[0])
-                vals.append(lat[1])
-            else:
-                pass
+            # print("Filtered LAT: {}".format(lat[1]))
+            vals.append(latency[0])
+            vals.append(rssi[0])
+            # vals.append(lat[1])
         except ExpectTimeout:
             print("Expect timed out")
     # TODO: get this dictionary iterator working
@@ -113,10 +105,10 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
     return tuple(vals)
 
 
-def main(n):
+def main():
     currtime = time.strftime("%Y%m%d-%H%M%S")
     filename = "rf_coe_records" + currtime + ".csv"
-    fields = ['latency', 'RSSI', 'filtered latency', 'attn1', 'attn2', 'TIMESTAMP']
+    fields = ['latency', 'RSSI', 'attn1', 'attn2', 'TIMESTAMP']
     dev_manager = DeviceManager()
     dev_list = dev_manager.available_devices(count=1)
     attobj = ldausbcli_007.CLIVaunixAttn()
@@ -146,21 +138,4 @@ def main(n):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--duration', nargs='?', const=300, default=300, type=int)
-    user_args = parser.parse_args()
-    print(user_args)
-
-    # Start main as a process
-#    p = multiprocessing.Process(target=main, name="main", args=(user_args.duration,))
-#    p.start()
-
-    # Wait 10 seconds for foo
-#    time.sleep(user_args.duration)
-
-    # Terminate foo
-#    p.terminate()
-
-    # Cleanup
-#    p.join()
-    main(1)
+    main()

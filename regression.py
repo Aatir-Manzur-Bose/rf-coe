@@ -13,11 +13,11 @@ import re
 from main import fig
 
 
-df = pd.read_csv(r'masterfilerf_coe_dropout20230413-145948.csv')
+df = pd.read_csv(r'reference.csv')
 df = df.dropna()
-data = pd.DataFrame(df, columns=['latency', 'RSSI', 'filtered latency', "TIMESTAMP", "Drop?"])
+data = pd.DataFrame(df, columns=['latency', 'RSSI', "TIMESTAMP", "Drop?"])
 
-features = ['latency', 'RSSI', 'filtered latency']
+features = ['latency', 'RSSI']
 result = ["Drop?"]
 X = data[features]
 Y = data[result]
@@ -73,10 +73,10 @@ list_of_files = glob.glob('masterfile*')  # * means all if need specific format 
 latest_file = max(list_of_files, key=os.path.getmtime)
 df = pd.read_csv(r'' + latest_file)
 df = df.dropna()
-data = pd.DataFrame(df, columns=['latency', 'RSSI', 'filtered latency', "TIMESTAMP", "Drop?"])
+data = pd.DataFrame(df, columns=['latency', 'RSSI', "TIMESTAMP", "Drop?"])
 data_list = data.values.tolist()
 
-features = ['latency', 'RSSI', 'filtered latency']
+features = ['latency', 'RSSI']
 new_X = data[features]
 new_Y = logreg.predict(new_X)
 
@@ -91,25 +91,25 @@ new_Y = logreg.predict(new_X)
 latency = []
 RSSI = []
 dropouts = []
-filt_latency = []
+# filt_latency = []
 seconds = []
 
 for i in data_list:
     latency_intval = (i[0])
-    filt_latency_intval = (i[2])
+    # filt_latency_intval = (i[2])
     RSSI_intval = (i[1])
-    seconds_intval = (i[3])
-    dropouts_intval = i[4]
+    seconds_intval = (i[2])
+    dropouts_intval = i[3]
     latency.append(latency_intval)
     RSSI.append(RSSI_intval)
     seconds.append(seconds_intval)
-    filt_latency.append(filt_latency_intval)
+    # filt_latency.append(filt_latency_intval)
     dropouts.append(dropouts_intval)
 
 ax = fig.add_subplot(1,2,2)
 ax.plot(seconds, RSSI, label="RSSI",color='green')
 ax.plot(seconds, latency, label="Latency",color='black')
-ax.plot(seconds,filt_latency,label='Filtered Latency',color='blue')
+# ax.plot(seconds,filt_latency,label='Filtered Latency',color='blue')
 ax.legend(loc='best')
 for i in range(0,len(seconds) - 1):
     if (new_Y[i] == 1):
