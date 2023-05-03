@@ -95,9 +95,12 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
             print("Found response: {}".format(latency[0]))
             print("Found response: {}".format(rssi[0]))
             print("Filtered LAT: {}".format(lat[1]))
-            vals.append(latency[0])
-            vals.append(rssi[0])
-            vals.append(lat[1])
+            if latency[0] <400 and rssi[0] < 0 and lat[1] < 400:
+                vals.append(latency[0])
+                vals.append(rssi[0])
+                vals.append(lat[1])
+            else:
+                pass
         except ExpectTimeout:
             print("Expect timed out")
     # TODO: get this dictionary iterator working
@@ -149,14 +152,15 @@ if __name__ == '__main__':
     print(user_args)
 
     # Start main as a process
-    p = multiprocessing.Process(target=main, name="main", args=(user_args.duration,))
-    p.start()
+#    p = multiprocessing.Process(target=main, name="main", args=(user_args.duration,))
+#    p.start()
 
     # Wait 10 seconds for foo
-    time.sleep(user_args.duration)
+#    time.sleep(user_args.duration)
 
     # Terminate foo
-    p.terminate()
+#    p.terminate()
 
     # Cleanup
-    p.join()
+#    p.join()
+    main(1)
