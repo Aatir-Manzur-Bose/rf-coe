@@ -192,4 +192,3 @@ plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
 # ax = fig.add_subplot(1,2,2)
 # plt.title("Latency and RSSI Plot with Automatically Marked Regions of Dropouts")
 
-/

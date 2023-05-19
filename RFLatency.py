@@ -14,26 +14,11 @@ import ldausbcli_007
 def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj):
     x = []
     y = []
-    # filt = []
     y2 = []
     a1 = []
     a2 = []
-    tp= []
-    tpt = []
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
-
-    def turningpoints(v):
-     
-        N=0
-        for i in range(1, len(v)-1):
-            if ((v[i-1] < v[i] and v[i+1] < v[i]) 
-            or (v[i-1] > v[i] and v[i+1] > v[i])):
-                N += 1
-                if(v[i]<100):
-                    tp.append(v[i])
-                    tpt.append(x[i])
-        return N
 
     with open(filename, 'a') as csvfile:
         # creating a csv writer object
@@ -41,14 +26,11 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         csvwriter.writerow(fields)
 
     def update(i):
-        print(fun(dev_list, active_attn_devices, attobj))
         yi, y2i, attn1, attn2 = fun(dev_list, active_attn_devices, attobj)
         y.append(yi)
         y2.append(y2i)
-        # filt.append(filti)
         a1.append(attn1)
         a2.append(attn2)
-        turningpoints(y)
         # row = [yi, y2i, datetime.now()]
         # csvwriter.writerow(row)
         # x = range(len(y))
@@ -59,8 +41,6 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         ax.set_title("Latency and RSSI plot")
         ax.plot(x, y, label='Latency')
         ax.plot(x, y2, label='RSSI')
-        # ax.plot(x,filt, label='Filtered Latency')
-        ax.scatter(tpt,tp)
         ax.legend(loc='best')
         # ax.plot(x, a1)
         # ax.plot(x, a2)
@@ -81,18 +61,14 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
         try:
             result = dev.send_expect(DeviceMessageType.TAP, "aud.latency", ".*current:.*\d+")
             result2 = str(dev.send_expect(DeviceMessageType.TAP, "cor.bt rssi", ".*RSSI:.*\d+"))
-            # result4 = dev.send_expect(DeviceMessageType.TAP, "bt lq print", ".*LAT raw: \d+")
             print(result2)
-            # lat = [int(s) for s in result4.data.split() if s.isdigit()]
             latency = [int(s) for s in result.data.split() if s.isdigit()]
             regex = re.compile(r'[\+\-]?[0-9]+')
             rssi = [int(k) for k in regex.findall(result2)]
             print("Found response: {}".format(latency[0]))
             print("Found response: {}".format(rssi[0]))
-            # print("Filtered LAT: {}".format(lat[1]))
             vals.append(latency[0])
             vals.append(rssi[0])
-            # vals.append(lat[1])
         except ExpectTimeout:
             print("Expect timed out")
     # TODO: get this dictionary iterator working

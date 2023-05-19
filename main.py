@@ -39,7 +39,7 @@ time = []
 df = pd.read_csv(r'' + latest_file)
 # print(df)
 df = df.dropna()
-data = pd.DataFrame(df, columns=['latency', 'RSSI', 'attn1', 'attn2', "TIMESTAMP"])
+data = pd.DataFrame(df, columns=['latency','RSSI', 'attn1', 'attn2', "TIMESTAMP"])
 # print(data)
 data_list = data.values.tolist()
 
@@ -148,7 +148,7 @@ for ct in range(0, len(time1)):
             master[i] = master[i] + dropout_list[i]
     dropout_list = []
 
-fields = ['latency', 'RSSI', "TIMESTAMP", "Drop?"]
+fields = ['latency','RSSI',"TIMESTAMP", "Drop?"]
 filename = "masterfile" + latest_file
 with open(filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile)

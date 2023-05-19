@@ -57,9 +57,9 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         ax.set_xlabel('Samples')
         ax.set_ylabel('Latency and RSSI')
         ax.set_title("Latency and RSSI plot")
-        # ax.plot(x, y, label='Latency')
+        ax.plot(x, y, label='Latency')
         ax.plot(x, y2, label='RSSI')
-        # ax.plot(x,filt, label='Filtered Latency')
+        ax.plot(x,filt, label='Filtered Latency')
         ax.scatter(tpt, tp)
         ax.legend(loc='best')
         # ax.plot(x, a1)
@@ -79,23 +79,23 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
     vals = []
     for dev in dev_list:
         try:
-            # result = dev.send_expect(DeviceMessageType.TAP, "aud.latency", ".*current:.*\d+")
+            result = dev.send_expect(DeviceMessageType.TAP, "aud.latency", ".*current:.*\d+")
             result2 = str(dev.send_expect(DeviceMessageType.TAP, "cor.bt rssi", ".*RSSI:.*\d+"))
-            # result4 = dev.send_expect(DeviceMessageType.TAP, "bt lq print", ".*LAT raw: \d+")
+            result4 = dev.send_expect(DeviceMessageType.TAP, "bt lq print", ".*LAT raw: \d+")
             print(result2)
-            # lat = [int(s) for s in result4.data.split() if s.isdigit()]
+            lat = [int(s) for s in result4.data.split() if s.isdigit()]
             # lat = 1
-            # latency = [int(s) for s in result.data.split() if s.isdigit()]
+            latency = [int(s) for s in result.data.split() if s.isdigit()]
             regex = re.compile(r'[\+\-]?[0-9]+')
             rssi = [int(k) for k in regex.findall(result2)]
-            # print("Found response: {}".format(latency[0]))
+            print("Found response: {}".format(latency[0]))
             print("Found response: {}".format(rssi[0]))
-            # print("Filtered LAT: {}".format(lat[1]))
-            # vals.append(latency[0])
-            vals.append(1)
+            print("Filtered LAT: {}".format(lat[1]))
+            vals.append(latency[0])
+            # vals.append(1)
             vals.append(rssi[0])
-            # vals.append(lat[1])
-            vals.append(1)
+            vals.append(lat[1])
+            # vals.append(1)
         except ExpectTimeout:
             print("Expect timed out")
     # TODO: get this dictionary iterator working

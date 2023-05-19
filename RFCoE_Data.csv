@@ -1,0 +1,4 @@
+Fading Period (ms),Drops/Min,Avg. Drop Length (sps),Median Drop Length (sps),Standard Dev. (sps),Ag. Drop RSSI (dB),Median Drop RSSI (dB),Standard Dev. (dB)
+500,29.64752485,0.295302013,0,0.707546622,-96.44966443,-96,3.29823268
+0,3.968900699573039,0.0,0.0,0.0,-97.4,-98.0,1.8814887722226779
+0,7.780733736159756,0.0,0.0,0.0,-95.5,-95.5,1.5
