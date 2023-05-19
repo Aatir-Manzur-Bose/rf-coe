@@ -69,6 +69,8 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
             print("Found response: {}".format(rssi[0]))
             vals.append(latency[0])
             vals.append(rssi[0])
+            print("Filtered LAT: {}".format(lat[1]))
+
         except ExpectTimeout:
             print("Expect timed out")
     # TODO: get this dictionary iterator working
