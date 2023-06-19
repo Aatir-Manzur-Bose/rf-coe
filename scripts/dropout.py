@@ -20,7 +20,7 @@ while True:  # making a loop
             with open(filename, 'a') as csvfile:
                 # creating a csv writer object
                 counter += 1
-                row = [counter, " ", datetime.now(), " "]
+                row = [counter, " ", time.time_ns(), " "]
                 csvwriter = csv.writer(csvfile)
                 csvwriter.writerow(row)
             while keyboard.is_pressed('d'):
@@ -30,7 +30,7 @@ while True:  # making a loop
             with open(filename, 'a') as csvfile:
                 # creating a csv writer object
                 returns += 1
-                row = [" ", returns, " ", datetime.now()]
+                row = [" ", returns, " ", time.time_ns()]
                 csvwriter = csv.writer(csvfile)
                 csvwriter.writerow(row)
             while keyboard.is_pressed('r'):

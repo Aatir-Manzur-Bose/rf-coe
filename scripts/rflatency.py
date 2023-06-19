@@ -48,7 +48,8 @@ def plot_cont(fun, xmax, dev_list, active_attn_devices, filename, fields, attobj
         print(i, ': ', yi)
         with open(filename, 'a') as csvfile:
             # creating a csv writer object
-            row = [yi, y2i, attn1, datetime.now()]
+            print(time.time_ns())
+            row = [yi, y2i, attn1, str(time.time_ns())]
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(row)
 
@@ -89,7 +90,7 @@ def main():
     logging.getLogger().setLevel(logging.DEBUG)
     currtime = time.strftime("%Y%m%d-%H%M%S")
     filename = "rf_coe_records" + currtime + ".csv"
-    fields = ['latency', 'RSSI', 'attn1', 'attn2', 'TIMESTAMP']
+    fields = ['latency', 'RSSI', 'attn1','TIMESTAMP']
     dev_manager = DeviceManager()
     dev_list = dev_manager.available_devices(count=1, timeout=20.0)
     attobj = Attenuator()

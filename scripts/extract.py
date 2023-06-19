@@ -12,7 +12,11 @@ from sklearn.model_selection import train_test_split
 from sklearn import metrics
 import seaborn as sns
 from sklearn.metrics import classification_report
+import datetime
+from calendar import timegm
 import argparse
+from datetime import datetime
+from rfcoe.classes.utilities import Utility 
 
 latest_file = ''
 parser = argparse.ArgumentParser(description=" RF CoE Data")
@@ -39,24 +43,39 @@ time = []
 df = pd.read_csv(r'' + latest_file)
 # print(df)
 df = df.dropna()
-data = pd.DataFrame(df, columns=['latency','RSSI', 'attn1', 'attn2', "TIMESTAMP"])
-# print(data)
+data = pd.DataFrame(df, columns=['latency','RSSI', 'attn1', "TIMESTAMP"])
+print(data)
 data_list = data.values.tolist()
 
 for i in data_list:
     latency_intval = (i[0])
     # filt_latency_intval = (i[2])
     RSSI_intval = (i[1])
-    fading_intval = (i[3])
-    noise_intval = (i[2])
-    seconds_intval = (i[4])
+    fading_intval = (i[2])
+    #noise_intval = (i[2])
+    str1= ''
+    str1+=i[3]
+    timestamp_string = i[3]
+
+    # input format
+    #ValueError: time data '2023-06-18 00:23:51.790253' does not match format '%Y-%m-%dT%H::%M::%S.%f'
+
+    format = '%Y-%m-%d %H:%M:%S.%f'
+
+    # converting the timestamp string to datetime object
+    datetime_object = datetime.strptime(timestamp_string, format)
+    epoch_time = int(timegm(datetime_object.timetuple()))
+    print(epoch_time)
+    print(Utility.timestampToEpoch(i[3]))
+
+    seconds_intval = (i[3])
     latency.append(latency_intval)
     RSSI.append(RSSI_intval)
     fading.append(-1 * fading_intval)
-    noise.append(noise_intval)
+    #noise.append(noise_intval)
     seconds.append(seconds_intval)
     # filt_latency.append(filt_latency_intval)
-
+print("letency length, %d!" % len(latency))
 
 text = r'(\d+-\d+-\d+ (\d+):(\d+):(\d+).(\d+))'
 pattern = re.compile(text)
@@ -103,6 +122,7 @@ else:
 df1 = pd.read_csv(r'' + latest_file)
 data1 = pd.DataFrame(df1, columns=['dropout', 'return', "DROPOUT TIMESTAMP", 'RETURN TIMESTAMP'])
 data_list1 = data1.values.tolist()
+print(len(data_list1))
 
 for i1 in data_list1:
     if (i1[0] != " "):
@@ -150,6 +170,10 @@ for ct in range(0, len(dropuout_timestamps)):
 
 fields = ['latency','RSSI',"TIMESTAMP", "Drop?"]
 filename = "masterfile" + latest_file
+print(len(latency))
+print(len(RSSI))
+print(len(time))
+print(len(master))
 with open(filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(fields)

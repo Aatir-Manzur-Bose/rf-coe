@@ -11,15 +11,14 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report
 import re
 import csv
-from main import fig
+#from main import fig
+fig = plt.figure()
 
-
-
-df = pd.read_csv(r'INSERT TRAINING FILENAME HERE')
+df = pd.read_csv(r'masterfilerf_coe_dropout20230618-002613.csv')
 df = df.dropna()
 data = pd.DataFrame(df, columns=['latency', 'RSSI', "TIMESTAMP", "Drop?"])
 
-features = ['latency','RSSI']
+features = ['latency', 'RSSI']
 result = ["Drop?"]
 X = data[features]
 Y = data[result]
@@ -31,16 +30,16 @@ coefficients = logreg.coef_[0]
 print(coefficients)
 Y_pred = logreg.predict(X_test)
 
-confusion_matrix = metrics.confusion_matrix(Y_test,Y_pred)
+confusion_matrix = metrics.confusion_matrix(Y_test, Y_pred)
 print(confusion_matrix)
 
-class_names=[0,1] # name  of classes
+class_names = [0, 1]  # name  of classes
 fig1, ax = plt.subplots()
 tick_marks = np.arange(len(class_names))
 plt.xticks(tick_marks, class_names)
 plt.yticks(tick_marks, class_names)
 # create heatmap
-sns.heatmap(pd.DataFrame(confusion_matrix), annot=True, cmap="YlGnBu" ,fmt='g')
+sns.heatmap(pd.DataFrame(confusion_matrix), annot=True, cmap="YlGnBu", fmt='g')
 ax.xaxis.set_label_position("top")
 plt.tight_layout()
 plt.title('Confusion matrix', y=1.1)
@@ -49,8 +48,6 @@ plt.xlabel('Predicted label')
 
 target_names = ['Non-Dropout Samples', 'Dropout Samples']
 print(classification_report(Y_test, Y_pred, target_names=target_names))
-
-
 
 # fig = plt.figure()
 # ax = fig.add_subplot(1,2,1)
@@ -78,7 +75,7 @@ df = df.dropna()
 data = pd.DataFrame(df, columns=['latency', 'RSSI', "TIMESTAMP", "Drop?"])
 data_list = data.values.tolist()
 
-features = ['latency','RSSI']
+features = ['latency', 'RSSI']
 new_X = data[features]
 new_Y = logreg.predict(new_X)
 
@@ -113,18 +110,18 @@ filename = "resultfile_" + latest_file
 with open(filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(fields)
-    for a in range(0,len(new_Y)):
-        row = [latency[a],RSSI[a], seconds[a],new_Y[a]]
+    for a in range(0, len(new_Y)):
+        row = [latency[a], RSSI[a], seconds[a], new_Y[a]]
         csvwriter.writerow(row)
 
-ax = fig.add_subplot(1,2,2)
-ax.plot(seconds, RSSI, label="RSSI",color='green')
-ax.plot(seconds, latency, label="Latency",color='black')
+ax = fig.add_subplot(1, 2, 2)
+ax.plot(seconds, RSSI, label="RSSI", color='green')
+ax.plot(seconds, latency, label="Latency", color='black')
 # ax.plot(seconds,filt_latency,label='Filtered Latency',color='blue')
 ax.legend(loc='best')
-for i in range(0,len(seconds) - 1):
+for i in range(0, len(seconds) - 1):
     if (new_Y[i] == 1):
-        ax.axvspan(seconds[i], seconds[i+1], color='red', alpha=0.7)
+        ax.axvspan(seconds[i], seconds[i + 1], color='red', alpha=0.7)
 ax.set_xlabel("Time (seconds)")
 ax.legend(loc='best')
 plt.title("Latency and RSSI Plot with Manually Marked Regions of Dropouts")
@@ -137,11 +134,11 @@ add = 0
 dropouts_list = []
 drop_RSSI = []
 
-for r in range(1,len(new_Y)):
-    if (new_Y[r] - new_Y[r-1] == 1):
+for r in range(1, len(new_Y)):
+    if (new_Y[r] - new_Y[r - 1] == 1):
         dropout_number += 1
         drop_RSSI.append(RSSI[r])
-    elif (new_Y[r] - new_Y[r-1] == 0):
+    elif (new_Y[r] - new_Y[r - 1] == 0):
         if (new_Y[r] == 1):
             drop_len += 1
     else:
@@ -156,7 +153,7 @@ print("Average Dropout Length = {} samples".format(add / dropout_number))
 drop_dist = np.asarray(dropouts_list)
 median = np.median(drop_dist)
 std = np.std(drop_dist)
-print("Median = {}, St. Dev. = {}".format(median,std))
+print("Median = {}, St. Dev. = {}".format(median, std))
 
 plt.figure()
 plt.hist(drop_dist)
@@ -169,7 +166,7 @@ median_RSSI = np.median(drp_RSSI)
 mean_RSSI = np.mean(drp_RSSI)
 std_RSSI = np.std(drp_RSSI)
 print("Average Dropout RSSI = {}".format(mean_RSSI))
-print("Median = {}, St. Dev. = {}".format(median_RSSI,std_RSSI))
+print("Median = {}, St. Dev. = {}".format(median_RSSI, std_RSSI))
 
 # fields = ['Fading Period (ms)', 'Drops/Min', "Avg. Drop Length (sps)", "Median Drop Length (ss)", "Standard Dev. (sps)", "Ag. Drop RSSI (dB)", "Median Drop RSSI (dB)", "Standard Dev. (dB)"]
 # filename = "RFCoE_Data.csv"
