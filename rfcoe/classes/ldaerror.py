@@ -1,0 +1,2 @@
+class LDAError(Exception):
+    pass
