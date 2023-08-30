@@ -1,0 +1,7 @@
+# Packages from the nexus repository
+--trusted-host ingress-platform.live-aws-useast1.bose.io
+--extra-index-url https://ingress-platform.live-aws-useast1.bose.io/dev/svc-core-devops-nexus/prod/core-devops-nexus-core/repository/pypi-all/simple
+WearableTestUtils==12.13.1
+CastleTestUtils==6.0.7
+BluetoothTestUtils==1.0.23
+pytest-order

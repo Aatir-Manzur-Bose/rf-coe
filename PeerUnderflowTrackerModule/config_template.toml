@@ -1,0 +1,24 @@
+[Source_1]
+name = "Bose Smart 500" # Enter name for the device(unique name)
+active = false # make it true to activate the device
+product = "RIVIERA" # Enter the product name of the device, like."RIVIERA, ANDROID"
+adb_id = "" # Enter adb id of the device, like 879faab, 8734ccb
+enable_log = false # make it true to enable logs
+DID_product_id = 16484 # Expected product ID used for DID info verification(int), like 16484(SMALLS)
+
+[Source_2]
+name = "" # Enter name for the device(unique name)
+active = false # make it true to activate the device
+product = "" # Enter the product name of the device, like."RIVIERA, ANDROID"
+mac = "" # Enter mac address of the device
+enable_log = false # make it true to enable logs
+ip = "" # for mobile devices only, like 192.168.0.105
+port = "" # for mobile devices , like 5000
+
+[Extra_Source_1]
+name = "" # Enter name for the device(unique name)
+active = false # make it true to activate the device
+product = "" # Enter the product name of the device like, "RIVIERA, ANDROID"
+adb_id = "" # Enter adb id of the device, like 879faab, 8734ccb
+enable_log = false # make it true to enable logs
+DID_product_id = 16484 # Expected product ID used for DID info verification(int), like 16484(SMALLS)

@@ -66,7 +66,7 @@ def mergeDropoutsAndRecordsFile(latest_records_file: str, latest_drops_file: str
     drops = []
     dropout_start_time_arr, dropout_end_time_arr = dropoutStartAndEndTimes(latest_drops_file)
     for count, i1 in enumerate(data_list1):
-        for i in range (0, max(len(dropout_start_time_arr), len(dropout_end_time_arr))):
+        for i in range (0, min(len(dropout_start_time_arr), len(dropout_end_time_arr))):
             drops.append(0)
             #timestamp: 1687101808292378000, 
             #start:     1687101808071341400, 

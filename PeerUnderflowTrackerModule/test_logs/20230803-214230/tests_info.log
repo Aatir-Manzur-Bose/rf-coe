@@ -1,0 +1,468 @@
+[I Aug-03 21:42:31.910 bmap_plugin:78] bmap_version=None, bmap_build=None, bmap_branch=None, bmap_parser_type=BmapFileType.PYTHON
+[I Aug-03 21:42:31.969 conftest_plugin:417] Automation stared  : 2023-08-03 21:42:31.968688
+[I Aug-03 21:42:32.012 polycomm_helper:130] Sleeping for 3 seconds to load Device Manager...
+[I Aug-03 21:42:42.870 dut_session_fixture_helper:145] Getting default Dut
+[I Aug-03 21:42:42.872 dut_session_fixture_helper:148] Current Operating System is:-> windows
+[I Aug-03 21:42:42.874 dut_session_fixture_helper:164] [<WearableTestUtils.DutUtils.dut.Dut object at 0x000001BDE7CAC5E0>, <WearableTestUtils.DutUtils.dut.Dut object at 0x000001BDE7CB1100>]
+[I Aug-03 21:42:42.948 PbManager:374] Loading proto 'component_state'
+[I Aug-03 21:42:42.965 PbManager:374] Loading proto 'core_address'
+[I Aug-03 21:42:42.967 PbManager:374] Loading proto 'core_api'
+[I Aug-03 21:42:42.968 PbManager:374] Loading proto 'core_handover'
+[I Aug-03 21:42:42.970 PbManager:374] Loading proto 'core_msg_header'
+[I Aug-03 21:42:42.972 PbManager:374] Loading proto 'cor_reboot_info'
+[I Aug-03 21:42:42.974 PbManager:374] Loading proto 'cor_reboot_reason'
+[I Aug-03 21:42:42.978 PbManager:374] Loading proto 'cor_shutdown_reason'
+[I Aug-03 21:42:42.982 PbManager:374] Loading proto 'media_player_drv_state'
+[I Aug-03 21:42:42.983 PbManager:374] Loading proto 'nanopb'
+[I Aug-03 21:42:42.985 PbManager:374] Loading proto 'tco_api'
+[I Aug-03 21:42:42.986 PbManager:374] Loading proto 'telephony_drv_state'
+[W Aug-03 21:42:42.987 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 21:42:42.989 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 21:42:42.990 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 21:42:42.991 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 21:42:42.993 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 21:42:42.994 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 21:42:42.996 PbManager:410] Loaded 12 protobufs
+[W Aug-03 21:42:43.058 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 21:42:43.060 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 21:42:43.061 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 21:42:43.062 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 21:42:43.064 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 21:42:43.066 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 21:42:43.067 PbManager:410] Loaded 12 protobufs
+[I Aug-03 21:42:43.070 conftest_plugin:460] Invoking logread fixture
+[I Aug-03 21:42:43.074 conftest_plugin:498] -----------------------
+[I Aug-03 21:42:43.076 conftest_plugin:499] TEST SETUP PASSED
+[I Aug-03 21:42:43.076 conftest_plugin:500] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 21:42:43.076 conftest_plugin:501] DateTime: 2023-08-03 21:42:43.076004
+[I Aug-03 21:42:43.076 conftest_plugin:502] ------------------------
+[I Aug-03 21:42:43.077 test_peerUnderflowTracker:147] Current DUT device is: Scotty [M308000151388105501A0C0]
+[I Aug-03 21:42:43.136 test_peerUnderflowTracker:154] Current DUT device [ Scotty [M308000151388105501A0C0] ] role is: [ 1 ]
+    
+[I Aug-03 21:42:43.138 test_peerUnderflowTracker:158] PRIMARY device is: Scotty [M308000151388105501A0C0]
+[I Aug-03 21:42:43.141 test_peerUnderflowTracker:147] Current DUT device is: Scotty [M308000132588105601A0C0]
+[I Aug-03 21:42:43.198 test_peerUnderflowTracker:154] Current DUT device [ Scotty [M308000132588105601A0C0] ] role is: [ 2 ]
+    
+[I Aug-03 21:42:43.199 test_peerUnderflowTracker:161] SECONDARY device is: Scotty [M308000132588105601A0C0]
+[I Aug-03 21:42:43.201 test_peerUnderflowTracker:163] Starting peer underflow tracker
+[W Aug-03 21:42:43.431 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:43.432 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:43.553 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:43.554 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:43.584 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:43.585 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:43.630 SpitfireMessaging:645] No handler for core event cor,4
+[W Aug-03 21:42:43.632 SpitfireMessaging:645] No handler for core event cor,11
+[W Aug-03 21:42:43.647 SpitfireMessaging:645] No handler for core event cor,4
+[W Aug-03 21:42:43.648 SpitfireMessaging:645] No handler for core event cor,11
+[W Aug-03 21:42:43.771 SpitfireMessaging:645] No handler for core event cor,15
+[W Aug-03 21:42:43.772 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:43.772 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:43.818 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:43.818 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:43.819 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:43.820 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:43.928 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:43.929 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:43.930 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:43.931 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:43.976 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:43.977 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.004 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.009 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.010 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.012 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.012 SpitfireMessaging:645] No handler for core event cor,20
+[W Aug-03 21:42:44.013 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.014 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.050 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.051 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.052 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.053 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.083 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.083 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.085 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.086 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.141 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.144 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.145 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.146 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.188 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.189 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.251 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.252 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.298 SpitfireMessaging:645] No handler for core event cor,20
+[W Aug-03 21:42:44.299 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.300 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.359 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.361 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.375 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.376 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.408 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.409 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.469 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.470 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.508 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.509 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.700 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.701 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.702 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.702 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:44.840 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:44.841 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.039 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.041 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.056 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.057 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.071 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.072 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.101 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.102 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.149 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.150 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.336 SpitfireMessaging:645] No handler for core event cor,20
+[W Aug-03 21:42:45.350 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.351 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.374 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.375 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.399 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.400 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.476 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.477 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.508 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.509 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.635 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.636 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:45.711 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:45.712 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:51.790 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:51.792 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:51.800 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:51.801 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:51.832 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:51.833 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:51.878 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:51.878 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:51.909 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:51.910 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.018 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.019 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.060 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.062 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.092 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.094 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.415 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.417 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.430 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.430 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.494 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.495 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.507 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.508 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.538 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.539 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.569 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.570 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.601 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.601 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.602 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.602 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.631 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.632 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.646 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.648 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.692 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.693 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.724 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.725 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.740 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.741 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.755 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.756 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.771 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.772 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:52.819 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:52.820 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.163 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.166 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.172 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.172 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.190 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.191 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.394 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.397 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.424 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.424 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.470 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.471 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.503 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.503 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.593 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.594 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.659 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.661 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.955 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.957 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.958 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.959 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:55.961 SpitfireMessaging:645] No handler for core event cor,15
+[W Aug-03 21:42:55.963 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:55.964 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.086 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.088 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.088 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.090 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.101 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.102 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.116 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.117 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.118 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.118 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.148 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.149 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.295 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.296 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.318 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.319 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.365 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.365 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.395 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.395 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.396 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.397 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.410 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.411 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.441 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.442 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.467 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.468 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.486 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.487 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.488 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.489 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:56.517 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:56.518 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:57.265 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:57.267 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:57.277 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:57.278 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:57.294 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:57.294 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:57.324 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:57.325 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:57.340 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:57.341 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:57.342 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:57.343 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:57.371 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:57.372 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:57.541 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:57.542 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:57.589 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:57.591 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.271 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.272 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.281 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.282 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.313 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.314 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.327 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.329 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.344 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.344 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.345 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.346 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.376 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.376 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.467 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.468 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.528 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.529 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.825 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.829 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.831 SpitfireMessaging:645] No handler for core event cor,15
+[W Aug-03 21:42:58.834 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.835 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.835 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.836 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.948 SpitfireMessaging:645] No handler for core event cor,20
+[W Aug-03 21:42:58.949 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.950 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.951 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.951 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.979 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.980 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.981 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.981 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.993 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.995 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:58.995 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:58.995 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.136 SpitfireMessaging:645] No handler for core event cor,20
+[W Aug-03 21:42:59.213 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.213 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.227 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.228 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.229 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.230 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.257 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.258 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.698 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.698 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.712 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.712 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.736 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.736 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.766 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.767 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.781 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.782 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.783 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.783 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:42:59.814 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:42:59.815 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:00.215 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:00.216 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:00.230 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:00.231 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:00.282 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:00.283 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:00.292 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:00.293 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:00.294 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:00.295 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:00.323 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:00.324 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:00.941 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:00.943 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:01.439 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:01.440 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:02.152 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:02.155 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:02.168 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:02.169 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:02.182 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:02.183 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:02.990 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:02.992 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:03.036 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:03.037 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:05.405 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:05.406 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:05.687 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:05.689 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:05.700 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:05.701 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:05.732 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:05.733 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:05.794 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:05.795 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:05.810 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:05.810 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.072 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.073 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.103 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.105 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.118 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.120 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.150 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.151 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.152 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.153 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.180 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.181 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.258 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.259 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.304 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.304 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.538 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.539 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:06.998 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:06.999 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.014 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.014 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.036 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.037 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.050 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.051 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.080 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.082 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.113 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.114 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.145 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.145 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.174 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.175 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.231 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.232 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.253 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.253 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.283 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.284 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.285 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.286 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.299 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.300 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.314 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.314 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.330 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.330 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.361 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.361 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.376 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.376 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.406 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.407 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.422 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.423 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.437 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.439 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.443 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.443 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.471 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.473 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.500 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.500 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.501 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.502 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.516 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.516 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.530 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.531 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.593 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.594 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:07.609 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:07.609 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:08.309 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:08.312 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:08.707 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:08.708 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:08.723 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:08.724 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:08.739 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:08.740 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:08.786 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:08.787 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:08.818 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:08.819 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:09.172 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:09.173 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:09.203 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:09.204 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:12.291 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:12.293 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:12.693 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:12.694 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:43:13.751 conftest_plugin:434] Automation completed  : 2023-08-03 21:43:13.751659
+[W Aug-03 21:43:13.755 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty R4C84. Value-> None
+[W Aug-03 21:43:13.755 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty L5164. Value-> None
+[W Aug-03 21:43:16.358 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:16.358 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:43:16.374 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:43:16.375 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:43:19.115 conftest_plugin:520] =================== TEST RESULTS ====================
+[I Aug-03 21:43:19.116 conftest_plugin:535]  Passed: 0
+[I Aug-03 21:43:19.116 conftest_plugin:542]  Failed: 0
+[I Aug-03 21:43:19.117 conftest_plugin:549]  Errors: 0
+[I Aug-03 21:43:19.117 conftest_plugin:556]  Skipped: 0
+[I Aug-03 21:43:19.117 conftest_plugin:559] =========== Passed 0, Failed 0, Error 0, Skipped 0 in 47.14 seconds =============

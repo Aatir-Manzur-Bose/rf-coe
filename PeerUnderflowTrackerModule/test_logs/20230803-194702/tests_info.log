@@ -1,0 +1,72 @@
+[I Aug-03 19:47:03.355 bmap_plugin:78] bmap_version=None, bmap_build=None, bmap_branch=None, bmap_parser_type=BmapFileType.PYTHON
+[I Aug-03 19:47:03.413 conftest_plugin:417] Automation stared  : 2023-08-03 19:47:03.413191
+[I Aug-03 19:47:03.455 polycomm_helper:130] Sleeping for 3 seconds to load Device Manager...
+[I Aug-03 19:47:13.902 dut_session_fixture_helper:145] Getting default Dut
+[I Aug-03 19:47:13.902 dut_session_fixture_helper:148] Current Operating System is:-> windows
+[I Aug-03 19:47:13.903 dut_session_fixture_helper:164] [<WearableTestUtils.DutUtils.dut.Dut object at 0x000001FD658B9E20>, <WearableTestUtils.DutUtils.dut.Dut object at 0x000001FD658C1D60>]
+[I Aug-03 19:47:13.961 PbManager:374] Loading proto 'component_state'
+[I Aug-03 19:47:14.025 PbManager:374] Loading proto 'core_address'
+[I Aug-03 19:47:14.025 PbManager:374] Loading proto 'core_api'
+[I Aug-03 19:47:14.026 PbManager:374] Loading proto 'core_bt_private'
+[I Aug-03 19:47:14.026 PbManager:374] Loading proto 'core_handover'
+[I Aug-03 19:47:14.027 PbManager:374] Loading proto 'core_msg_header'
+[I Aug-03 19:47:14.027 PbManager:374] Loading proto 'cor_reboot_info'
+[I Aug-03 19:47:14.030 PbManager:374] Loading proto 'cor_reboot_reason'
+[I Aug-03 19:47:14.033 PbManager:374] Loading proto 'cor_shutdown_reason'
+[I Aug-03 19:47:14.036 PbManager:374] Loading proto 'media_player_drv_state'
+[I Aug-03 19:47:14.036 PbManager:374] Loading proto 'nanopb'
+[I Aug-03 19:47:14.037 PbManager:374] Loading proto 'tco_api'
+[I Aug-03 19:47:14.037 PbManager:374] Loading proto 'telephony_drv_state'
+[W Aug-03 19:47:14.037 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 19:47:14.037 PbManager:396] No entry for proto `core_bt_private` found in loaded metadata
+[W Aug-03 19:47:14.038 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 19:47:14.038 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 19:47:14.038 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 19:47:14.038 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 19:47:14.039 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 19:47:14.039 PbManager:410] Loaded 13 protobufs
+[W Aug-03 19:47:14.098 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 19:47:14.098 PbManager:396] No entry for proto `core_bt_private` found in loaded metadata
+[W Aug-03 19:47:14.098 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 19:47:14.099 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 19:47:14.099 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 19:47:14.099 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 19:47:14.099 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 19:47:14.099 PbManager:410] Loaded 13 protobufs
+[I Aug-03 19:47:14.100 conftest_plugin:460] Invoking logread fixture
+[I Aug-03 19:47:14.102 conftest_plugin:498] -----------------------
+[I Aug-03 19:47:14.103 conftest_plugin:499] TEST SETUP PASSED
+[I Aug-03 19:47:14.103 conftest_plugin:500] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 19:47:14.103 conftest_plugin:501] DateTime: 2023-08-03 19:47:14.103495
+[I Aug-03 19:47:14.103 conftest_plugin:502] ------------------------
+[I Aug-03 19:47:14.104 test_peerUnderflowTracker:150] Current DUT device is: Scotty [M308000151388105501A0C0]
+[E Aug-03 19:47:19.117 test_peerUnderflowTracker:89] Error: Not received response
+    assert False
+[I Aug-03 19:47:19.730 conftest_plugin:505] -----------------------
+[I Aug-03 19:47:19.731 conftest_plugin:506] TEST FAILED
+[I Aug-03 19:47:19.731 conftest_plugin:507] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 19:47:19.731 conftest_plugin:508] DateTime: 2023-08-03 19:47:19.731494
+[E Aug-03 19:47:19.732 conftest_plugin:509] Error: test_peerUnderflowTracker.py:85: in send_request_and_validate
+        assert False, f"Error: Not received response"
+    E   AssertionError: Error: Not received response
+    E   assert False
+    
+    During handling of the above exception, another exception occurred:
+    test_peerUnderflowTracker.py:217: in test_track_peer_underflow
+        track_peer_underflow(messaging_list, underflowTimeout)
+    test_peerUnderflowTracker.py:156: in track_peer_underflow
+        dut_payload = send_request_and_validate( msgdev, core_api_pb2.COR_BT_GET_ROLE, payload )
+    test_peerUnderflowTracker.py:90: in send_request_and_validate
+        traceback.print_exc()
+    E   NameError: name 'traceback' is not defined
+[I Aug-03 19:47:19.732 conftest_plugin:510] ------------------------
+[W Aug-03 19:47:19.741 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty R4C84. Value-> None
+[W Aug-03 19:47:19.742 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty L5164. Value-> None
+[I Aug-03 19:47:25.623 conftest_plugin:434] Automation completed  : 2023-08-03 19:47:25.623067
+[I Aug-03 19:47:25.681 conftest_plugin:520] =================== TEST RESULTS ====================
+[I Aug-03 19:47:25.682 conftest_plugin:535]  Passed: 0
+[I Aug-03 19:47:25.682 conftest_plugin:538]  Failed: 1
+[I Aug-03 19:47:25.682 conftest_plugin:540]    test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 19:47:25.682 conftest_plugin:549]  Errors: 0
+[I Aug-03 19:47:25.682 conftest_plugin:556]  Skipped: 0
+[I Aug-03 19:47:25.683 conftest_plugin:559] =========== Passed 0, Failed 1, Error 0, Skipped 0 in 22.26 seconds =============

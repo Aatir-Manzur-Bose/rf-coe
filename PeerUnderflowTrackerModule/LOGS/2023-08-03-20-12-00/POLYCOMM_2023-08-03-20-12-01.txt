@@ -1,0 +1,151 @@
+[D 2023-08-03 20:12:01,495 devicemanager:0487] [38864] Setting up new device!
+[D 2023-08-03 20:12:01,497 hiddevice:0677] [38864] Report ID to size: {9: 126, 13: 259, 15: 512, 17: 675, 12: 1022, 14: 512, 16: 675, 10: 62}
+[D 2023-08-03 20:12:01,503 hiddevice:0679] [38864] current mode: 0x4072
+[D 2023-08-03 20:12:01,503 hiddevice:0802] [38864] mini_tap_write sn
+[D 2023-08-03 20:12:01,503 hiddevice:0797] [38864] write [<_HidReportIdCrescendo.MINI_TAP: 2>, 115, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[D 2023-08-03 20:12:01,504 hiddevice:1189] [38864] The parameter is incorrect.
+[D 2023-08-03 20:12:01,504 hiddevice:1190] [38864] status : -1
+[D 2023-08-03 20:12:01,504 polycommdevice:0952] [38864] Device 0, last connected time set to 1691089921.5043316
+[D 2023-08-03 20:12:01,504 polycommdevice:0957] [38864] Device Scotty [M308000151388105501A0C0] (ID=0), just connected.
+[D 2023-08-03 20:12:01,504 devicemanager:0502] [38864] New device setup complete!
+[I 2023-08-03 20:12:01,504 hidpolycommdevice:0517] [26464] STARTING update_device_support() for Scotty [M308000151388105501A0C0] (device_id=0)
+[D 2023-08-03 20:12:01,504 devicemanager:0487] [38864] Setting up new device!
+[D 2023-08-03 20:12:01,506 hiddevice:0677] [38864] Report ID to size: {9: 126, 13: 259, 15: 512, 17: 675, 12: 1022, 14: 512, 16: 675, 10: 62}
+[D 2023-08-03 20:12:01,513 hiddevice:0679] [38864] current mode: 0x4072
+[D 2023-08-03 20:12:01,513 hiddevice:0802] [38864] mini_tap_write sn
+[D 2023-08-03 20:12:01,513 hiddevice:0797] [38864] write [<_HidReportIdCrescendo.MINI_TAP: 2>, 115, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[D 2023-08-03 20:12:01,513 hiddevice:1189] [38864] The parameter is incorrect.
+[D 2023-08-03 20:12:01,513 hiddevice:1190] [38864] status : -1
+[D 2023-08-03 20:12:01,513 polycommdevice:0952] [38864] Device 1, last connected time set to 1691089921.5136788
+[D 2023-08-03 20:12:01,513 polycommdevice:0957] [38864] Device Scotty [M308000132588105601A0C0] (ID=1), just connected.
+[D 2023-08-03 20:12:01,514 devicemanager:0502] [38864] New device setup complete!
+[I 2023-08-03 20:12:01,514 hidpolycommdevice:0517] [50460] STARTING update_device_support() for Scotty [M308000132588105601A0C0] (device_id=1)
+[D 2023-08-03 20:12:02,053 hiddevice:0831] [1916] Sending TAP as report [<_HidReportIdCrescendo.TAP: 10>, 118, 114, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[D 2023-08-03 20:12:02,054 hiddevice:0831] [40348] Sending TAP as report [<_HidReportIdCrescendo.TAP: 10>, 118, 114, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[D 2023-08-03 20:12:02,065 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: '' at 1691089922.065
+[D 2023-08-03 20:12:02,084 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 'version: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22' at 1691089922.084
+[D 2023-08-03 20:12:02,084 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: '' at 1691089922.084
+[D 2023-08-03 20:12:02,100 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 'version: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22' at 1691089922.1
+[D 2023-08-03 20:12:02,101 hidthread:0236] [1916] ID=0 Took 0.016698122024536133 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 5, 33, 0] return=1023
+[D 2023-08-03 20:12:02,116 hidthread:0236] [40348] ID=1 Took 0.015116453170776367 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 5, 33, 0] return=1023
+[D 2023-08-03 20:12:02,132 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 00050311312e362e32382d322b6736613361386439 at 1691089922.132
+[I 2023-08-03 20:12:02,133 polycommdevice:3484] [26464] Generating context!
+[D 2023-08-03 20:12:02,133 polycommdevice:3172] [26464] Sending ProductInfo.ProductIDVariant.Get on Port 2 for Scotty [M308000151388105501A0C0]...
+[I 2023-08-03 20:12:02,134 polycommdevice:3484] [26464] Generating context!
+[D 2023-08-03 20:12:02,134 polycommdevice:3206] [1916] Sending product type request on port 2 for Scotty [M308000151388105501A0C0]! (source: '00032100')
+[D 2023-08-03 20:12:02,134 polycommdevice:3157] [26464] Request device to report feature lock status for Scotty [M308000151388105501A0C0]...
+[D 2023-08-03 20:12:02,148 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 00050311312e362e32382d322b6736613361386439 at 1691089922.148
+[I 2023-08-03 20:12:02,149 polycommdevice:3484] [50460] Generating context!
+[D 2023-08-03 20:12:02,149 polycommdevice:3172] [50460] Sending ProductInfo.ProductIDVariant.Get on Port 2 for Scotty [M308000132588105601A0C0]...
+[I 2023-08-03 20:12:02,150 polycommdevice:3484] [50460] Generating context!
+[D 2023-08-03 20:12:02,150 polycommdevice:3206] [40348] Sending product type request on port 2 for Scotty [M308000132588105601A0C0]! (source: '00032100')
+[D 2023-08-03 20:12:02,150 hidthread:0236] [1916] ID=0 Took 0.016000986099243164 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 3, 33, 0] return=1023
+[D 2023-08-03 20:12:02,150 polycommdevice:3189] [1916] Sending non-case lock request on Scotty [M308000151388105501A0C0]!
+[D 2023-08-03 20:12:02,151 polycommdevice:3157] [50460] Request device to report feature lock status for Scotty [M308000132588105601A0C0]...
+[D 2023-08-03 20:12:02,166 hidthread:0236] [40348] ID=1 Took 0.01599907875061035 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 3, 33, 0] return=1023
+[D 2023-08-03 20:12:02,166 polycommdevice:3189] [40348] Sending non-case lock request on Scotty [M308000132588105601A0C0]!
+[D 2023-08-03 20:12:02,167 hidthread:0236] [1916] ID=0 Took 0.016999006271362305 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 5, 18, 10, 1, 1, 1] return=1023
+[D 2023-08-03 20:12:02,182 hidthread:0236] [40348] ID=1 Took 0.015999317169189453 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 5, 18, 10, 1, 1, 1] return=1023
+[D 2023-08-03 20:12:02,183 polycommdevice:3297] [50488] Received: ProductInfo.ProductIDVariant.Status on Scotty [M308000151388105501A0C0]
+[D 2023-08-03 20:12:02,183 polycommdevice:3331] [50488] Scotty [M308000151388105501A0C0] ProductID=0x4072 for port 2
+[D 2023-08-03 20:12:02,183 polycommdevice:3339] [50488] Scotty [M308000151388105501A0C0] is not charging case.
+[D 2023-08-03 20:12:02,183 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 00030303407201 at 1691089922.183
+[D 2023-08-03 20:12:02,195 polycommdevice:3222] [50488] Received: Auth.FeatureLock.Status on Scotty [M308000151388105501A0C0]
+[D 2023-08-03 20:12:02,195 polycommdevice:3261] [50488] locked_features:0000
+[D 2023-08-03 20:12:02,195 polycommdevice:3276] [50488] The Scotty [M308000151388105501A0C0] (non-case) is unlocked
+[D 2023-08-03 20:12:02,195 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 120a0303010000 at 1691089922.195
+[I 2023-08-03 20:12:02,195 polycommdevice:3484] [26464] Generating context!
+[D 2023-08-03 20:12:02,210 polycommdevice:3297] [47072] Received: ProductInfo.ProductIDVariant.Status on Scotty [M308000132588105601A0C0]
+[D 2023-08-03 20:12:02,210 polycommdevice:3331] [47072] Scotty [M308000132588105601A0C0] ProductID=0x4072 for port 2
+[D 2023-08-03 20:12:02,210 polycommdevice:3339] [47072] Scotty [M308000132588105601A0C0] is not charging case.
+[D 2023-08-03 20:12:02,210 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 00030303407201 at 1691089922.21
+[D 2023-08-03 20:12:02,213 hidthread:0236] [1916] ID=0 Took 0.015993118286132812 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 8, 8, 22, 5, 4, 118, ... 114, 0, 0] return=1023
+[D 2023-08-03 20:12:02,225 polycommdevice:3222] [47072] Received: Auth.FeatureLock.Status on Scotty [M308000132588105601A0C0]
+[D 2023-08-03 20:12:02,225 polycommdevice:3261] [47072] locked_features:0000
+[D 2023-08-03 20:12:02,225 polycommdevice:3276] [47072] The Scotty [M308000132588105601A0C0] (non-case) is unlocked
+[D 2023-08-03 20:12:02,225 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 120a0303010000 at 1691089922.225
+[I 2023-08-03 20:12:02,226 polycommdevice:3484] [50460] Generating context!
+[D 2023-08-03 20:12:02,233 polycommdevice:2736] [50488] TAP over BMAP support confirmed.
+[D 2023-08-03 20:12:02,234 expecter:0949] [50488] Received: Debug.Tap.Status: '\r\nversion: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22\r\n\x00'
+[D 2023-08-03 20:12:02,234 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 081603840d0a76657273696f6e3a205370697466697265436f726553657276696365732f2f39352e352e312d382b676435353366353440426f7365436f72702f50522d313535303a7061636b6167655f69645f756e6b6e6f776e206177313035343333342e75736d612d68643437626b332e323032332d30382d30325432323a31383a32320d0a00 at 1691089922.233
+[D 2023-08-03 20:12:02,234 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: '' at 1691089922.233
+[D 2023-08-03 20:12:02,234 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 'version: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22' at 1691089922.233
+[D 2023-08-03 20:12:02,242 hidthread:0236] [40348] ID=1 Took 0.016106128692626953 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 8, 8, 22, 5, 4, 118, ... 114, 0, 0] return=1023
+[D 2023-08-03 20:12:02,257 expecter:0944] [50488] Received: Debug.Tap.Result
+[D 2023-08-03 20:12:02,257 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 0816060100 at 1691089922.257
+[D 2023-08-03 20:12:02,273 polycommdevice:2736] [47072] TAP over BMAP support confirmed.
+[D 2023-08-03 20:12:02,273 expecter:0949] [47072] Received: Debug.Tap.Status: '\r\nversion: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22\r\n\x00'
+[D 2023-08-03 20:12:02,274 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 081603840d0a76657273696f6e3a205370697466697265436f726553657276696365732f2f39352e352e312d382b676435353366353440426f7365436f72702f50522d313535303a7061636b6167655f69645f756e6b6e6f776e206177313035343333342e75736d612d68643437626b332e323032332d30382d30325432323a31383a32320d0a00 at 1691089922.273
+[D 2023-08-03 20:12:02,274 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: '' at 1691089922.273
+[D 2023-08-03 20:12:02,274 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 'version: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22' at 1691089922.273
+[D 2023-08-03 20:12:02,289 expecter:0944] [47072] Received: Debug.Tap.Result
+[D 2023-08-03 20:12:02,289 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 0816060100 at 1691089922.289
+[D 2023-08-03 20:12:02,446 hiddevice:0831] [1916] Sending TAP as report [<_HidReportIdCrescendo.TAP: 10>, 118, 114, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[D 2023-08-03 20:12:02,461 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: '' at 1691089922.461
+[D 2023-08-03 20:12:02,478 hiddevice:0831] [40348] Sending TAP as report [<_HidReportIdCrescendo.TAP: 10>, 118, 114, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[D 2023-08-03 20:12:02,493 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 'version: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22' at 1691089922.493
+[I 2023-08-03 20:12:02,493 hidpolycommdevice:0606] [26464] In _query_device_info(), device_id=0 supports tap? True version='version: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22'
+[D 2023-08-03 20:12:02,508 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: '' at 1691089922.508
+[D 2023-08-03 20:12:02,510 hidthread:0236] [1916] ID=0 Took 0.016012191772460938 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 1, 2, 1, 0] return=1023
+[D 2023-08-03 20:12:02,523 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 'version: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22' at 1691089922.523
+[I 2023-08-03 20:12:02,523 hidpolycommdevice:0606] [50460] In _query_device_info(), device_id=1 supports tap? True version='version: SpitfireCoreServices//95.5.1-8+gd553f54@BoseCorp/PR-1550:package_id_unknown aw1054334.usma-hd47bk3.2023-08-02T22:18:22'
+[D 2023-08-03 20:12:02,538 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 0102030d0153636f747479205234433834 at 1691089922.538
+[I 2023-08-03 20:12:02,539 hidpolycommdevice:0647] [26464] In _query_device_info(), 'Scotty [M308000151388105501A0C0]' (device_id=0) friendly name: 'Scotty R4C84'
+[I 2023-08-03 20:12:02,539 hidpolycommdevice:0654] [26464] COMPLETED update_device_support() (in 1.03 seconds) for Scotty [M308000151388105501A0C0] (device_id=0)
+[I 2023-08-03 20:12:02,540 bmapupdater:1465] [26464] Device 0 connected
+[D 2023-08-03 20:12:02,540 hidthread:0236] [40348] ID=1 Took 0.016201496124267578 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 1, 2, 1, 0] return=1023
+[D 2023-08-03 20:12:02,569 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 0102030d0153636f747479204c35313634 at 1691089922.569
+[I 2023-08-03 20:12:02,570 hidpolycommdevice:0647] [50460] In _query_device_info(), 'Scotty [M308000132588105601A0C0]' (device_id=1) friendly name: 'Scotty L5164'
+[I 2023-08-03 20:12:02,570 hidpolycommdevice:0654] [50460] COMPLETED update_device_support() (in 1.06 seconds) for Scotty [M308000132588105601A0C0] (device_id=1)
+[I 2023-08-03 20:12:02,572 bmapupdater:1465] [50460] Device 1 connected
+[D 2023-08-03 20:12:07,453 ec_helper_2:0541] [50828] Downloading 'Python' from 'https://hepdsw-web.bose.com/ec/prod/BMAP/Continuous/master/1.1.0-5254+fc38664/Python-1.1.0-5254+fc38664.zip' into 'C:\\Spitfire\\PeerUnderflowTrackerModule\\.bmap_download\\bmap\\py.zip'!
+[D 2023-08-03 20:12:11,556 hidthread:0236] [1916] ID=0 Took 0.016149044036865234 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 1, 2, 1, 0] return=1023
+[D 2023-08-03 20:12:11,588 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 0102030d0153636f747479205234433834 at 1691089931.588
+[D 2023-08-03 20:12:11,589 polycommdevice:3206] [1916] Sending product type request on port 0 for Scotty [M308000151388105501A0C0]! (source: '00030100')
+[D 2023-08-03 20:12:11,605 hidthread:0236] [1916] ID=0 Took 0.015676021575927734 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 3, 1, 0] return=1023
+[D 2023-08-03 20:12:11,650 polycommdevice:3297] [50488] Received: ProductInfo.ProductIDVariant.Status on Scotty [M308000151388105501A0C0]
+[D 2023-08-03 20:12:11,650 polycommdevice:3331] [50488] Scotty [M308000151388105501A0C0] ProductID=0x4072 for port 0
+[D 2023-08-03 20:12:11,650 polycommdevice:3339] [50488] Scotty [M308000151388105501A0C0] is not charging case.
+[D 2023-08-03 20:12:11,650 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 00030303407201 at 1691089931.65
+[D 2023-08-03 20:12:11,667 hidthread:0236] [1916] ID=0 Took 0.016104698181152344 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 6, 1, 0] return=1023
+[D 2023-08-03 20:12:11,697 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 00060306acbf719a4c84 at 1691089931.697
+[D 2023-08-03 20:12:11,698 polycommdevice:3206] [1916] Sending product type request on port 0 for Scotty [M308000151388105501A0C0]! (source: '00030100')
+[D 2023-08-03 20:12:11,715 hidthread:0236] [1916] ID=0 Took 0.01670050621032715 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 3, 1, 0] return=1023
+[D 2023-08-03 20:12:11,744 polycommdevice:3297] [50488] Received: ProductInfo.ProductIDVariant.Status on Scotty [M308000151388105501A0C0]
+[D 2023-08-03 20:12:11,745 polycommdevice:3331] [50488] Scotty [M308000151388105501A0C0] ProductID=0x4072 for port 0
+[D 2023-08-03 20:12:11,745 polycommdevice:3339] [50488] Scotty [M308000151388105501A0C0] is not charging case.
+[D 2023-08-03 20:12:11,745 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: 00030303407201 at 1691089931.744
+[D 2023-08-03 20:12:11,765 hidthread:0236] [40348] ID=1 Took 0.015136003494262695 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 1, 2, 1, 0] return=1023
+[D 2023-08-03 20:12:11,806 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 0102030d0153636f747479204c35313634 at 1691089931.806
+[D 2023-08-03 20:12:11,808 polycommdevice:3206] [40348] Sending product type request on port 0 for Scotty [M308000132588105601A0C0]! (source: '00030100')
+[D 2023-08-03 20:12:11,823 hidthread:0236] [40348] ID=1 Took 0.015702009201049805 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 3, 1, 0] return=1023
+[D 2023-08-03 20:12:11,852 polycommdevice:3297] [47072] Received: ProductInfo.ProductIDVariant.Status on Scotty [M308000132588105601A0C0]
+[D 2023-08-03 20:12:11,852 polycommdevice:3331] [47072] Scotty [M308000132588105601A0C0] ProductID=0x4072 for port 0
+[D 2023-08-03 20:12:11,852 polycommdevice:3339] [47072] Scotty [M308000132588105601A0C0] is not charging case.
+[D 2023-08-03 20:12:11,852 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 00030303407201 at 1691089931.852
+[D 2023-08-03 20:12:11,869 hidthread:0236] [40348] ID=1 Took 0.0160977840423584 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 6, 1, 0] return=1023
+[D 2023-08-03 20:12:11,899 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 00060306acbf719a4c84 at 1691089931.899
+[D 2023-08-03 20:12:11,899 polycommdevice:3206] [40348] Sending product type request on port 0 for Scotty [M308000132588105601A0C0]! (source: '00030100')
+[D 2023-08-03 20:12:11,915 hidthread:0236] [40348] ID=1 Took 0.01621103286743164 seconds to write [<_HidReportIdCrescendo.BMAP: 12>, 0, 4, 0, 3, 1, 0] return=1023
+[D 2023-08-03 20:12:11,945 polycommdevice:3297] [47072] Received: ProductInfo.ProductIDVariant.Status on Scotty [M308000132588105601A0C0]
+[D 2023-08-03 20:12:11,945 polycommdevice:3331] [47072] Scotty [M308000132588105601A0C0] ProductID=0x4072 for port 0
+[D 2023-08-03 20:12:11,945 polycommdevice:3339] [47072] Scotty [M308000132588105601A0C0] is not charging case.
+[D 2023-08-03 20:12:11,945 polycommdevice:2979] [47072] From Scotty [M308000132588105601A0C0] received: 00030303407201 at 1691089931.945
+[D 2023-08-03 20:12:12,188 hidthread:0236] [1916] ID=0 Took 0.007997989654541016 seconds to write [<_HidReportIdCrescendo.PROTOMSG: 14>, 0, 15, 11, 0, 0, 0, 10, ... 21, 56, 16] return=1023
+[D 2023-08-03 20:12:12,225 polycommdevice:2979] [50488] From Scotty [M308000151388105501A0C0] received: [14, 0, 0, 0, 10, 3, 99, 111, 114, 18, 3, 99, 111, 114, 24, 2, 32, 21] at 1691089932.225
+[D 2023-08-03 20:12:22,810 hidthread:0369] [14252] HidThread background thread grabbing __interfaces_lock...
+[D 2023-08-03 20:12:22,810 hidthread:0371] [14252] HidThread background thread acquired __interfaces_lock!
+[D 2023-08-03 20:12:22,810 hidthread:0377] [14252] HidThread background thread acquiring the read lock...
+[D 2023-08-03 20:12:22,810 hidthread:0379] [14252] HidThread background thread acquired the read lock! Now getting the write lock...
+[D 2023-08-03 20:12:22,810 hidthread:0383] [14252] HidThread background thread acquired the write lock! Now closing...
+[D 2023-08-03 20:12:22,810 hidthread:0385] [14252] HidThread background thread closed the object.
+[D 2023-08-03 20:12:22,810 polycommdevice:0975] [50828] Device Scotty [M308000151388105501A0C0] (ID=0), just disconnected.
+[I 2023-08-03 20:12:22,811 bmapupdater:1465] [26464] Device 0 disconnected
+[D 2023-08-03 20:12:22,815 hidthread:0369] [14252] HidThread background thread grabbing __interfaces_lock...
+[D 2023-08-03 20:12:22,815 hidthread:0371] [14252] HidThread background thread acquired __interfaces_lock!
+[D 2023-08-03 20:12:22,815 hidthread:0377] [14252] HidThread background thread acquiring the read lock...
+[D 2023-08-03 20:12:22,815 hidthread:0379] [14252] HidThread background thread acquired the read lock! Now getting the write lock...
+[D 2023-08-03 20:12:22,815 hidthread:0383] [14252] HidThread background thread acquired the write lock! Now closing...
+[D 2023-08-03 20:12:22,815 hidthread:0385] [14252] HidThread background thread closed the object.
+[D 2023-08-03 20:12:22,815 polycommdevice:0975] [50828] Device Scotty [M308000132588105601A0C0] (ID=1), just disconnected.
+[I 2023-08-03 20:12:22,816 bmapupdater:1465] [50460] Device 1 disconnected

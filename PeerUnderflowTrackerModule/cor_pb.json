@@ -1,0 +1,323 @@
+{
+    "id": "cor",
+    "protos": [
+        "core_api",
+        "core_handover",
+        "core_msg_header",
+        "core_address",
+        "media_player_drv_state",
+        "telephony_drv_state"
+    ],
+    "events": [
+        {
+            "name": "CORE_EVENT_INITIALIZE",
+            "message": "core_event_initialize_t"
+        },
+        {
+            "name": "CORE_EVENT_SHUTDOWN",
+            "message": "core_event_shutdown_t"
+        },
+        {
+            "name": "NULL",
+            "message": "NULL"
+        },
+        {
+            "name": "CORE_EVENT_FACTORY_RESET",
+            "message": "core_event_factory_reset_t"
+        },
+        {
+            "name": "CORE_EVENT_ACTIVE_ENTITIES",
+            "message": "core_event_active_entities_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_CASE_CONNECTED",
+            "message": "core_event_entity_case_connected_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_CASE_DISCONNECTED",
+            "message": "core_event_entity_case_disconnected_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_LEFT_BUD_CONNECTED",
+            "message": "core_event_entity_left_bud_connected_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_LEFT_BUD_DISCONNECTED",
+            "message": "core_event_entity_left_bud_disconnected_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_RIGHT_BUD_CONNECTED",
+            "message": "core_event_entity_right_bud_connected_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_RIGHT_BUD_DISCONNECTED",
+            "message": "core_event_entity_right_bud_disconnected_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_PEER_CONNECTED",
+            "message": "core_event_entity_peer_connected_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_PEER_DISCONNECTED",
+            "message": "core_event_entity_peer_disconnected_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_TEST_CONNECTED",
+            "message": "core_event_entity_test_connected_t"
+        },
+        {
+            "name": "CORE_EVENT_ENTITY_TEST_DISCONNECTED",
+            "message": "core_event_entity_test_disconnected_t"
+        },
+        {
+            "name": "CORE_EVENT_HANDOVER_CHANGED",
+            "message": "core_event_handover_changed_t"
+        },
+        {
+            "name": "CORE_EVENT_EARLYINITIALIZE",
+            "message": "core_event_earlyinitialize_t"
+        },
+        {
+            "name": "CORE_EVENT_INITIALIZATION_COMPLETE",
+            "message": "core_event_initialization_complete_t"
+        },
+        {
+            "name": "CORE_EVENT_POWER_OFF_COMPLETE",
+            "message": "core_event_power_off_complete_t"
+        },
+        {
+            "name": "CORE_EVENT_FIXED_ROLE",
+            "message": "core_event_fixed_role_t"
+        },
+        {
+            "name": "CORE_EVENT_HANDSET_LINK_QUALITY_CHANGED",
+            "message": "core_handset_link_quality_status_t"
+        },
+        {
+            "name": "CORE_EVENT_P2P_TRANSMIT_UNDERFLOW",
+            "message": "core_event_p2p_transmit_underflow_t"
+        }
+    ],
+    "requests": [
+        {
+            "name": "CORE_REQUEST_ADD_EMULATE_ENTITY",
+            "message": "core_request_add_emulate_entity_t"
+        },
+        {
+            "name": "CORE_REQUEST_REMOVE_EMULATE_ENTITY",
+            "message": "core_request_remove_emulate_entity_t"
+        },
+        {
+            "name": "CORE_REQUEST_FACTORY_DEFAULT",
+            "message": "core_request_factory_default_t"
+        },
+        {
+            "name": "CORE_REQUEST_CONNECT_TRANSPORT",
+            "message": "core_request_connect_transport_t"
+        },
+        {
+            "name": "CORE_REQUEST_DISCONNECT_TRANSPORT",
+            "message": "core_request_disconnect_transport_t"
+        },
+        {
+            "name": "CORE_REQUEST_TRANSPORT_STATUS",
+            "message": "core_request_transport_status_t"
+        },
+        {
+            "name": "CORE_REQUEST_RELEASE_TRANSPORT_DATA",
+            "message": "core_request_release_transport_data_t"
+        },
+        {
+            "name": "NULL",
+            "message": "NULL"
+        },
+        {
+            "name": "CORE_REQUEST_INITIATE_HANDOVER",
+            "message": "core_request_initiate_handover_t"
+        },
+        {
+            "name": "CORE_REQUEST_POWER_OFF",
+            "message": "core_power_off_interface_req_t"
+        },
+        {
+            "name": "CORE_REQUEST_HEAP_STATS",
+            "message": "core_request_heap_stats_t"
+        },
+        {
+            "name": "CORE_MSG_SEQ_REQ",
+            "message": "core_msg_seq_req_t"
+        },
+        {
+            "name": "COR_REQUEST_SET_FIXED_ROLE",
+            "message": "cor_request_set_fixed_role_t"
+        },
+        {
+            "name": "COR_REQUEST_GET_FIXED_ROLE",
+            "message": "cor_request_get_fixed_role_t"
+        },
+        {
+            "name": "CORE_FAKE_HANDOVER_REQ",
+            "message": "core_fake_handover_req_t"
+        },
+        {
+            "name": "CORE_UPDATE_PEER_STATE_REQ",
+            "message": "core_update_peer_state_t"
+        },
+        {
+            "name": "CORE_HANDOVER_PREP_REQ",
+            "message": "core_handover_prep_req_t"
+        },
+        {
+            "name": "CORE_HANDSET_LINK_QUALITY_REQUEST",
+            "message": "core_handset_link_quality_request_t"
+        },
+        {
+            "name": "CORE_WAIT_FOR_VETO_STATUS_REQUEST",
+            "message": "core_request_wait_for_veto_t"
+        },
+        {
+            "name": "CORE_GET_SYSTEM_TOPOLOGY_INFO_REQUEST",
+            "message": "core_request_get_system_topology_type_t"
+        },
+        {
+            "name": "CORE_DATACOLLECTION_READ_REQUEST",
+            "message": "core_request_dc_t"
+        },
+        {
+            "name": "CORE_BT_GET_ROLE",
+            "message": "core_bt_get_role_request_t"
+        }
+    ],
+    "responses": [
+        {
+            "name": "CORE_REQUEST_ADD_EMULATE_ENTITY",
+            "message": "core_response_emulate_entity_t"
+        },
+        {
+            "name": "CORE_REQUEST_REMOVE_EMULATE_ENTITY",
+            "message": "core_response_emulate_entity_t"
+        },
+        {
+            "name": "CORE_REQUEST_FACTORY_DEFAULT",
+            "message": "core_response_factory_default_t"
+        },
+        {
+            "name": "CORE_REQUEST_CONNECT_TRANSPORT",
+            "message": "core_response_transport_connect_status_t"
+        },
+        {
+            "name": "CORE_REQUEST_DISCONNECT_TRANSPORT",
+            "message": "core_response_transport_status_t"
+        },
+        {
+            "name": "CORE_REQUEST_TRANSPORT_STATUS",
+            "message": "core_response_transport_status_t"
+        },
+        {
+            "name": "CORE_REQUEST_RELEASE_TRANSPORT_DATA",
+            "message": "core_response_release_transport_data_t"
+        },
+        {
+            "name": "NULL",
+            "message": "NULL"
+        },
+        {
+            "name": "CORE_REQUEST_INITIATE_HANDOVER",
+            "message": "core_response_initiate_handover_t"
+        },
+        {
+            "name": "CORE_REQUEST_POWER_OFF",
+            "message": "core_power_off_interface_resp_t"
+        },
+        {
+            "name": "CORE_REQUEST_HEAP_STATS",
+            "message": "core_response_heap_stats_t"
+        },
+        {
+            "name": "CORE_MSG_SEQ_REQ",
+            "message": "core_msg_seq_resp_t"
+        },
+        {
+            "name": "COR_REQUEST_SET_FIXED_ROLE",
+            "message": "cor_response_set_fixed_role_t"
+        },
+        {
+            "name": "COR_REQUEST_GET_FIXED_ROLE",
+            "message": "cor_response_get_fixed_role_t"
+        },
+        {
+            "name": "CORE_FAKE_HANDOVER_REQ",
+            "message": "core_fake_handover_resp_t"
+        },
+        {
+            "name": "CORE_UPDATE_PEER_STATE_REQ",
+            "message": "core_update_peer_state_response_t"
+        },
+        {
+            "name": "CORE_HANDOVER_PREP_REQ",
+            "message": "core_handover_prep_resp_t"
+        },
+        {
+            "name": "CORE_HANDSET_LINK_QUALITY_REQUEST",
+            "message": "core_handset_link_quality_status_t"
+        },
+        {
+            "name": "CORE_WAIT_FOR_VETO_STATUS_REQUEST",
+            "message": "core_response_wait_for_veto_t"
+        },
+        {
+            "name": "CORE_GET_SYSTEM_TOPOLOGY_INFO_REQUEST",
+            "message": "core_response_get_system_topology_type_t"
+        },
+        {
+            "name": "CORE_DATACOLLECTION_READ_REQUEST",
+            "message": "core_response_dc_t"
+        },
+        {
+            "name": "CORE_BT_GET_ROLE",
+            "message": "core_bt_get_role_response_t"
+        }
+    ],
+    "commands": [
+        {
+            "name": "CORE_COMMAND_REBOOT_NOW",
+            "message": "core_command_reboot_now_t"
+        },
+        {
+            "name": "CORE_UPDATE_PEER_STATE",
+            "message": "core_update_peer_state_t"
+        },
+        {
+            "name": "CORE_SET_COMPONENT_AS_EMULATED",
+            "message": "core_set_component_as_emulated_t"
+        },
+        {
+            "name": "CORE_HANDOVER_CANCEL",
+            "message": "core_handover_cancel_t"
+        },
+        {
+            "name": "CORE_COMMAND_RESUME_INIT",
+            "message": "core_command_resume_init_t"
+        }
+    ],
+    "component_states": [
+        {
+            "name": "CORE_PEER_PROPERTY_SYNC",
+            "message": "core_peer_property_sync_t"
+        }
+    ],
+    "handover_states": [
+        {
+            "name": "MPLDRV_HANDOVER_STATE",
+            "message": "mplDrv_state_instance_t"
+        },
+        {
+            "name": "TELDRV_HANDOVER_STATE",
+            "message": "telDrv_state_instance_t"
+        },
+        {
+            "name": "CORE_CM_HANDOVER_STATE",
+            "message": "core_cm_handover_data_t"
+        }
+    ]
+}

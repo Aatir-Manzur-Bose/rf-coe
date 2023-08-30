@@ -61,6 +61,15 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
     vals = []
     for dev in dev_list:
         try:
+            print(
+                "***************************************************************************dev found****************************************************")
+            result = dev.send_expect(DeviceMessageType.TAP, "aud.stats 0", "[0-9]+(,[0-9]+)+")
+            print("stat list {} *************************************".format(result))
+            stat_list = str(result).split(",")
+            print("stat list {} *************************************".format(stat_list))
+            #vals.append(int(stat_list[1]))
+            #vals.append(int(stat_list[2]))
+            print("lat/rssi: {}".format(stat_list[1]))
             result = dev.send_expect(DeviceMessageType.TAP, "aud.latency", ".*current:.*\d+")
             result2 = str(dev.send_expect(DeviceMessageType.TAP, "cor.bt rssi", ".*RSSI:.*\d+"))
             print(result2)
@@ -69,8 +78,10 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
             rssi = [int(k) for k in regex.findall(result2)]
             print("Found response: {}".format(latency[0]))
             print("Found response: {}".format(rssi[0]))
-            vals.append(latency[0])
-            vals.append(rssi[0])
+            vals.append(int(stat_list[2]))
+            vals.append((int(stat_list[1])))
+            #vals.append(latency[0])
+            #vals.append(rssi[0])
             # print("Filtered LAT: {}".format(lat[1]))
 
         except ExpectTimeout:
@@ -83,7 +94,6 @@ def getLatencyAndAttenuation(dev_list, active_attn_devices, attobj):
     attobj.open_device(1)
     vals.append((int(attobj.get_currentattenuation(1, 1))))
     return tuple(vals)
-
 
 def main():
     logging.getLogger().addHandler(logging.StreamHandler())

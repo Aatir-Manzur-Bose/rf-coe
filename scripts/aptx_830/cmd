@@ -1,0 +1,2 @@
+python attenuator.py -a 0 -f 1 -s 59 -e 48 -w 83 -d 83 -o 0 -k 1 -p 1 -M 1 -b 83 -B 1
+

@@ -1,0 +1,200 @@
+[I Aug-03 22:17:24.464 bmap_plugin:78] bmap_version=None, bmap_build=None, bmap_branch=None, bmap_parser_type=BmapFileType.PYTHON
+[I Aug-03 22:17:24.519 conftest_plugin:417] Automation stared  : 2023-08-03 22:17:24.519489
+[I Aug-03 22:17:24.557 polycomm_helper:130] Sleeping for 3 seconds to load Device Manager...
+[I Aug-03 22:17:35.467 dut_session_fixture_helper:145] Getting default Dut
+[I Aug-03 22:17:35.470 dut_session_fixture_helper:148] Current Operating System is:-> windows
+[I Aug-03 22:17:35.473 dut_session_fixture_helper:164] [<WearableTestUtils.DutUtils.dut.Dut object at 0x000001919A8E2130>, <WearableTestUtils.DutUtils.dut.Dut object at 0x000001919A8FC250>]
+[I Aug-03 22:17:35.574 PbManager:374] Loading proto 'component_state'
+[I Aug-03 22:17:35.592 PbManager:374] Loading proto 'core_address'
+[I Aug-03 22:17:35.594 PbManager:374] Loading proto 'core_api'
+[I Aug-03 22:17:35.596 PbManager:374] Loading proto 'core_handover'
+[I Aug-03 22:17:35.599 PbManager:374] Loading proto 'core_msg_header'
+[I Aug-03 22:17:35.601 PbManager:374] Loading proto 'cor_reboot_info'
+[I Aug-03 22:17:35.605 PbManager:374] Loading proto 'cor_reboot_reason'
+[I Aug-03 22:17:35.608 PbManager:374] Loading proto 'cor_shutdown_reason'
+[I Aug-03 22:17:35.611 PbManager:374] Loading proto 'media_player_drv_state'
+[I Aug-03 22:17:35.612 PbManager:374] Loading proto 'nanopb'
+[I Aug-03 22:17:35.615 PbManager:374] Loading proto 'tco_api'
+[I Aug-03 22:17:35.617 PbManager:374] Loading proto 'telephony_drv_state'
+[W Aug-03 22:17:35.619 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 22:17:35.623 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 22:17:35.625 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 22:17:35.628 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 22:17:35.632 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 22:17:35.634 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 22:17:35.637 PbManager:410] Loaded 12 protobufs
+[W Aug-03 22:17:35.734 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 22:17:35.736 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 22:17:35.739 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 22:17:35.742 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 22:17:35.744 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 22:17:35.747 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 22:17:35.749 PbManager:410] Loaded 12 protobufs
+[I Aug-03 22:17:35.752 conftest_plugin:460] Invoking logread fixture
+[I Aug-03 22:17:35.756 conftest_plugin:498] -----------------------
+[I Aug-03 22:17:35.759 conftest_plugin:499] TEST SETUP PASSED
+[I Aug-03 22:17:35.759 conftest_plugin:500] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 22:17:35.760 conftest_plugin:501] DateTime: 2023-08-03 22:17:35.760438
+[I Aug-03 22:17:35.760 conftest_plugin:502] ------------------------
+[I Aug-03 22:17:35.761 test_peerUnderflowTracker:148] Current DUT device is: Scotty [M308000151388105501A0C0]
+[I Aug-03 22:17:35.810 test_peerUnderflowTracker:155] Current DUT device [ Scotty [M308000151388105501A0C0] ] role is: [ 1 ]
+    
+[I Aug-03 22:17:35.813 test_peerUnderflowTracker:159] PRIMARY device is: Scotty [M308000151388105501A0C0]
+[I Aug-03 22:17:35.815 test_peerUnderflowTracker:148] Current DUT device is: Scotty [M308000132588105601A0C0]
+[I Aug-03 22:17:35.869 test_peerUnderflowTracker:155] Current DUT device [ Scotty [M308000132588105601A0C0] ] role is: [ 2 ]
+    
+[I Aug-03 22:17:35.873 test_peerUnderflowTracker:162] SECONDARY device is: Scotty [M308000132588105601A0C0]
+[I Aug-03 22:17:35.875 test_peerUnderflowTracker:164] Starting peer underflow tracker
+[I Aug-03 22:17:35.877 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:36.129 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:36.390 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:36.643 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:36.907 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:37.173 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:37.437 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:37.702 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:37.966 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:38.233 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:38.497 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:38.762 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:39.026 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:39.291 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:39.557 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:39.822 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:40.087 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:40.348 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:40.610 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:40.873 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:41.138 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:41.398 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:41.661 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:41.924 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:42.188 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:42.450 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:42.711 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:42.977 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:43.240 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:43.502 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:43.764 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:44.027 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:44.292 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:44.556 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:44.820 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:45.083 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:45.346 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:45.609 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:45.873 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:46.136 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:46.400 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:46.665 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:46.930 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:47.192 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:47.457 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:47.720 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:47.986 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:48.250 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:48.515 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:48.778 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:49.042 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:49.305 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:49.568 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:49.834 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:50.097 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:50.361 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:50.625 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:50.891 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:51.154 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:51.416 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:51.680 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:51.942 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:52.209 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:52.471 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:52.734 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:52.998 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:53.263 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:53.527 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:53.790 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:54.055 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:54.317 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:54.582 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:54.845 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:55.107 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:55.371 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:55.634 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:55.898 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:56.161 test_peerUnderflowTracker:206] Check
+[I Aug-03 22:17:56.424 test_peerUnderflowTracker:206] Check
+[W Aug-03 22:17:56.626 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:56.627 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:17:56.678 test_peerUnderflowTracker:206] Check
+[W Aug-03 22:17:56.888 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:56.889 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:56.903 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:56.904 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:56.913 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:56.914 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:17:56.915 test_peerUnderflowTracker:103] Event with count:649
+[I Aug-03 22:17:56.942 test_peerUnderflowTracker:187] Found underflow count of:649
+[I Aug-03 22:17:56.943 test_peerUnderflowTracker:198] Panic
+[I Aug-03 22:17:56.945 test_peerUnderflowTracker:199] Maximum underflow reached: panicking both buds!
+[I Aug-03 22:17:56.961 conftest_plugin:512] -----------------------
+[I Aug-03 22:17:56.965 conftest_plugin:513] TEST PASSED
+[I Aug-03 22:17:56.966 conftest_plugin:514] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 22:17:56.966 conftest_plugin:515] DateTime: 2023-08-03 22:17:56.966150
+[I Aug-03 22:17:56.966 conftest_plugin:516] ------------------------
+[W Aug-03 22:17:56.972 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty R4C84. Value-> None
+[W Aug-03 22:17:56.974 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty L5164. Value-> None
+[W Aug-03 22:17:56.990 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:56.991 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.006 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.007 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.078 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.080 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.091 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.092 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.109 SpitfireMessaging:645] No handler for core event cor,21
+[W Aug-03 22:17:57.123 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.123 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.133 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.133 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.144 SpitfireMessaging:645] No handler for core event cor,21
+[W Aug-03 22:17:57.192 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.193 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.211 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.212 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.223 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.225 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.225 SpitfireMessaging:645] No handler for core event cor,21
+[W Aug-03 22:17:57.267 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.269 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.284 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.286 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.287 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.288 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.299 SpitfireMessaging:645] No handler for core event cor,21
+[W Aug-03 22:17:57.317 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.318 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.318 SpitfireMessaging:645] No handler for core event cor,21
+[W Aug-03 22:17:57.347 SpitfireMessaging:645] No handler for core event cor,21
+[W Aug-03 22:17:57.362 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.364 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.395 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.396 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.397 SpitfireMessaging:645] No handler for core event cor,21
+[W Aug-03 22:17:57.440 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.441 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.442 SpitfireMessaging:645] No handler for core event cor,21
+[W Aug-03 22:17:57.454 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.455 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.499 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:17:57.501 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:17:57.501 SpitfireMessaging:645] No handler for core event cor,21
+[W Aug-03 22:17:57.517 SpitfireMessaging:645] No handler for core event cor,21
+[I Aug-03 22:18:01.925 conftest_plugin:434] Automation completed  : 2023-08-03 22:18:01.925567
+[I Aug-03 22:18:01.930 conftest_plugin:520] =================== TEST RESULTS ====================
+[I Aug-03 22:18:01.930 conftest_plugin:531]  Passed: 1
+[I Aug-03 22:18:01.931 conftest_plugin:533]    test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 22:18:01.931 conftest_plugin:542]  Failed: 0
+[I Aug-03 22:18:01.931 conftest_plugin:549]  Errors: 0
+[I Aug-03 22:18:01.931 conftest_plugin:556]  Skipped: 0
+[I Aug-03 22:18:01.932 conftest_plugin:559] =========== Passed 1, Failed 0, Error 0, Skipped 0 in 37.41 seconds =============

@@ -1,0 +1,199 @@
+[D Aug-03 20:58:45.965 polycomm_helper:39] Removed Existing BMAP Downloaded version from:-> C:\Spitfire\PeerUnderflowTrackerModule\.bmap_download
+[I Aug-03 20:58:46.519 bmap_plugin:78] bmap_version=None, bmap_build=None, bmap_branch=None, bmap_parser_type=BmapFileType.PYTHON
+[I Aug-03 20:58:46.577 conftest_plugin:417] Automation stared  : 2023-08-03 20:58:46.577917
+[I Aug-03 20:58:46.611 polycomm_helper:130] Sleeping for 3 seconds to load Device Manager...
+[D Aug-03 20:58:56.288 dut:100] Initializing Dut None with mac=None
+[D Aug-03 20:58:56.498 dut:100] Initializing Dut None with mac=None
+[I Aug-03 20:58:56.735 dut_session_fixture_helper:145] Getting default Dut
+[I Aug-03 20:58:56.737 dut_session_fixture_helper:148] Current Operating System is:-> windows
+[I Aug-03 20:58:56.739 dut_session_fixture_helper:164] [<WearableTestUtils.DutUtils.dut.Dut object at 0x000001ED47CDA100>, <WearableTestUtils.DutUtils.dut.Dut object at 0x000001ED47CF8220>]
+[I Aug-03 20:58:56.748 PbManager:374] Loading proto 'anr_assert'
+[I Aug-03 20:58:56.759 PbManager:374] Loading proto 'anr_cbm'
+[I Aug-03 20:58:56.765 PbManager:374] Loading proto 'anr_hxm'
+[I Aug-03 20:58:56.769 PbManager:374] Loading proto 'anr_hxs'
+[I Aug-03 20:58:56.775 PbManager:374] Loading proto 'anr_nxs'
+[I Aug-03 20:58:56.779 PbManager:374] Loading proto 'API_audio'
+[I Aug-03 20:58:56.786 PbManager:374] Loading proto 'API_mpl'
+[I Aug-03 20:58:56.791 PbManager:374] Loading proto 'API_tel'
+[I Aug-03 20:58:56.807 PbManager:374] Loading proto 'audio_aptx'
+[I Aug-03 20:58:56.812 PbManager:374] Loading proto 'audio_auto_volume'
+[I Aug-03 20:58:56.816 PbManager:374] Loading proto 'audio_bdsp'
+[I Aug-03 20:58:56.820 PbManager:374] Loading proto 'audio_common_enums'
+[I Aug-03 20:58:56.826 PbManager:374] Loading proto 'audio_handover_peer_state'
+[I Aug-03 20:58:56.830 PbManager:374] Loading proto 'audio_latency'
+[I Aug-03 20:58:56.835 PbManager:374] Loading proto 'audio_metrics'
+[I Aug-03 20:58:56.839 PbManager:374] Loading proto 'audio_mic_routing'
+[I Aug-03 20:58:56.845 PbManager:374] Loading proto 'audio_mic_trim'
+[I Aug-03 20:58:56.853 PbManager:374] Loading proto 'audio_mode'
+[I Aug-03 20:58:56.858 PbManager:374] Loading proto 'audio_output_manager'
+[I Aug-03 20:58:56.864 PbManager:374] Loading proto 'audio_prompt_language'
+[I Aug-03 20:58:56.869 PbManager:374] Loading proto 'audio_sensor_client'
+[I Aug-03 20:58:56.874 PbManager:374] Loading proto 'audio_source'
+[I Aug-03 20:58:56.883 PbManager:374] Loading proto 'audio_spatial'
+[I Aug-03 20:58:56.889 PbManager:374] Loading proto 'audio_stream_status'
+[I Aug-03 20:58:56.897 PbManager:374] Loading proto 'audio_tones_prompts'
+[I Aug-03 20:58:56.921 PbManager:374] Loading proto 'audio_user_eq_control'
+[I Aug-03 20:58:56.929 PbManager:374] Loading proto 'audio_volume_control'
+[I Aug-03 20:58:56.939 PbManager:374] Loading proto 'aud_music'
+[I Aug-03 20:58:56.945 PbManager:374] Loading proto 'aud_prompt'
+[I Aug-03 20:58:56.950 PbManager:374] Loading proto 'aud_spatial_calibrate_dc'
+[I Aug-03 20:58:56.956 PbManager:374] Loading proto 'aud_tone'
+[I Aug-03 20:58:56.961 PbManager:374] Loading proto 'aud_voice'
+[I Aug-03 20:58:56.966 PbManager:374] Loading proto 'battery_manager_api'
+[I Aug-03 20:58:57.008 PbManager:374] Loading proto 'battery_manager'
+[I Aug-03 20:58:57.011 PbManager:374] Loading proto 'bluetooth_api_handover'
+[I Aug-03 20:58:57.047 PbManager:374] Loading proto 'bluetooth_api'
+[I Aug-03 20:58:57.049 PbManager:374] Loading proto 'bluetooth_api_peer'
+[I Aug-03 20:58:57.057 PbManager:374] Loading proto 'bmap_am_handover_state'
+[I Aug-03 20:58:57.061 PbManager:374] Loading proto 'bmap_available_to_connect_handover_state'
+[I Aug-03 20:58:57.066 PbManager:374] Loading proto 'bmap_dc_handover_state'
+[I Aug-03 20:58:57.087 PbManager:374] Loading proto 'bmap_fwu_handover_state'
+[I Aug-03 20:58:57.092 PbManager:374] Loading proto 'bmap_handover_common'
+[I Aug-03 20:58:57.094 PbManager:374] Loading proto 'bmap_notification_table_declarations'
+[I Aug-03 20:58:57.103 PbManager:374] Loading proto 'bmap_peer_state'
+[I Aug-03 20:58:57.109 PbManager:374] Loading proto 'btm_charge_cycle'
+[I Aug-03 20:58:57.115 PbManager:374] Loading proto 'btn_api'
+[I Aug-03 20:58:57.127 PbManager:374] Loading proto 'bt_bose_pdl'
+[I Aug-03 20:58:57.134 PbManager:374] Loading proto 'bt_connectivity'
+[I Aug-03 20:58:57.141 PbManager:374] Loading proto 'clh_spitfire'
+[I Aug-03 20:58:57.147 PbManager:374] Loading proto 'component_state'
+[I Aug-03 20:58:57.157 PbManager:374] Loading proto 'core_address'
+[I Aug-03 20:58:57.158 PbManager:374] Loading proto 'core_api'
+[I Aug-03 20:58:57.160 PbManager:374] Loading proto 'core_handover'
+[I Aug-03 20:58:57.162 PbManager:374] Loading proto 'core_msg_header'
+[I Aug-03 20:58:57.163 PbManager:374] Loading proto 'cor_reboot_reason'
+[I Aug-03 20:58:57.165 PbManager:374] Loading proto 'cor_shutdown_reason'
+[I Aug-03 20:58:57.168 PbManager:374] Loading proto 'dataHarvesting_api'
+[I Aug-03 20:58:57.169 PbManager:374] Loading proto 'dc_counter'
+[I Aug-03 20:58:57.175 PbManager:374] Loading proto 'dc_ets'
+[I Aug-03 20:58:57.181 PbManager:374] Loading proto 'gf_api'
+[I Aug-03 20:58:57.187 PbManager:374] Loading proto 'hdma_api'
+[I Aug-03 20:58:57.193 PbManager:374] Loading proto 'led_api'
+[I Aug-03 20:58:57.206 PbManager:374] Loading proto 'led_behaviors'
+[I Aug-03 20:58:57.208 PbManager:374] Loading proto 'led_groups'
+[I Aug-03 20:58:57.211 PbManager:374] Loading proto 'manufacturing_if'
+[I Aug-03 20:58:57.219 PbManager:374] Loading proto 'media_player_drv_state'
+[I Aug-03 20:58:57.221 PbManager:374] Loading proto 'mpl_controls'
+[I Aug-03 20:58:57.229 PbManager:374] Loading proto 'mpl_handover'
+[I Aug-03 20:58:57.240 PbManager:374] Loading proto 'mpl_nowplaying_status'
+[I Aug-03 20:58:57.246 PbManager:374] Loading proto 'mpl_stream_status'
+[I Aug-03 20:58:57.248 PbManager:374] Loading proto 'nanopb'
+[I Aug-03 20:58:57.250 PbManager:374] Loading proto 'power_manager'
+[I Aug-03 20:58:57.260 PbManager:374] Loading proto 'psm_api'
+[I Aug-03 20:58:57.269 PbManager:374] Loading proto 'psm_internal_api'
+[I Aug-03 20:58:57.276 PbManager:374] Loading proto 'security'
+[I Aug-03 20:58:57.290 PbManager:374] Loading proto 'sens_api'
+[I Aug-03 20:58:57.321 PbManager:374] Loading proto 'sen_health'
+[I Aug-03 20:58:57.327 PbManager:374] Loading proto 'smartanr_api'
+[I Aug-03 20:58:57.339 PbManager:374] Loading proto 'soundManagement_api'
+[I Aug-03 20:58:57.357 PbManager:374] Loading proto 'tco_hello'
+[I Aug-03 20:58:57.362 PbManager:374] Loading proto 'telephony_drv_state'
+[I Aug-03 20:58:57.364 PbManager:374] Loading proto 'tel_call_event'
+[I Aug-03 20:58:57.365 PbManager:374] Loading proto 'tel_call_state'
+[I Aug-03 20:58:57.374 PbManager:374] Loading proto 'tel_connection_status'
+[I Aug-03 20:58:57.376 PbManager:374] Loading proto 'tel_controls'
+[I Aug-03 20:58:57.379 PbManager:374] Loading proto 'tel_vpa_event'
+[I Aug-03 20:58:57.380 PbManager:374] Loading proto 'tel_vpa_state'
+[I Aug-03 20:58:57.387 PbManager:374] Loading proto 'ui_api_input_config'
+[I Aug-03 20:58:57.414 PbManager:374] Loading proto 'ui_api'
+[I Aug-03 20:58:57.416 PbManager:374] Loading proto 'ui_runtime_data'
+[I Aug-03 20:58:57.426 PbManager:374] Loading proto 'update'
+[I Aug-03 20:58:57.445 PbManager:374] Loading proto 'upd_apply'
+[I Aug-03 20:58:57.450 PbManager:374] Loading proto 'upd_init'
+[W Aug-03 20:58:57.455 PbManager:396] No entry for proto `anr_assert` found in loaded metadata
+[W Aug-03 20:58:57.457 PbManager:396] No entry for proto `anr_cbm` found in loaded metadata
+[W Aug-03 20:58:57.459 PbManager:396] No entry for proto `anr_hxm` found in loaded metadata
+[W Aug-03 20:58:57.461 PbManager:396] No entry for proto `anr_hxs` found in loaded metadata
+[W Aug-03 20:58:57.463 PbManager:396] No entry for proto `anr_nxs` found in loaded metadata
+[W Aug-03 20:58:57.465 PbManager:396] No entry for proto `aud_music` found in loaded metadata
+[W Aug-03 20:58:57.466 PbManager:396] No entry for proto `aud_prompt` found in loaded metadata
+[W Aug-03 20:58:57.467 PbManager:396] No entry for proto `aud_spatial_calibrate_dc` found in loaded metadata
+[W Aug-03 20:58:57.469 PbManager:396] No entry for proto `aud_tone` found in loaded metadata
+[W Aug-03 20:58:57.470 PbManager:396] No entry for proto `aud_voice` found in loaded metadata
+[W Aug-03 20:58:57.472 PbManager:396] No entry for proto `btm_charge_cycle` found in loaded metadata
+[W Aug-03 20:58:57.473 PbManager:396] No entry for proto `bt_bose_pdl` found in loaded metadata
+[W Aug-03 20:58:57.475 PbManager:396] No entry for proto `bt_connectivity` found in loaded metadata
+[W Aug-03 20:58:57.477 PbManager:396] No entry for proto `clh_spitfire` found in loaded metadata
+[W Aug-03 20:58:57.478 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 20:58:57.480 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 20:58:57.481 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 20:58:57.483 PbManager:396] No entry for proto `dc_counter` found in loaded metadata
+[W Aug-03 20:58:57.484 PbManager:396] No entry for proto `dc_ets` found in loaded metadata
+[W Aug-03 20:58:57.485 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 20:58:57.487 PbManager:396] No entry for proto `sen_health` found in loaded metadata
+[W Aug-03 20:58:57.488 PbManager:396] No entry for proto `tco_hello` found in loaded metadata
+[W Aug-03 20:58:57.489 PbManager:396] No entry for proto `upd_apply` found in loaded metadata
+[W Aug-03 20:58:57.491 PbManager:396] No entry for proto `upd_init` found in loaded metadata
+[I Aug-03 20:58:57.493 PbManager:410] Loaded 93 protobufs
+[W Aug-03 20:58:57.503 PbManager:396] No entry for proto `anr_assert` found in loaded metadata
+[W Aug-03 20:58:57.506 PbManager:396] No entry for proto `anr_cbm` found in loaded metadata
+[W Aug-03 20:58:57.508 PbManager:396] No entry for proto `anr_hxm` found in loaded metadata
+[W Aug-03 20:58:57.510 PbManager:396] No entry for proto `anr_hxs` found in loaded metadata
+[W Aug-03 20:58:57.511 PbManager:396] No entry for proto `anr_nxs` found in loaded metadata
+[W Aug-03 20:58:57.513 PbManager:396] No entry for proto `aud_music` found in loaded metadata
+[W Aug-03 20:58:57.515 PbManager:396] No entry for proto `aud_prompt` found in loaded metadata
+[W Aug-03 20:58:57.516 PbManager:396] No entry for proto `aud_spatial_calibrate_dc` found in loaded metadata
+[W Aug-03 20:58:57.518 PbManager:396] No entry for proto `aud_tone` found in loaded metadata
+[W Aug-03 20:58:57.519 PbManager:396] No entry for proto `aud_voice` found in loaded metadata
+[W Aug-03 20:58:57.520 PbManager:396] No entry for proto `btm_charge_cycle` found in loaded metadata
+[W Aug-03 20:58:57.522 PbManager:396] No entry for proto `bt_bose_pdl` found in loaded metadata
+[W Aug-03 20:58:57.523 PbManager:396] No entry for proto `bt_connectivity` found in loaded metadata
+[W Aug-03 20:58:57.525 PbManager:396] No entry for proto `clh_spitfire` found in loaded metadata
+[W Aug-03 20:58:57.526 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 20:58:57.528 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 20:58:57.529 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 20:58:57.530 PbManager:396] No entry for proto `dc_counter` found in loaded metadata
+[W Aug-03 20:58:57.532 PbManager:396] No entry for proto `dc_ets` found in loaded metadata
+[W Aug-03 20:58:57.533 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 20:58:57.535 PbManager:396] No entry for proto `sen_health` found in loaded metadata
+[W Aug-03 20:58:57.536 PbManager:396] No entry for proto `tco_hello` found in loaded metadata
+[W Aug-03 20:58:57.537 PbManager:396] No entry for proto `upd_apply` found in loaded metadata
+[W Aug-03 20:58:57.539 PbManager:396] No entry for proto `upd_init` found in loaded metadata
+[I Aug-03 20:58:57.540 PbManager:410] Loaded 93 protobufs
+[I Aug-03 20:58:57.542 conftest_plugin:460] Invoking logread fixture
+[I Aug-03 20:58:57.546 conftest_plugin:498] -----------------------
+[I Aug-03 20:58:57.550 conftest_plugin:499] TEST SETUP PASSED
+[I Aug-03 20:58:57.550 conftest_plugin:500] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 20:58:57.550 conftest_plugin:501] DateTime: 2023-08-03 20:58:57.550892
+[I Aug-03 20:58:57.551 conftest_plugin:502] ------------------------
+[I Aug-03 20:58:57.551 test_peerUnderflowTracker:147] Current DUT device is: Scotty [M308000151388105501A0C0]
+[D Aug-03 20:58:57.553 SpitfireMessaging:400] Sending request with transaction id 0 (0x0)
+[D Aug-03 20:58:57.564 SpitfireMessaging:592] __dispatch_message: success
+[D Aug-03 20:58:57.602 dut:180] Received data from [M308000151388105501A0C0] is: [14, 0, 0, 0, 10, 3, 99, 111, 114, 18, 3, 99, 111, 114, 24, 2, 32, 21]
+[D Aug-03 20:58:57.604 SpitfireMessaging:658] Handler for core response cor,21 = role_response_callback
+[I Aug-03 20:58:57.605 test_peerUnderflowTracker:154] Current DUT device [ Scotty [M308000151388105501A0C0] ] role is: [ 0 ]
+    
+[I Aug-03 20:58:57.607 test_peerUnderflowTracker:147] Current DUT device is: Scotty [M308000132588105601A0C0]
+[D Aug-03 20:58:57.608 SpitfireMessaging:400] Sending request with transaction id 0 (0x0)
+[D Aug-03 20:58:57.619 SpitfireMessaging:592] __dispatch_message: success
+[D Aug-03 20:58:57.651 dut:180] Received data from [M308000132588105601A0C0] is: [14, 0, 0, 0, 10, 3, 99, 111, 114, 18, 3, 99, 111, 114, 24, 2, 32, 21]
+[D Aug-03 20:58:57.652 SpitfireMessaging:658] Handler for core response cor,21 = role_response_callback
+[I Aug-03 20:58:57.652 test_peerUnderflowTracker:154] Current DUT device [ Scotty [M308000132588105601A0C0] ] role is: [ 0 ]
+    
+[I Aug-03 20:58:57.654 test_peerUnderflowTracker:163] Starting peer underflow tracker
+[I Aug-03 20:58:58.162 conftest_plugin:505] -----------------------
+[I Aug-03 20:58:58.163 conftest_plugin:506] TEST FAILED
+[I Aug-03 20:58:58.164 conftest_plugin:507] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 20:58:58.164 conftest_plugin:508] DateTime: 2023-08-03 20:58:58.164129
+[E Aug-03 20:58:58.164 conftest_plugin:509] Error: test_peerUnderflowTracker.py:213: in test_track_peer_underflow
+        track_peer_underflow(messaging_list, underflowTimeout)
+    test_peerUnderflowTracker.py:177: in track_peer_underflow
+        register_event(primary_dut, core_api_pb2.core_event_ids_t.CORE_EVENT_HANDOVER_CHANGED, role_data)
+    test_peerUnderflowTracker.py:124: in register_event
+        messaging.register_event( "cor", event_id, function_spec )
+    E   AttributeError: 'NoneType' object has no attribute 'register_event'
+[I Aug-03 20:58:58.165 conftest_plugin:510] ------------------------
+[W Aug-03 20:58:58.172 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty R4C84. Value-> None
+[W Aug-03 20:58:58.173 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty L5164. Value-> None
+[D Aug-03 20:58:58.174 spitfire_command_helper:233] getting ELF file from directory:-> 'C:\Spitfire'
+[D Aug-03 20:59:03.168 spitfire_command_helper:236] Selected ELF file is:-> C:\Spitfire\LoneStarr.elf
+[D Aug-03 20:59:03.170 dut:293] Dut Scotty R4C84 connection status changed to -> False
+[D Aug-03 20:59:03.327 dut:293] Dut Scotty L5164 connection status changed to -> False
+[I Aug-03 20:59:03.493 conftest_plugin:434] Automation completed  : 2023-08-03 20:59:03.492668
+[I Aug-03 20:59:03.542 conftest_plugin:520] =================== TEST RESULTS ====================
+[I Aug-03 20:59:03.542 conftest_plugin:535]  Passed: 0
+[I Aug-03 20:59:03.542 conftest_plugin:538]  Failed: 1
+[I Aug-03 20:59:03.543 conftest_plugin:540]    test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 20:59:03.543 conftest_plugin:549]  Errors: 0
+[I Aug-03 20:59:03.543 conftest_plugin:556]  Skipped: 0
+[I Aug-03 20:59:03.543 conftest_plugin:559] =========== Passed 0, Failed 1, Error 0, Skipped 0 in 16.96 seconds =============

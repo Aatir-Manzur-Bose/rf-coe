@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+rfcoe/__init__.py
+rfcoe.egg-info/PKG-INFO
+rfcoe.egg-info/SOURCES.txt
+rfcoe.egg-info/dependency_links.txt
+rfcoe.egg-info/top_level.txt

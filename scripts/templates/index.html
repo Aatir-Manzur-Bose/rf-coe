@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>
+         document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById("myForm").addEventListener("submit", function (e) {
+               var myForm = document.getElementById('myForm');
+               var startAttn = document.getElementById('startAttn').value;
+               var endAttn = document.getElementById('endAttn').value;
+               myForm.action = '/disable';
+            });
+         });
+         function adjust_textarea(h) {
+            h.style.height = "20px";
+            h.style.height = (h.scrollHeight)+"px";
+         }
+      </script>
+      <link href="{{ url_for('static', path='hotform.css') }}" rel="stylesheet">
+   </head>
+   <body>
+   <div class="top-right"> <div class="bose-logo"><div class="lma-tool">LINK MARGIN ANALYZER</div></div></div>
+      <div>
+          <div class="compare-plot">
+      </div>
+      <div style="clear: both;"></div>
+      <div style="width: 360px; float:left">
+
+         <form method="post" class="form-style-7" id="myForm">
+            <h1 style="font-family: 'Trebuchet MS', sans-serif; font-weight: bold; font-color: red"> ATTENUATOR SETUP:</h1>
+            <ul class="form-style-7">
+               <li class="form-style-7">
+                  <label for="attn">Attenuator ID:</label><br>
+		  <input type="text" id="attnId" name="attnId" value="{{ serNo }}"><br>
+                   <span>Enter Vaunix attenuator ID</span>
+               </li>
+               <li class="form-style-7">
+                  <label for="attn">Attenuation:</label><br>
+		  <input type="text" id="attn" name="attn" value="{{ with_attn }}"><br>
+               </li>
+               <li class="form-style-7">
+                  <label for="startAttn">Ramp Start Attenuation:</label><br>
+		  <input type="text" id="startAttn" name="startAttn" value="{{ startAttn }}"><br>
+               </li>
+               <li class="form-style-7">
+                  <label for="endAttn">Ramp End Attenuation:</label><br>
+		  <input type="text" id="endAttn" name="endAttn" value="{{ endAttn }}"><br>
+               </li>
+               <li class="form-style-7">
+                  <label for="dwellTime">Dwell Time for each step of ramp:</label><br>
+		  <input type="text" id="dwellTime" name="dwellTime" value="{{ dwellTime }}"><br>
+               </li>
+               <li class="form-style-7">
+                  <label for="idleTime">Idle Time:</label><br>
+		  <input type="text" id="idleTime" name="idleTime" value="{{ idleTime }}"><br>
+               </li>
+               <li class="form-style-7">
+                  <label for="holdTime">Hold Time:</label><br>
+		  <input type="text" id="holdTime" name="holdTime" value="{{ holdTime }}"><br>
+               </li>
+               <li class="form-style-7">
+                  <label for="biDwellTime">Idle Time:</label><br>
+                  <input type="text" id="biDwellTime" name="idleTime"><br>
+               </li>
+               <li>
+                  <label for="stepDown">Step Down:</label><br>
+                  <input type="text" id="stepDown" name="stepDown"><br>
+               </li>
+               <li class="form-style-7">
+                  <label for="stepUp">Step Up:</label><br>
+                  <input type="text" id="stepUp" name="stepUp"><br>
+               </li>
+               <li class="form-style-7">
+                  <label for="biDirectionDwellTime">Bi-Directionall Dwell Time</label><br>
+                  <input type="text" id="biDirectionDwellTime" name="biDirectionDwellTime"><br>
+                  <span>Dwell Time for each step of ramp (up and down):</span>
+	       </li>
+	        <li class="form-style-7"/>
+
+            </ul>
+
+
+
+
+            <input class="submit" type="submit" value="Submit">
+         </form>
+      </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,2 @@
+[D Aug-03 21:06:53.796 dut:142] Starting Dut logger: with name=Scotty L5164, mac=AC:BF:71:9A:4C:84
+[D Aug-03 21:06:54.146 dut:181] Received data from [M308000132588105601A0C0] is: [14, 0, 0, 0, 10, 3, 99, 111, 114, 18, 3, 99, 111, 114, 24, 2, 32, 21]

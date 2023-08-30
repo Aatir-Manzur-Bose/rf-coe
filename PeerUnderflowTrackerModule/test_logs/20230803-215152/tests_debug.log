@@ -1,0 +1,713 @@
+[D Aug-03 21:51:52.820 polycomm_helper:39] Removed Existing BMAP Downloaded version from:-> C:\Spitfire\PeerUnderflowTrackerModule\.bmap_download
+[I Aug-03 21:51:53.391 bmap_plugin:78] bmap_version=None, bmap_build=None, bmap_branch=None, bmap_parser_type=BmapFileType.PYTHON
+[I Aug-03 21:51:53.444 conftest_plugin:417] Automation stared  : 2023-08-03 21:51:53.444091
+[I Aug-03 21:51:53.478 polycomm_helper:130] Sleeping for 3 seconds to load Device Manager...
+[D Aug-03 21:52:03.908 dut:100] Initializing Dut None with mac=None
+[D Aug-03 21:52:04.106 dut:100] Initializing Dut None with mac=None
+[I Aug-03 21:52:04.336 dut_session_fixture_helper:145] Getting default Dut
+[I Aug-03 21:52:04.338 dut_session_fixture_helper:148] Current Operating System is:-> windows
+[I Aug-03 21:52:04.340 dut_session_fixture_helper:164] [<WearableTestUtils.DutUtils.dut.Dut object at 0x00000162BDC97130>, <WearableTestUtils.DutUtils.dut.Dut object at 0x00000162BDCB9250>]
+[I Aug-03 21:52:04.406 PbManager:374] Loading proto 'component_state'
+[I Aug-03 21:52:04.420 PbManager:374] Loading proto 'core_address'
+[I Aug-03 21:52:04.422 PbManager:374] Loading proto 'core_api'
+[I Aug-03 21:52:04.423 PbManager:374] Loading proto 'core_handover'
+[I Aug-03 21:52:04.424 PbManager:374] Loading proto 'core_msg_header'
+[I Aug-03 21:52:04.426 PbManager:374] Loading proto 'cor_reboot_info'
+[I Aug-03 21:52:04.428 PbManager:374] Loading proto 'cor_reboot_reason'
+[I Aug-03 21:52:04.431 PbManager:374] Loading proto 'cor_shutdown_reason'
+[I Aug-03 21:52:04.433 PbManager:374] Loading proto 'media_player_drv_state'
+[I Aug-03 21:52:04.435 PbManager:374] Loading proto 'nanopb'
+[I Aug-03 21:52:04.437 PbManager:374] Loading proto 'tco_api'
+[I Aug-03 21:52:04.438 PbManager:374] Loading proto 'telephony_drv_state'
+[W Aug-03 21:52:04.440 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 21:52:04.441 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 21:52:04.444 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 21:52:04.446 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 21:52:04.448 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 21:52:04.450 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 21:52:04.452 PbManager:410] Loaded 12 protobufs
+[W Aug-03 21:52:04.516 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 21:52:04.519 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 21:52:04.521 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 21:52:04.523 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 21:52:04.525 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 21:52:04.527 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 21:52:04.528 PbManager:410] Loaded 12 protobufs
+[I Aug-03 21:52:04.531 conftest_plugin:460] Invoking logread fixture
+[I Aug-03 21:52:04.534 conftest_plugin:498] -----------------------
+[I Aug-03 21:52:04.536 conftest_plugin:499] TEST SETUP PASSED
+[I Aug-03 21:52:04.536 conftest_plugin:500] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 21:52:04.536 conftest_plugin:501] DateTime: 2023-08-03 21:52:04.536607
+[I Aug-03 21:52:04.536 conftest_plugin:502] ------------------------
+[I Aug-03 21:52:04.537 test_peerUnderflowTracker:148] Current DUT device is: Scotty [M308000151388105501A0C0]
+[D Aug-03 21:52:04.538 SpitfireMessaging:400] Sending request with transaction id 0 (0x0)
+[D Aug-03 21:52:04.550 SpitfireMessaging:592] __dispatch_message: success
+[D Aug-03 21:52:04.580 dut:180] Received data from [M308000151388105501A0C0] is: [14, 0, 2, 0, 10, 3, 99, 111, 114, 18, 3, 99, 111, 114, 24, 2, 32, 21, 8, 1]
+[D Aug-03 21:52:04.582 SpitfireMessaging:658] Handler for core response cor,21 = role_response_callback
+[I Aug-03 21:52:04.583 test_peerUnderflowTracker:155] Current DUT device [ Scotty [M308000151388105501A0C0] ] role is: [ 1 ]
+    
+[I Aug-03 21:52:04.585 test_peerUnderflowTracker:159] PRIMARY device is: Scotty [M308000151388105501A0C0]
+[I Aug-03 21:52:04.586 test_peerUnderflowTracker:148] Current DUT device is: Scotty [M308000132588105601A0C0]
+[D Aug-03 21:52:04.588 SpitfireMessaging:400] Sending request with transaction id 0 (0x0)
+[D Aug-03 21:52:04.598 SpitfireMessaging:592] __dispatch_message: success
+[D Aug-03 21:52:04.641 dut:180] Received data from [M308000132588105601A0C0] is: [14, 0, 2, 0, 10, 3, 99, 111, 114, 18, 3, 99, 111, 114, 24, 2, 32, 21, 8, 2]
+[D Aug-03 21:52:04.643 SpitfireMessaging:658] Handler for core response cor,21 = role_response_callback
+[I Aug-03 21:52:04.644 test_peerUnderflowTracker:155] Current DUT device [ Scotty [M308000132588105601A0C0] ] role is: [ 2 ]
+    
+[I Aug-03 21:52:04.645 test_peerUnderflowTracker:162] SECONDARY device is: Scotty [M308000132588105601A0C0]
+[I Aug-03 21:52:04.646 test_peerUnderflowTracker:164] Starting peer underflow tracker
+[I Aug-03 21:52:04.648 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:05.659 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:06.671 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:07.683 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:08.690 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:09.696 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:10.709 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:11.721 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:12.727 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:13.734 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:14.742 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:15.749 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:16.755 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:17.762 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:18.768 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:19.777 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:20.792 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:21.797 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:22.336 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 30, 0, 10, 3, 98, 116, 109, 24, 3, 32, 2, 18, 8, 8, 100, 16, 255, 255, 3, 24, 2, 18, 8, 8, 100, 16, 255, 255, 3, 24, 1, 18, 8, 8, 100, 16, 255, 255, 3, 24, 4]
+[W Aug-03 21:52:22.338 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:22.339 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:22.398 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 30, 0, 10, 3, 98, 116, 109, 24, 3, 32, 2, 18, 8, 8, 100, 16, 255, 255, 3, 24, 1, 18, 8, 8, 100, 16, 255, 255, 3, 24, 2, 18, 8, 8, 100, 16, 255, 255, 3, 24, 4]
+[W Aug-03 21:52:22.398 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:22.399 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:22.814 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:23.823 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:24.828 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:25.619 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 10]
+[W Aug-03 21:52:25.621 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:25.622 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:25.836 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:26.394 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 30, 0, 10, 3, 98, 116, 109, 24, 3, 32, 2, 18, 8, 8, 100, 16, 255, 255, 3, 24, 1, 18, 8, 8, 100, 16, 255, 255, 3, 24, 2, 18, 8, 8, 100, 16, 255, 255, 3, 24, 4]
+[W Aug-03 21:52:26.395 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:26.396 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:26.505 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 30, 0, 10, 3, 98, 116, 109, 24, 3, 32, 2, 18, 8, 8, 100, 16, 255, 255, 3, 24, 2, 18, 8, 8, 100, 16, 255, 255, 3, 24, 1, 18, 8, 8, 100, 16, 255, 255, 3, 24, 4]
+[W Aug-03 21:52:26.508 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:26.509 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:26.844 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:27.683 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 16]
+[W Aug-03 21:52:27.684 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.685 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:27.695 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 2, 16, 3]
+[W Aug-03 21:52:27.696 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.697 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:27.728 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 131, 216, 1]
+[W Aug-03 21:52:27.728 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.729 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:27.730 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:27.730 test_peerUnderflowTracker:102] Event with count:447
+[D Aug-03 21:52:27.731 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 191, 3, 16, 203, 229, 237, 3]
+[D Aug-03 21:52:27.757 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 2, 32, 3, 48, 1]
+[W Aug-03 21:52:27.759 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.760 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:27.787 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 12]
+[W Aug-03 21:52:27.788 SpitfireMessaging:705] Could not map payload to protobuf
+[D Aug-03 21:52:27.789 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:27.790 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:27.791 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.792 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:27.792 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:27.793 test_peerUnderflowTracker:102] Event with count:198
+[D Aug-03 21:52:27.793 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 198, 1, 16, 181, 216, 244, 3]
+[D Aug-03 21:52:27.803 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 3, 16, 127]
+[W Aug-03 21:52:27.804 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.805 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:27.835 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 127, 32, 2, 40, 1]
+[D Aug-03 21:52:27.835 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 3, 32, 127, 48, 1]
+[W Aug-03 21:52:27.836 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.837 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.838 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:27.838 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:27.850 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:27.865 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:27.866 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.867 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:27.882 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[D Aug-03 21:52:27.882 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 199, 1, 16, 130, 217, 244, 3]
+[W Aug-03 21:52:27.883 SpitfireMessaging:705] Could not map payload to protobuf
+[D Aug-03 21:52:27.884 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[W Aug-03 21:52:27.885 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:27.885 test_peerUnderflowTracker:102] Event with count:199
+[D Aug-03 21:52:27.886 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:27.887 test_peerUnderflowTracker:102] Event with count:448
+[D Aug-03 21:52:27.887 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 192, 3, 16, 234, 230, 237, 3]
+[D Aug-03 21:52:27.913 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 193, 3, 16, 130, 231, 237, 3]
+[D Aug-03 21:52:27.914 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:27.915 test_peerUnderflowTracker:102] Event with count:449
+[D Aug-03 21:52:27.956 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 127, 32, 2]
+[W Aug-03 21:52:27.957 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.958 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:27.976 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:27.977 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:27.977 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:27.978 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:27.978 test_peerUnderflowTracker:102] Event with count:450
+[D Aug-03 21:52:27.979 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 194, 3, 16, 199, 231, 237, 3]
+[D Aug-03 21:52:28.006 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 195, 3, 16, 222, 231, 237, 3]
+[D Aug-03 21:52:28.007 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:28.008 test_peerUnderflowTracker:102] Event with count:451
+[D Aug-03 21:52:28.534 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 13]
+[W Aug-03 21:52:28.535 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:28.536 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:28.858 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:29.433 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 39, 0, 10, 3, 99, 111, 114, 24, 3, 32, 20, 8, 255, 255, 255, 255, 255, 255, 255, 255, 255, 1, 16, 4, 24, 167, 254, 3, 32, 3, 40, 190, 255, 255, 255, 255, 255, 255, 255, 255, 1, 48, 2, 56, 248, 242, 237, 3, 64, 1]
+[W Aug-03 21:52:29.434 SpitfireMessaging:645] No handler for core event cor,20
+[D Aug-03 21:52:29.717 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 17]
+[W Aug-03 21:52:29.718 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:29.719 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:29.727 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 39, 0, 10, 3, 99, 111, 114, 24, 3, 32, 20, 8, 255, 255, 255, 255, 255, 255, 255, 255, 255, 1, 16, 4, 24, 167, 254, 3, 32, 3, 40, 196, 255, 255, 255, 255, 255, 255, 255, 255, 1, 48, 3, 56, 166, 245, 237, 3, 64, 1]
+[W Aug-03 21:52:29.728 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 21:52:29.866 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:29.966 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 2, 0, 10, 3, 97, 110, 114, 24, 3, 8, 2]
+[W Aug-03 21:52:29.967 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:29.968 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:29.976 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 127, 16, 4]
+[W Aug-03 21:52:29.977 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:29.978 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.019 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 131, 248, 1]
+[W Aug-03 21:52:30.020 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.021 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.022 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:30.022 test_peerUnderflowTracker:102] Event with count:452
+[D Aug-03 21:52:30.023 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 196, 3, 16, 194, 247, 237, 3]
+[D Aug-03 21:52:30.037 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 197, 3, 16, 203, 247, 237, 3]
+[D Aug-03 21:52:30.037 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:30.039 test_peerUnderflowTracker:102] Event with count:453
+[D Aug-03 21:52:30.039 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:30.040 test_peerUnderflowTracker:102] Event with count:454
+[D Aug-03 21:52:30.040 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:30.040 test_peerUnderflowTracker:102] Event with count:455
+[D Aug-03 21:52:30.041 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 198, 3, 16, 205, 247, 237, 3]
+[D Aug-03 21:52:30.042 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 199, 3, 16, 213, 247, 237, 3]
+[D Aug-03 21:52:30.098 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 127, 32, 4, 48, 1]
+[W Aug-03 21:52:30.099 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.099 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.146 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:30.146 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.147 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.148 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:30.148 test_peerUnderflowTracker:102] Event with count:200
+[D Aug-03 21:52:30.149 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 200, 1, 16, 222, 234, 244, 3]
+[D Aug-03 21:52:30.191 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 4, 24, 127, 32, 2, 40, 1]
+[W Aug-03 21:52:30.192 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.193 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.239 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 4]
+[D Aug-03 21:52:30.239 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 4, 0, 10, 3, 97, 110, 114, 24, 3, 32, 6, 8, 1, 16, 10]
+[W Aug-03 21:52:30.240 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.240 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.241 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:30.242 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.242 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:30.243 test_peerUnderflowTracker:102] Event with count:456
+[D Aug-03 21:52:30.244 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 200, 3, 16, 150, 249, 237, 3]
+[D Aug-03 21:52:30.269 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 201, 3, 16, 178, 249, 237, 3]
+[D Aug-03 21:52:30.270 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:30.270 test_peerUnderflowTracker:102] Event with count:457
+[D Aug-03 21:52:30.330 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 52, 0, 10, 3, 97, 110, 114, 24, 3, 32, 8, 10, 16, 67, 114, 111, 119, 98, 97, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 32, 99, 98, 95, 103, 101, 116, 95, 115, 121, 110, 99, 95, 100, 97, 116, 97, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[W Aug-03 21:52:30.331 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.332 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.342 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 52, 0, 10, 3, 97, 110, 114, 24, 3, 32, 8, 10, 16, 72, 111, 114, 99, 114, 117, 120, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 32, 104, 120, 95, 103, 101, 116, 95, 115, 121, 110, 99, 95, 100, 97, 116, 97, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[W Aug-03 21:52:30.343 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.343 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.361 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 64, 0, 10, 3, 97, 110, 114, 24, 3, 32, 8, 10, 16, 87, 78, 88, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 32, 87, 78, 88, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 8, 34, 8, 1, 186, 3, 8, 0, 0, 0, 0]
+[W Aug-03 21:52:30.361 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.362 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.498 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 57, 0, 10, 3, 97, 110, 114, 24, 3, 32, 8, 10, 16, 67, 114, 111, 119, 98, 97, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 32, 99, 98, 95, 115, 121, 110, 99, 95, 100, 97, 116, 97, 95, 117, 112, 100, 97, 116, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 1, 34, 1, 1]
+[W Aug-03 21:52:30.499 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.500 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:30.514 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 59, 0, 10, 3, 97, 110, 114, 24, 3, 32, 8, 10, 16, 72, 111, 114, 99, 114, 117, 120, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 32, 104, 120, 95, 115, 121, 110, 99, 95, 100, 97, 116, 97, 95, 117, 112, 100, 97, 116, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 3, 34, 3, 0, 2, 0]
+[W Aug-03 21:52:30.515 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:30.516 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:30.868 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:31.292 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 14]
+[W Aug-03 21:52:31.293 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.294 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:31.304 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 4, 16, 2]
+[W Aug-03 21:52:31.305 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.306 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:31.336 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 131, 184, 1]
+[W Aug-03 21:52:31.336 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.337 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:31.337 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:31.339 test_peerUnderflowTracker:102] Event with count:458
+[D Aug-03 21:52:31.339 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 202, 3, 16, 229, 129, 238, 3]
+[D Aug-03 21:52:31.366 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 4, 32, 2, 48, 1]
+[W Aug-03 21:52:31.367 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.368 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:31.398 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:31.399 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.399 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:31.400 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.400 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:31.401 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:31.401 test_peerUnderflowTracker:102] Event with count:201
+[D Aug-03 21:52:31.402 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 10]
+[D Aug-03 21:52:31.402 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 201, 1, 16, 212, 244, 244, 3]
+[D Aug-03 21:52:31.459 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 4, 0, 10, 3, 97, 110, 114, 24, 3, 32, 6, 8, 1, 16, 10]
+[W Aug-03 21:52:31.460 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.462 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:31.567 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 4, 16, 2, 24, 127, 32, 2, 40, 1]
+[W Aug-03 21:52:31.567 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.568 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:31.597 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:31.598 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.599 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:31.600 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:31.600 test_peerUnderflowTracker:102] Event with count:459
+[D Aug-03 21:52:31.601 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 203, 3, 16, 239, 131, 238, 3]
+[D Aug-03 21:52:31.625 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 204, 3, 16, 132, 132, 238, 3]
+[D Aug-03 21:52:31.626 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:31.626 test_peerUnderflowTracker:102] Event with count:460
+[W Aug-03 21:52:31.627 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.628 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:31.628 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 7]
+[D Aug-03 21:52:31.643 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 205, 3, 16, 152, 132, 238, 3]
+[D Aug-03 21:52:31.644 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:31.644 test_peerUnderflowTracker:102] Event with count:461
+[D Aug-03 21:52:31.796 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 64, 0, 10, 3, 97, 110, 114, 24, 3, 32, 8, 10, 16, 87, 78, 88, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 32, 87, 78, 88, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 8, 34, 8, 0, 95, 3, 32, 0, 0, 0, 0]
+[W Aug-03 21:52:31.797 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:31.798 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:31.873 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:32.288 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 16]
+[W Aug-03 21:52:32.289 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.290 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.303 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 2, 16, 3]
+[W Aug-03 21:52:32.304 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.304 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.325 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 131, 216, 1]
+[W Aug-03 21:52:32.326 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.326 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.327 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:32.328 test_peerUnderflowTracker:102] Event with count:462
+[D Aug-03 21:52:32.328 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 206, 3, 16, 194, 137, 238, 3]
+[D Aug-03 21:52:32.340 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 2, 32, 3, 48, 1]
+[W Aug-03 21:52:32.341 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.342 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.366 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:32.367 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.367 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.372 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 2, 16, 3, 24, 127, 32, 2, 40, 1]
+[W Aug-03 21:52:32.373 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.373 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.386 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 202, 1, 16, 158, 252, 244, 3]
+[D Aug-03 21:52:32.387 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 3]
+[D Aug-03 21:52:32.388 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[W Aug-03 21:52:32.389 SpitfireMessaging:705] Could not map payload to protobuf
+[I Aug-03 21:52:32.389 test_peerUnderflowTracker:102] Event with count:202
+[W Aug-03 21:52:32.390 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.391 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:32.392 test_peerUnderflowTracker:102] Event with count:463
+[D Aug-03 21:52:32.392 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 207, 3, 16, 135, 138, 238, 3]
+[D Aug-03 21:52:32.419 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 208, 3, 16, 146, 138, 238, 3]
+[D Aug-03 21:52:32.420 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:32.420 test_peerUnderflowTracker:102] Event with count:464
+[W Aug-03 21:52:32.421 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.422 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.422 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:32.423 test_peerUnderflowTracker:102] Event with count:465
+[D Aug-03 21:52:32.423 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 12]
+[D Aug-03 21:52:32.424 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 209, 3, 16, 163, 138, 238, 3]
+[D Aug-03 21:52:32.448 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 3, 16, 127]
+[W Aug-03 21:52:32.449 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.450 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.463 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 210, 3, 16, 200, 138, 238, 3]
+[D Aug-03 21:52:32.464 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:32.465 test_peerUnderflowTracker:102] Event with count:466
+[D Aug-03 21:52:32.479 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 211, 3, 16, 225, 138, 238, 3]
+[D Aug-03 21:52:32.479 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 3, 32, 127, 48, 1]
+[D Aug-03 21:52:32.480 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[W Aug-03 21:52:32.480 SpitfireMessaging:705] Could not map payload to protobuf
+[I Aug-03 21:52:32.481 test_peerUnderflowTracker:102] Event with count:467
+[W Aug-03 21:52:32.482 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.509 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:32.510 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.510 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.511 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:32.511 test_peerUnderflowTracker:102] Event with count:203
+[D Aug-03 21:52:32.512 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 203, 1, 16, 160, 253, 244, 3]
+[D Aug-03 21:52:32.523 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 127, 32, 2, 40, 1]
+[W Aug-03 21:52:32.524 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.525 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.555 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:32.557 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:32.557 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:32.558 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:32.558 test_peerUnderflowTracker:102] Event with count:468
+[D Aug-03 21:52:32.558 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 212, 3, 16, 167, 139, 238, 3]
+[D Aug-03 21:52:32.586 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 213, 3, 16, 189, 139, 238, 3]
+[D Aug-03 21:52:32.587 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:32.587 test_peerUnderflowTracker:102] Event with count:469
+[I Aug-03 21:52:32.877 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:33.124 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 13]
+[W Aug-03 21:52:33.125 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.125 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.355 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 20]
+[W Aug-03 21:52:33.356 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.357 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.370 dut:180] Received data from [M308000151388105501A0C0] is: [6, 0, 3, 0, 10, 2, 117, 105, 24, 3, 8, 145, 4]
+[W Aug-03 21:52:33.371 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.372 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.501 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 16]
+[W Aug-03 21:52:33.502 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.504 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.519 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 2, 16, 3]
+[W Aug-03 21:52:33.520 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.521 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.537 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 129, 216, 1]
+[W Aug-03 21:52:33.537 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.539 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.540 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:33.540 test_peerUnderflowTracker:102] Event with count:204
+[D Aug-03 21:52:33.541 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 204, 1, 16, 171, 133, 245, 3]
+[D Aug-03 21:52:33.555 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 2]
+[W Aug-03 21:52:33.556 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.556 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.557 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:33.557 test_peerUnderflowTracker:102] Event with count:205
+[D Aug-03 21:52:33.558 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 205, 1, 16, 183, 133, 245, 3]
+[D Aug-03 21:52:33.606 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 12]
+[W Aug-03 21:52:33.607 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.607 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.619 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 3, 16, 127]
+[W Aug-03 21:52:33.620 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.621 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.710 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 2, 32, 3, 48, 1]
+[W Aug-03 21:52:33.711 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.712 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.742 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:33.742 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.743 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.744 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:33.744 test_peerUnderflowTracker:102] Event with count:470
+[D Aug-03 21:52:33.745 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 214, 3, 16, 204, 148, 238, 3]
+[D Aug-03 21:52:33.773 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 3, 32, 127, 48, 1]
+[W Aug-03 21:52:33.774 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.774 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.803 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[D Aug-03 21:52:33.804 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 3, 32, 127, 40, 1]
+[W Aug-03 21:52:33.805 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.805 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.806 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:33.807 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.808 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:33.809 test_peerUnderflowTracker:102] Event with count:471
+[D Aug-03 21:52:33.809 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 215, 3, 16, 255, 148, 238, 3]
+[D Aug-03 21:52:33.834 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:33.835 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.835 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.865 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 206, 1, 16, 213, 135, 245, 3]
+[D Aug-03 21:52:33.866 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:33.866 test_peerUnderflowTracker:102] Event with count:206
+[I Aug-03 21:52:33.879 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:33.894 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 207, 1, 16, 251, 135, 245, 3]
+[D Aug-03 21:52:33.895 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:33.895 test_peerUnderflowTracker:102] Event with count:207
+[D Aug-03 21:52:33.911 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 208, 1, 16, 149, 136, 245, 3]
+[D Aug-03 21:52:33.912 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:33.913 test_peerUnderflowTracker:102] Event with count:208
+[D Aug-03 21:52:33.942 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 14]
+[W Aug-03 21:52:33.943 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.943 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.957 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 127, 16, 2]
+[W Aug-03 21:52:33.958 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.958 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:33.959 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:33.959 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:33.960 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 3, 32, 127, 40, 1]
+[D Aug-03 21:52:34.002 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 127, 32, 2, 48, 1]
+[D Aug-03 21:52:34.003 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 129, 184, 1]
+[W Aug-03 21:52:34.004 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.004 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.005 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:34.005 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:34.006 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.007 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.007 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.008 test_peerUnderflowTracker:102] Event with count:209
+[D Aug-03 21:52:34.008 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[D Aug-03 21:52:34.009 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 209, 1, 16, 243, 136, 245, 3]
+[D Aug-03 21:52:34.033 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[D Aug-03 21:52:34.034 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 210, 1, 16, 135, 137, 245, 3]
+[W Aug-03 21:52:34.035 SpitfireMessaging:705] Could not map payload to protobuf
+[D Aug-03 21:52:34.035 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[W Aug-03 21:52:34.036 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:34.037 test_peerUnderflowTracker:102] Event with count:210
+[D Aug-03 21:52:34.037 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.038 test_peerUnderflowTracker:102] Event with count:472
+[D Aug-03 21:52:34.039 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 216, 3, 16, 234, 150, 238, 3]
+[D Aug-03 21:52:34.080 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 3, 32, 127]
+[W Aug-03 21:52:34.080 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.081 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.106 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:34.107 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.108 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.125 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 211, 1, 16, 232, 137, 245, 3]
+[D Aug-03 21:52:34.126 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.127 test_peerUnderflowTracker:102] Event with count:211
+[D Aug-03 21:52:34.140 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 212, 1, 16, 253, 137, 245, 3]
+[D Aug-03 21:52:34.141 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.142 test_peerUnderflowTracker:102] Event with count:212
+[D Aug-03 21:52:34.203 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 16]
+[W Aug-03 21:52:34.204 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.205 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.219 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 2, 16, 3]
+[W Aug-03 21:52:34.219 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.220 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.235 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 129, 216, 1]
+[W Aug-03 21:52:34.236 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.237 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.237 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.238 test_peerUnderflowTracker:102] Event with count:213
+[D Aug-03 21:52:34.238 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 213, 1, 16, 231, 138, 245, 3]
+[D Aug-03 21:52:34.266 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 10]
+[D Aug-03 21:52:34.266 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 2, 32, 3, 48, 1]
+[W Aug-03 21:52:34.267 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.268 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.269 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:34.269 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.292 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 2, 16, 3, 24, 3, 32, 127, 40, 1]
+[W Aug-03 21:52:34.293 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.293 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.295 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:34.296 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.297 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.297 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.298 test_peerUnderflowTracker:102] Event with count:473
+[D Aug-03 21:52:34.298 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 217, 3, 16, 238, 152, 238, 3]
+[D Aug-03 21:52:34.311 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 3]
+[W Aug-03 21:52:34.312 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.312 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.313 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.313 test_peerUnderflowTracker:102] Event with count:214
+[D Aug-03 21:52:34.314 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 214, 1, 16, 174, 139, 245, 3]
+[D Aug-03 21:52:34.373 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 17]
+[W Aug-03 21:52:34.373 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.374 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.425 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 12]
+[W Aug-03 21:52:34.426 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.427 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.450 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 3, 16, 127]
+[W Aug-03 21:52:34.451 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.452 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.466 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 3, 32, 127, 48, 1]
+[W Aug-03 21:52:34.467 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.467 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.496 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:34.497 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.497 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.498 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.498 test_peerUnderflowTracker:102] Event with count:474
+[D Aug-03 21:52:34.499 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 218, 3, 16, 185, 154, 238, 3]
+[D Aug-03 21:52:34.510 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 3, 32, 127, 40, 1]
+[W Aug-03 21:52:34.511 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.512 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.541 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:34.542 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.542 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:34.543 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.543 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.544 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.544 test_peerUnderflowTracker:102] Event with count:215
+[D Aug-03 21:52:34.545 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 14]
+[D Aug-03 21:52:34.545 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 215, 1, 16, 147, 141, 245, 3]
+[D Aug-03 21:52:34.588 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 127, 16, 2]
+[W Aug-03 21:52:34.589 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.589 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.590 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.590 test_peerUnderflowTracker:102] Event with count:216
+[D Aug-03 21:52:34.591 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 216, 1, 16, 192, 141, 245, 3]
+[D Aug-03 21:52:34.603 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 127, 32, 2, 48, 1]
+[W Aug-03 21:52:34.604 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.605 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.618 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 129, 184, 1]
+[W Aug-03 21:52:34.619 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.620 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.620 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.621 test_peerUnderflowTracker:102] Event with count:217
+[D Aug-03 21:52:34.621 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 217, 1, 16, 225, 141, 245, 3]
+[D Aug-03 21:52:34.649 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:34.649 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.650 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.651 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.651 test_peerUnderflowTracker:102] Event with count:475
+[D Aug-03 21:52:34.652 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 219, 3, 16, 200, 155, 238, 3]
+[D Aug-03 21:52:34.664 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 3, 32, 127, 40, 1]
+[W Aug-03 21:52:34.665 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.666 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.695 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:34.696 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.697 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.697 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.698 test_peerUnderflowTracker:102] Event with count:218
+[D Aug-03 21:52:34.699 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 218, 1, 16, 170, 142, 245, 3]
+[D Aug-03 21:52:34.726 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 219, 1, 16, 197, 142, 245, 3]
+[D Aug-03 21:52:34.727 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.727 test_peerUnderflowTracker:102] Event with count:219
+[W Aug-03 21:52:34.728 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.728 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.729 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 16]
+[D Aug-03 21:52:34.757 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 2, 16, 3]
+[W Aug-03 21:52:34.757 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.758 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.788 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 129, 216, 1]
+[W Aug-03 21:52:34.789 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.789 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:34.790 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.791 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.791 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.791 test_peerUnderflowTracker:102] Event with count:220
+[D Aug-03 21:52:34.792 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 10]
+[D Aug-03 21:52:34.793 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 220, 1, 16, 139, 143, 245, 3]
+[D Aug-03 21:52:34.802 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 2, 32, 3, 48, 1]
+[W Aug-03 21:52:34.804 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.804 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.830 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 2, 16, 3, 24, 3, 32, 127, 40, 1]
+[W Aug-03 21:52:34.831 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.831 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.833 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:34.834 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.834 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.835 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.835 test_peerUnderflowTracker:102] Event with count:476
+[D Aug-03 21:52:34.836 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 220, 3, 16, 134, 157, 238, 3]
+[D Aug-03 21:52:34.848 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 221, 3, 16, 140, 157, 238, 3]
+[D Aug-03 21:52:34.849 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 3]
+[D Aug-03 21:52:34.850 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[W Aug-03 21:52:34.851 SpitfireMessaging:705] Could not map payload to protobuf
+[I Aug-03 21:52:34.851 test_peerUnderflowTracker:102] Event with count:477
+[W Aug-03 21:52:34.852 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.853 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[D Aug-03 21:52:34.853 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:34.854 test_peerUnderflowTracker:102] Event with count:478
+[I Aug-03 21:52:34.855 test_peerUnderflowTracker:102] Event with count:221
+[D Aug-03 21:52:34.855 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 222, 3, 16, 150, 157, 238, 3]
+[D Aug-03 21:52:34.856 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 221, 1, 16, 198, 143, 245, 3]
+[I Aug-03 21:52:34.894 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:34.939 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 12]
+[W Aug-03 21:52:34.940 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.941 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.971 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 3, 16, 127]
+[W Aug-03 21:52:34.972 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.973 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:34.988 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 3, 32, 127, 48, 1]
+[W Aug-03 21:52:34.989 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:34.989 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.003 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 3, 32, 127, 40, 1]
+[W Aug-03 21:52:35.004 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.004 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.034 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:35.035 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.036 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.037 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.037 test_peerUnderflowTracker:102] Event with count:479
+[D Aug-03 21:52:35.037 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 223, 3, 16, 213, 158, 238, 3]
+[D Aug-03 21:52:35.050 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:35.050 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.052 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:35.053 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.054 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.054 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.055 test_peerUnderflowTracker:102] Event with count:222
+[D Aug-03 21:52:35.056 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 14]
+[D Aug-03 21:52:35.056 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 222, 1, 16, 136, 145, 245, 3]
+[D Aug-03 21:52:35.081 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 127, 16, 2]
+[D Aug-03 21:52:35.081 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 3, 16, 127, 24, 127, 32, 2, 48, 1]
+[W Aug-03 21:52:35.082 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.082 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.083 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 21:52:35.084 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.097 dut:180] Received data from [M308000132588105601A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 129, 184, 1]
+[W Aug-03 21:52:35.098 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.099 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.099 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.100 test_peerUnderflowTracker:102] Event with count:223
+[D Aug-03 21:52:35.100 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 223, 1, 16, 187, 145, 245, 3]
+[D Aug-03 21:52:35.113 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 127]
+[W Aug-03 21:52:35.113 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.114 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.115 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.115 test_peerUnderflowTracker:102] Event with count:480
+[D Aug-03 21:52:35.116 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 224, 3, 16, 170, 159, 238, 3]
+[D Aug-03 21:52:35.127 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 224, 1, 16, 208, 145, 245, 3]
+[D Aug-03 21:52:35.128 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.129 test_peerUnderflowTracker:102] Event with count:224
+[D Aug-03 21:52:35.144 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 225, 1, 16, 233, 145, 245, 3]
+[D Aug-03 21:52:35.144 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.145 test_peerUnderflowTracker:102] Event with count:225
+[D Aug-03 21:52:35.174 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 10]
+[W Aug-03 21:52:35.175 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.176 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.189 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 3, 32, 127, 40, 1]
+[W Aug-03 21:52:35.190 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.191 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.221 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:35.221 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.222 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.223 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.223 test_peerUnderflowTracker:102] Event with count:226
+[D Aug-03 21:52:35.224 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 226, 1, 16, 194, 146, 245, 3]
+[D Aug-03 21:52:35.267 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 227, 1, 16, 215, 146, 245, 3]
+[D Aug-03 21:52:35.267 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.269 test_peerUnderflowTracker:102] Event with count:227
+[D Aug-03 21:52:35.559 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 2]
+[W Aug-03 21:52:35.560 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.562 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.894 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 0, 0, 10, 3, 115, 101, 110, 24, 3, 32, 14]
+[W Aug-03 21:52:35.895 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.896 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 21:52:35.902 test_peerUnderflowTracker:207] Check
+[D Aug-03 21:52:35.908 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 4, 0, 10, 3, 112, 115, 109, 24, 3, 8, 127, 16, 2]
+[W Aug-03 21:52:35.909 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.910 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.933 dut:180] Received data from [M308000151388105501A0C0] is: [7, 0, 6, 0, 10, 3, 104, 100, 109, 24, 3, 8, 1, 16, 131, 184, 1]
+[W Aug-03 21:52:35.934 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.934 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.935 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.935 test_peerUnderflowTracker:102] Event with count:481
+[D Aug-03 21:52:35.936 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 225, 3, 16, 215, 165, 238, 3]
+[D Aug-03 21:52:35.965 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 127, 32, 2, 48, 1]
+[W Aug-03 21:52:35.966 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.967 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.980 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:35.981 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:35.982 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:35.982 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:35.983 test_peerUnderflowTracker:102] Event with count:228
+[D Aug-03 21:52:35.983 dut:180] Received data from [M308000132588105601A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 228, 1, 16, 184, 152, 245, 3]
+[D Aug-03 21:52:36.058 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 10, 0, 10, 3, 112, 115, 109, 24, 3, 32, 1, 8, 127, 16, 2, 24, 127, 32, 2, 40, 1]
+[W Aug-03 21:52:36.059 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:36.060 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:36.074 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 2, 0, 10, 3, 117, 112, 100, 24, 3, 32, 10, 8, 2]
+[W Aug-03 21:52:36.075 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 21:52:36.076 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[D Aug-03 21:52:36.076 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:36.076 test_peerUnderflowTracker:102] Event with count:482
+[D Aug-03 21:52:36.077 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 226, 3, 16, 242, 166, 238, 3]
+[D Aug-03 21:52:36.119 dut:180] Received data from [M308000151388105501A0C0] is: [9, 0, 8, 0, 10, 3, 99, 111, 114, 24, 3, 32, 21, 8, 227, 3, 16, 137, 167, 238, 3]
+[D Aug-03 21:52:36.120 SpitfireMessaging:642] Handler for core event cor,21 = peer_underflow_event_callback
+[I Aug-03 21:52:36.121 test_peerUnderflowTracker:102] Event with count:483
+[I Aug-03 21:52:36.910 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:37.912 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:38.919 test_peerUnderflowTracker:207] Check
+[I Aug-03 21:52:39.892 conftest_plugin:434] Automation completed  : 2023-08-03 21:52:39.892912
+[W Aug-03 21:52:39.898 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty R4C84. Value-> None
+[W Aug-03 21:52:39.898 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty L5164. Value-> None
+[D Aug-03 21:52:39.898 spitfire_command_helper:233] getting ELF file from directory:-> 'C:\Spitfire'
+[D Aug-03 21:52:44.445 spitfire_command_helper:236] Selected ELF file is:-> C:\Spitfire\LoneStarr.elf
+[D Aug-03 21:52:44.447 dut:293] Dut Scotty R4C84 connection status changed to -> False
+[D Aug-03 21:52:44.534 dut:293] Dut Scotty L5164 connection status changed to -> False
+[I Aug-03 21:52:44.643 conftest_plugin:520] =================== TEST RESULTS ====================
+[I Aug-03 21:52:44.644 conftest_plugin:535]  Passed: 0
+[I Aug-03 21:52:44.644 conftest_plugin:542]  Failed: 0
+[I Aug-03 21:52:44.644 conftest_plugin:549]  Errors: 0
+[I Aug-03 21:52:44.644 conftest_plugin:556]  Skipped: 0
+[I Aug-03 21:52:44.644 conftest_plugin:559] =========== Passed 0, Failed 0, Error 0, Skipped 0 in 51.19 seconds =============

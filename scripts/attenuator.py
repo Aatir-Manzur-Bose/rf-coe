@@ -508,7 +508,7 @@ def main(argv):
                             print("\n*****************Current Information of the device**********")
                             print("Device #:", dev)
                             print("Model Name:", attobj.get_modelname(dev))
-                            print("Serial #:", attobj.get_serial_number(dev))
+                            print("Serial #:", attobj.get_serial_number(1))
                             print("LDA DLL Version:", attobj.get_dllversion())
                             print("Min Frequency(MHz):", attobj.get_minfrequency(dev))
                             print("Max Frequency(MHz):", attobj.get_maxfrequency(dev))

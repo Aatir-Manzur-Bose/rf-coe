@@ -1,0 +1,82 @@
+[D Aug-03 19:48:43.296 polycomm_helper:39] Removed Existing BMAP Downloaded version from:-> C:\Spitfire\PeerUnderflowTrackerModule\.bmap_download
+[I Aug-03 19:48:43.869 bmap_plugin:78] bmap_version=None, bmap_build=None, bmap_branch=None, bmap_parser_type=BmapFileType.PYTHON
+[I Aug-03 19:48:43.920 conftest_plugin:417] Automation stared  : 2023-08-03 19:48:43.920093
+[I Aug-03 19:48:43.959 polycomm_helper:130] Sleeping for 3 seconds to load Device Manager...
+[D Aug-03 19:48:53.517 dut:100] Initializing Dut None with mac=None
+[D Aug-03 19:48:53.730 dut:100] Initializing Dut None with mac=None
+[I Aug-03 19:48:53.964 dut_session_fixture_helper:145] Getting default Dut
+[I Aug-03 19:48:53.965 dut_session_fixture_helper:148] Current Operating System is:-> windows
+[I Aug-03 19:48:53.967 dut_session_fixture_helper:164] [<WearableTestUtils.DutUtils.dut.Dut object at 0x0000019E17A49430>, <WearableTestUtils.DutUtils.dut.Dut object at 0x0000019E17A545E0>]
+[I Aug-03 19:48:54.025 PbManager:374] Loading proto 'component_state'
+[I Aug-03 19:48:54.039 PbManager:374] Loading proto 'core_address'
+[I Aug-03 19:48:54.040 PbManager:374] Loading proto 'core_api'
+[I Aug-03 19:48:54.042 PbManager:374] Loading proto 'core_bt_private'
+[I Aug-03 19:48:54.044 PbManager:374] Loading proto 'core_handover'
+[I Aug-03 19:48:54.045 PbManager:374] Loading proto 'core_msg_header'
+[I Aug-03 19:48:54.046 PbManager:374] Loading proto 'cor_reboot_info'
+[I Aug-03 19:48:54.048 PbManager:374] Loading proto 'cor_reboot_reason'
+[I Aug-03 19:48:54.050 PbManager:374] Loading proto 'cor_shutdown_reason'
+[I Aug-03 19:48:54.052 PbManager:374] Loading proto 'media_player_drv_state'
+[I Aug-03 19:48:54.054 PbManager:374] Loading proto 'nanopb'
+[I Aug-03 19:48:54.055 PbManager:374] Loading proto 'tco_api'
+[I Aug-03 19:48:54.057 PbManager:374] Loading proto 'telephony_drv_state'
+[W Aug-03 19:48:54.058 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 19:48:54.059 PbManager:396] No entry for proto `core_bt_private` found in loaded metadata
+[W Aug-03 19:48:54.061 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 19:48:54.063 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 19:48:54.064 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 19:48:54.065 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 19:48:54.066 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 19:48:54.067 PbManager:410] Loaded 13 protobufs
+[W Aug-03 19:48:54.117 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 19:48:54.119 PbManager:396] No entry for proto `core_bt_private` found in loaded metadata
+[W Aug-03 19:48:54.120 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 19:48:54.122 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 19:48:54.123 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 19:48:54.124 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 19:48:54.125 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 19:48:54.126 PbManager:410] Loaded 13 protobufs
+[I Aug-03 19:48:54.128 conftest_plugin:460] Invoking logread fixture
+[I Aug-03 19:48:54.131 conftest_plugin:498] -----------------------
+[I Aug-03 19:48:54.133 conftest_plugin:499] TEST SETUP PASSED
+[I Aug-03 19:48:54.133 conftest_plugin:500] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 19:48:54.133 conftest_plugin:501] DateTime: 2023-08-03 19:48:54.133668
+[I Aug-03 19:48:54.133 conftest_plugin:502] ------------------------
+[I Aug-03 19:48:54.134 test_peerUnderflowTracker:149] Current DUT device is: Scotty [M308000151388105501A0C0]
+[D Aug-03 19:48:54.135 SpitfireMessaging:400] Sending request with transaction id 0 (0x0)
+[D Aug-03 19:48:54.147 SpitfireMessaging:592] __dispatch_message: success
+[D Aug-03 19:48:54.183 dut:180] Received data from [M308000151388105501A0C0] is: [15, 0, 0, 0, 10, 3, 99, 111, 114, 18, 3, 99, 111, 114, 24, 5, 32, 128, 1]
+[E Aug-03 19:48:59.159 test_peerUnderflowTracker:89] Error: Not received response
+    assert False
+[I Aug-03 19:48:59.624 conftest_plugin:505] -----------------------
+[I Aug-03 19:48:59.625 conftest_plugin:506] TEST FAILED
+[I Aug-03 19:48:59.625 conftest_plugin:507] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 19:48:59.625 conftest_plugin:508] DateTime: 2023-08-03 19:48:59.625184
+[E Aug-03 19:48:59.625 conftest_plugin:509] Error: test_peerUnderflowTracker.py:85: in send_request_and_validate
+        assert False, f"Error: Not received response"
+    E   AssertionError: Error: Not received response
+    E   assert False
+    
+    During handling of the above exception, another exception occurred:
+    test_peerUnderflowTracker.py:216: in test_track_peer_underflow
+        track_peer_underflow(messaging_list, underflowTimeout)
+    test_peerUnderflowTracker.py:155: in track_peer_underflow
+        dut_payload = send_request_and_validate( msgdev, core_api_pb2.COR_BT_GET_ROLE, payload )
+    test_peerUnderflowTracker.py:90: in send_request_and_validate
+        assert False
+    E   assert False
+[I Aug-03 19:48:59.626 conftest_plugin:510] ------------------------
+[W Aug-03 19:48:59.632 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty R4C84. Value-> None
+[W Aug-03 19:48:59.633 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty L5164. Value-> None
+[D Aug-03 19:48:59.634 spitfire_command_helper:233] getting ELF file from directory:-> 'C:\Spitfire'
+[D Aug-03 19:49:04.281 spitfire_command_helper:236] Selected ELF file is:-> C:\Spitfire\LoneStarr.elf
+[D Aug-03 19:49:04.285 dut:293] Dut Scotty R4C84 connection status changed to -> False
+[D Aug-03 19:49:04.383 dut:293] Dut Scotty L5164 connection status changed to -> False
+[I Aug-03 19:49:04.514 conftest_plugin:434] Automation completed  : 2023-08-03 19:49:04.514088
+[I Aug-03 19:49:04.562 conftest_plugin:520] =================== TEST RESULTS ====================
+[I Aug-03 19:49:04.562 conftest_plugin:535]  Passed: 0
+[I Aug-03 19:49:04.562 conftest_plugin:538]  Failed: 1
+[I Aug-03 19:49:04.562 conftest_plugin:540]    test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 19:49:04.563 conftest_plugin:549]  Errors: 0
+[I Aug-03 19:49:04.563 conftest_plugin:556]  Skipped: 0
+[I Aug-03 19:49:04.563 conftest_plugin:559] =========== Passed 0, Failed 1, Error 0, Skipped 0 in 20.64 seconds =============

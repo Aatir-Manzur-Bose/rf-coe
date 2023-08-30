@@ -1,0 +1,63 @@
+[D Aug-03 20:10:05.240 polycomm_helper:39] Removed Existing BMAP Downloaded version from:-> C:\Spitfire\PeerUnderflowTrackerModule\.bmap_download
+[I Aug-03 20:10:05.879 bmap_plugin:78] bmap_version=None, bmap_build=None, bmap_branch=None, bmap_parser_type=BmapFileType.PYTHON
+[I Aug-03 20:10:05.933 conftest_plugin:417] Automation stared  : 2023-08-03 20:10:05.933162
+[I Aug-03 20:10:05.975 polycomm_helper:130] Sleeping for 3 seconds to load Device Manager...
+[D Aug-03 20:10:16.416 dut:100] Initializing Dut None with mac=None
+[D Aug-03 20:10:16.635 dut:100] Initializing Dut None with mac=None
+[I Aug-03 20:10:16.853 dut_session_fixture_helper:145] Getting default Dut
+[I Aug-03 20:10:16.855 dut_session_fixture_helper:148] Current Operating System is:-> windows
+[I Aug-03 20:10:16.857 dut_session_fixture_helper:164] [<WearableTestUtils.DutUtils.dut.Dut object at 0x00000237D3DF97C0>, <WearableTestUtils.DutUtils.dut.Dut object at 0x00000237D3E00910>]
+[I Aug-03 20:10:16.925 PbManager:374] Loading proto 'component_state'
+[I Aug-03 20:10:16.964 PbManager:374] Loading proto 'core_address'
+[I Aug-03 20:10:16.967 PbManager:374] Loading proto 'core_api'
+[I Aug-03 20:10:16.969 PbManager:374] Loading proto 'core_bt_private'
+[I Aug-03 20:10:17.619 conftest_plugin:491] -----------------------
+[I Aug-03 20:10:17.620 conftest_plugin:492] TEST SETUP FAILED
+[I Aug-03 20:10:17.620 conftest_plugin:493] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 20:10:17.620 conftest_plugin:494] DateTime: 2023-08-03 20:10:17.620603
+[E Aug-03 20:10:17.621 conftest_plugin:495] Error: C:\Users\aw1054334\AppData\Local\Programs\Python\Python39\lib\site-packages\WearableTestUtils\SpitfireMessagingUtils\pytest_plugins\messaging_plugin.py:113: in messaging_list
+        out_list.append(get_messaging(dut, conanpb, pbdir))
+    C:\Users\aw1054334\AppData\Local\Programs\Python\Python39\lib\site-packages\WearableTestUtils\SpitfireMessagingUtils\pytest_plugins\messaging_plugin.py:78: in get_messaging
+        _load_protos(conanpb, pbdir)
+    C:\Users\aw1054334\AppData\Local\Programs\Python\Python39\lib\site-packages\WearableTestUtils\SpitfireMessagingUtils\pytest_plugins\messaging_plugin.py:137: in _load_protos
+        pb_mgr.load_from_folder(args_pbdir)
+    C:\Users\aw1054334\AppData\Local\Programs\Python\Python39\lib\site-packages\WearableTestUtils\SpitfireMessagingUtils\PbManager.py:407: in load_from_folder
+        self.__load_protos(proto_paths)
+    C:\Users\aw1054334\AppData\Local\Programs\Python\Python39\lib\site-packages\WearableTestUtils\SpitfireMessagingUtils\PbManager.py:354: in __load_protos
+        self.__load_proto_file(proto_file)
+    C:\Users\aw1054334\AppData\Local\Programs\Python\Python39\lib\site-packages\WearableTestUtils\SpitfireMessagingUtils\PbManager.py:375: in __load_proto_file
+        proto_module = importlib.import_module(proto_file)
+    C:\Users\aw1054334\AppData\Local\Programs\Python\Python39\lib\importlib\__init__.py:127: in import_module
+        return _bootstrap._gcd_import(name[level:], package, level)
+    core_bt_private_pb2.py:18: in <module>
+        DESCRIPTOR = _descriptor.FileDescriptor(
+    C:\Users\aw1054334\AppData\Local\Programs\Python\Python39\lib\site-packages\google\protobuf\descriptor.py:1024: in __new__
+        return _message.default_pool.AddSerializedFile(serialized_pb)
+    E   TypeError: Couldn't build proto file into descriptor pool!
+    E   Invalid proto descriptor for file "core_bt_private.proto":
+    E     core_bt_get_role_request_t: "core_bt_get_role_request_t" is already defined in file "core_api.proto".
+    E     core_bt_get_role_response_t.role: "core_bt_get_role_response_t.role" is already defined in file "core_api.proto".
+    E     core_bt_get_role_response_t: "core_bt_get_role_response_t" is already defined in file "core_api.proto".
+    E     core_bt_role_no_role: "core_bt_role_no_role" is already defined in file "core_api.proto".
+    E     core_bt_role_no_role: Note that enum values use C++ scoping rules, meaning that enum values are siblings of their type, not children of it.  Therefore, "core_bt_role_no_role" must be unique within the global scope, not just within "core_bt_role_t".
+    E     core_bt_role_primary: "core_bt_role_primary" is already defined in file "core_api.proto".
+    E     core_bt_role_primary: Note that enum values use C++ scoping rules, meaning that enum values are siblings of their type, not children of it.  Therefore, "core_bt_role_primary" must be unique within the global scope, not just within "core_bt_role_t".
+    E     core_bt_role_secondary: "core_bt_role_secondary" is already defined in file "core_api.proto".
+    E     core_bt_role_secondary: Note that enum values use C++ scoping rules, meaning that enum values are siblings of their type, not children of it.  Therefore, "core_bt_role_secondary" must be unique within the global scope, not just within "core_bt_role_t".
+    E     core_bt_role_t: "core_bt_role_t" is already defined in file "core_api.proto".
+    E     core_bt_get_role_response_t.role: "core_bt_role_t" seems to be defined in "core_api.proto", which is not imported by "core_bt_private.proto".  To use it here, please add the necessary import.
+[I Aug-03 20:10:17.623 conftest_plugin:496] ------------------------
+[W Aug-03 20:10:17.630 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty R4C84. Value-> None
+[W Aug-03 20:10:17.632 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty L5164. Value-> None
+[D Aug-03 20:10:17.633 spitfire_command_helper:233] getting ELF file from directory:-> 'C:\Spitfire'
+[D Aug-03 20:10:23.324 spitfire_command_helper:236] Selected ELF file is:-> C:\Spitfire\LoneStarr.elf
+[D Aug-03 20:10:23.327 dut:293] Dut Scotty R4C84 connection status changed to -> False
+[D Aug-03 20:10:23.385 dut:293] Dut Scotty L5164 connection status changed to -> False
+[I Aug-03 20:10:23.549 conftest_plugin:434] Automation completed  : 2023-08-03 20:10:23.549935
+[I Aug-03 20:10:23.605 conftest_plugin:520] =================== TEST RESULTS ====================
+[I Aug-03 20:10:23.605 conftest_plugin:535]  Passed: 0
+[I Aug-03 20:10:23.606 conftest_plugin:542]  Failed: 0
+[I Aug-03 20:10:23.606 conftest_plugin:545]  Errors: 1
+[I Aug-03 20:10:23.606 conftest_plugin:547]    test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 20:10:23.606 conftest_plugin:556]  Skipped: 0
+[I Aug-03 20:10:23.606 conftest_plugin:559] =========== Passed 0, Failed 0, Error 1, Skipped 0 in 17.66 seconds =============

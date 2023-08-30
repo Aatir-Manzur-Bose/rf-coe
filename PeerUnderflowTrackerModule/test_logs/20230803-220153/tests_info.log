@@ -1,0 +1,303 @@
+[I Aug-03 22:01:54.335 bmap_plugin:78] bmap_version=None, bmap_build=None, bmap_branch=None, bmap_parser_type=BmapFileType.PYTHON
+[I Aug-03 22:01:54.387 conftest_plugin:417] Automation stared  : 2023-08-03 22:01:54.387054
+[I Aug-03 22:01:54.424 polycomm_helper:130] Sleeping for 3 seconds to load Device Manager...
+[I Aug-03 22:02:05.043 dut_session_fixture_helper:145] Getting default Dut
+[I Aug-03 22:02:05.046 dut_session_fixture_helper:148] Current Operating System is:-> windows
+[I Aug-03 22:02:05.049 dut_session_fixture_helper:164] [<WearableTestUtils.DutUtils.dut.Dut object at 0x000002125A8B5FD0>, <WearableTestUtils.DutUtils.dut.Dut object at 0x000002125A8DF160>]
+[I Aug-03 22:02:05.149 PbManager:374] Loading proto 'component_state'
+[I Aug-03 22:02:05.166 PbManager:374] Loading proto 'core_address'
+[I Aug-03 22:02:05.168 PbManager:374] Loading proto 'core_api'
+[I Aug-03 22:02:05.171 PbManager:374] Loading proto 'core_handover'
+[I Aug-03 22:02:05.173 PbManager:374] Loading proto 'core_msg_header'
+[I Aug-03 22:02:05.175 PbManager:374] Loading proto 'cor_reboot_info'
+[I Aug-03 22:02:05.178 PbManager:374] Loading proto 'cor_reboot_reason'
+[I Aug-03 22:02:05.181 PbManager:374] Loading proto 'cor_shutdown_reason'
+[I Aug-03 22:02:05.184 PbManager:374] Loading proto 'media_player_drv_state'
+[I Aug-03 22:02:05.186 PbManager:374] Loading proto 'nanopb'
+[I Aug-03 22:02:05.189 PbManager:374] Loading proto 'tco_api'
+[I Aug-03 22:02:05.192 PbManager:374] Loading proto 'telephony_drv_state'
+[W Aug-03 22:02:05.193 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 22:02:05.196 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 22:02:05.197 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 22:02:05.199 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 22:02:05.201 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 22:02:05.203 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 22:02:05.205 PbManager:410] Loaded 12 protobufs
+[W Aug-03 22:02:05.302 PbManager:396] No entry for proto `component_state` found in loaded metadata
+[W Aug-03 22:02:05.305 PbManager:396] No entry for proto `cor_reboot_info` found in loaded metadata
+[W Aug-03 22:02:05.307 PbManager:396] No entry for proto `cor_reboot_reason` found in loaded metadata
+[W Aug-03 22:02:05.309 PbManager:396] No entry for proto `cor_shutdown_reason` found in loaded metadata
+[W Aug-03 22:02:05.312 PbManager:396] No entry for proto `nanopb` found in loaded metadata
+[W Aug-03 22:02:05.314 PbManager:396] No entry for proto `tco_api` found in loaded metadata
+[I Aug-03 22:02:05.317 PbManager:410] Loaded 12 protobufs
+[I Aug-03 22:02:05.322 conftest_plugin:460] Invoking logread fixture
+[I Aug-03 22:02:05.328 conftest_plugin:498] -----------------------
+[I Aug-03 22:02:05.331 conftest_plugin:499] TEST SETUP PASSED
+[I Aug-03 22:02:05.331 conftest_plugin:500] Test: test_peerUnderflowTracker.py::test_track_peer_underflow
+[I Aug-03 22:02:05.332 conftest_plugin:501] DateTime: 2023-08-03 22:02:05.332120
+[I Aug-03 22:02:05.332 conftest_plugin:502] ------------------------
+[I Aug-03 22:02:05.333 test_peerUnderflowTracker:149] Current DUT device is: Scotty [M308000151388105501A0C0]
+[I Aug-03 22:02:05.400 test_peerUnderflowTracker:156] Current DUT device [ Scotty [M308000151388105501A0C0] ] role is: [ 1 ]
+    
+[I Aug-03 22:02:05.403 test_peerUnderflowTracker:160] PRIMARY device is: Scotty [M308000151388105501A0C0]
+[I Aug-03 22:02:05.405 test_peerUnderflowTracker:149] Current DUT device is: Scotty [M308000132588105601A0C0]
+[I Aug-03 22:02:05.460 test_peerUnderflowTracker:156] Current DUT device [ Scotty [M308000132588105601A0C0] ] role is: [ 2 ]
+    
+[I Aug-03 22:02:05.463 test_peerUnderflowTracker:163] SECONDARY device is: Scotty [M308000132588105601A0C0]
+[I Aug-03 22:02:05.466 test_peerUnderflowTracker:165] Starting peer underflow tracker
+[I Aug-03 22:02:05.468 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:05.720 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:05.984 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:06.249 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:06.514 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:06.537 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.538 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:06.554 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.555 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:06.577 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.578 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:06.579 test_peerUnderflowTracker:103] Event with count:535
+[W Aug-03 22:02:06.593 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.594 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:06.623 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.624 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:06.625 test_peerUnderflowTracker:103] Event with count:249
+[W Aug-03 22:02:06.638 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.639 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:06.671 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.672 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:06.700 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.701 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:06.716 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.717 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:06.732 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.733 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:06.734 test_peerUnderflowTracker:103] Event with count:250
+[W Aug-03 22:02:06.748 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.749 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:06.751 test_peerUnderflowTracker:103] Event with count:536
+[I Aug-03 22:02:06.778 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:06.781 test_peerUnderflowTracker:103] Event with count:537
+[I Aug-03 22:02:06.782 test_peerUnderflowTracker:103] Event with count:538
+[W Aug-03 22:02:06.808 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.809 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:06.840 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:06.841 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:06.842 test_peerUnderflowTracker:103] Event with count:539
+[I Aug-03 22:02:06.870 test_peerUnderflowTracker:103] Event with count:540
+[I Aug-03 22:02:07.041 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:07.142 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:07.143 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:07.165 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:07.166 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:07.181 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:07.181 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:07.183 test_peerUnderflowTracker:103] Event with count:541
+[W Aug-03 22:02:07.211 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:07.212 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:07.228 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:07.229 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:07.245 test_peerUnderflowTracker:103] Event with count:251
+[I Aug-03 22:02:07.305 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:07.369 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:07.370 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:07.400 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:07.401 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:07.403 test_peerUnderflowTracker:103] Event with count:542
+[I Aug-03 22:02:07.432 test_peerUnderflowTracker:103] Event with count:543
+[W Aug-03 22:02:07.509 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:07.510 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:07.571 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:07.681 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:07.682 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:07.835 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:08.101 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:08.365 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:08.569 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:08.570 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:08.630 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:08.893 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:09.147 SpitfireMessaging:645] No handler for core event cor,20
+[W Aug-03 22:02:09.159 SpitfireMessaging:705] Could not map payload to protobuf
+[I Aug-03 22:02:09.159 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:09.160 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:09.422 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:09.608 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 22:02:09.685 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:09.763 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:09.764 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:09.937 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:10.189 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:10.455 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:10.721 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:10.984 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:11.062 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:11.063 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:11.250 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:11.511 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:11.730 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 22:02:11.776 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:12.040 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:12.211 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:12.213 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:12.242 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 22:02:12.305 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:12.569 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:12.832 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:13.067 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 22:02:13.098 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:13.363 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:13.487 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:13.488 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:13.625 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:13.889 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:14.152 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:14.275 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 22:02:14.414 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:14.678 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:14.738 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:14.739 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:14.937 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:15.202 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:15.464 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:15.696 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:15.696 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:15.726 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:15.990 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:16.085 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 22:02:16.254 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:16.473 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:16.474 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:16.519 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:16.612 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:16.613 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:16.785 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:17.046 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:17.309 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:17.572 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:17.681 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:17.682 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:17.839 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:17.963 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 22:02:18.103 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:18.366 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:18.630 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:18.893 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:19.155 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:19.419 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:19.545 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:19.545 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:19.682 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:19.761 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 22:02:19.947 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:20.210 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:20.474 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:20.728 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:20.992 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:21.254 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:21.516 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:21.778 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:22.040 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:22.304 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:22.567 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:22.770 SpitfireMessaging:645] No handler for core event cor,20
+[I Aug-03 22:02:22.831 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:23.094 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:23.358 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:23.621 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:23.883 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:24.144 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:24.407 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:24.668 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:24.930 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:25.195 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:25.461 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:25.725 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:25.989 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:26.253 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:26.283 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:26.284 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:26.515 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:26.778 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:27.042 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:27.250 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.251 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.276 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.277 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.292 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.293 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:27.293 test_peerUnderflowTracker:103] Event with count:544
+[I Aug-03 22:02:27.307 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:27.354 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.355 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.370 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.371 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.371 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.372 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.384 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.385 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:27.396 test_peerUnderflowTracker:103] Event with count:252
+[W Aug-03 22:02:27.397 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.398 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.414 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.416 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:27.417 test_peerUnderflowTracker:103] Event with count:253
+[W Aug-03 22:02:27.431 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.432 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.447 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.448 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.462 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.463 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:27.464 test_peerUnderflowTracker:103] Event with count:545
+[W Aug-03 22:02:27.478 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.479 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:27.480 test_peerUnderflowTracker:103] Event with count:254
+[W Aug-03 22:02:27.509 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.510 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.523 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.524 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.555 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.556 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:27.557 test_peerUnderflowTracker:103] Event with count:546
+[W Aug-03 22:02:27.570 SpitfireMessaging:705] Could not map payload to protobuf
+[I Aug-03 22:02:27.570 test_peerUnderflowTracker:208] Check
+[W Aug-03 22:02:27.571 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.586 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.587 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.601 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.602 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:27.603 test_peerUnderflowTracker:103] Event with count:255
+[W Aug-03 22:02:27.617 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.618 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.618 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.619 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:27.620 test_peerUnderflowTracker:103] Event with count:547
+[I Aug-03 22:02:27.662 test_peerUnderflowTracker:103] Event with count:548
+[W Aug-03 22:02:27.693 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.694 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:27.740 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:27.740 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:27.741 test_peerUnderflowTracker:103] Event with count:549
+[I Aug-03 22:02:27.770 test_peerUnderflowTracker:103] Event with count:550
+[I Aug-03 22:02:27.831 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:28.091 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:28.355 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:28.620 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:28.884 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:29.147 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:29.410 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:29.673 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:29.936 test_peerUnderflowTracker:208] Check
+[I Aug-03 22:02:30.541 conftest_plugin:434] Automation completed  : 2023-08-03 22:02:30.541256
+[W Aug-03 22:02:30.546 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty R4C84. Value-> None
+[W Aug-03 22:02:30.546 session_fixture:201] Unable to clear PyDbg Executors for DUT-> Scotty L5164. Value-> None
+[W Aug-03 22:02:31.435 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:31.436 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[W Aug-03 22:02:31.450 SpitfireMessaging:705] Could not map payload to protobuf
+[W Aug-03 22:02:31.450 SpitfireMessaging:624] Failed to parse header/payload from incoming mesage
+[I Aug-03 22:02:35.246 conftest_plugin:520] =================== TEST RESULTS ====================
+[I Aug-03 22:02:35.246 conftest_plugin:535]  Passed: 0
+[I Aug-03 22:02:35.247 conftest_plugin:542]  Failed: 0
+[I Aug-03 22:02:35.247 conftest_plugin:549]  Errors: 0
+[I Aug-03 22:02:35.247 conftest_plugin:556]  Skipped: 0
+[I Aug-03 22:02:35.247 conftest_plugin:559] =========== Passed 0, Failed 0, Error 0, Skipped 0 in 40.85 seconds =============

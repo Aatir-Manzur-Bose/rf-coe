@@ -1,0 +1,10 @@
+[I Aug-03 19:45:14.490 bmap_plugin:78] bmap_version=None, bmap_build=None, bmap_branch=None, bmap_parser_type=BmapFileType.PYTHON
+[I Aug-03 19:45:14.546 conftest_plugin:417] Automation stared  : 2023-08-03 19:45:14.545433
+[I Aug-03 19:45:15.063 conftest_plugin:434] Automation completed  : 2023-08-03 19:45:15.063437
+[I Aug-03 19:45:15.066 conftest_plugin:520] =================== TEST RESULTS ====================
+[I Aug-03 19:45:15.066 conftest_plugin:535]  Passed: 0
+[I Aug-03 19:45:15.066 conftest_plugin:542]  Failed: 0
+[I Aug-03 19:45:15.067 conftest_plugin:545]  Errors: 1
+[I Aug-03 19:45:15.067 conftest_plugin:547]    test_peerUnderflowTracker.py
+[I Aug-03 19:45:15.067 conftest_plugin:556]  Skipped: 0
+[I Aug-03 19:45:15.068 conftest_plugin:559] =========== Passed 0, Failed 0, Error 1, Skipped 0 in 0.52 seconds =============
