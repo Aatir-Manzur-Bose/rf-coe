@@ -1,3 +1,7 @@
+--trusted-host ingress-platform.live-aws-useast1.bose.io 
+--extra-index-url https://ingress-platform.live-aws-useast1.bose.io/dev/svc-core-devops-nexus/prod/core-devops-nexus-core/repository/pypi-all/simple 
+
+pypolycomm==2.30.0
 keyboard==0.13.5
 matplotlib==3.7.1
 scikit-learn==1.2.2
